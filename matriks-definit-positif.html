@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matriks Definit Positif - BELAJAR</title>
+    <meta name="description" content="Matriks Definit Positif, Menentukan Matriks Definit Positif dengan Determinan | Matrix | Fibonacciku, , , , FibonacciKu Indonesia, 2021-08-03T12:00:16.000000Z, 20, Statistika Multivariat Matriks Varians Kovarians LOGO Pendahuluan Data, slidetodoc.com, 720 x 540, jpeg, , 20, matriks-definit-positif, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Matriks Definit Positif - BELAJAR" />
+    <meta property="og:description" content="Matriks Definit Positif, Menentukan Matriks Definit Positif dengan Determinan | Matrix | Fibonacciku, , , , FibonacciKu Indonesia, 2021-08-03T12:00:16.000000Z, 20, Statistika Multivariat Matriks Varians Kovarians LOGO Pendahuluan Data, slidetodoc.com, 720 x 540, jpeg, , 20, matriks-definit-positif, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Matriks Definit Positif - BELAJAR" />
+    <meta name="twitter:description" content="Matriks Definit Positif, Menentukan Matriks Definit Positif dengan Determinan | Matrix | Fibonacciku, , , , FibonacciKu Indonesia, 2021-08-03T12:00:16.000000Z, 20, Statistika Multivariat Matriks Varians Kovarians LOGO Pendahuluan Data, slidetodoc.com, 720 x 540, jpeg, , 20, matriks-definit-positif, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://prosschole.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://prosschole.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://prosschole.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://prosschole.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://prosschole.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://prosschole.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://prosschole.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://prosschole.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://prosschole.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://prosschole.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Matriks Definit Positif</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">resa18</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Matriks+Definit+Positif" alt="Matriks Definit Positif">
+                    </div>
+                    <p></p>
+                    <p>mohon bantuannya kenapa ini definit positif, trus ciri2 definit positif di pertidaksamaan itu apa aja ya? </p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mohon-bantuannya-kenapa-ini-definit-positif-trus-ciri2-definit-positif-di-pertidaksamaan-itu-apa-aja-ya">1.
+                                            mohon bantuannya kenapa ini definit positif, trus ciri2 definit positif di pertidaksamaan itu apa aja ya? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-apakah-definit-positif-atau-definit-negative-y-x2-x3">2.
+                                            Tentukan apakah definit positif atau definit negative y = x2-x+3</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#selidiki-apakah-fungsi-y-3x%c2%b2-4x-2-dan-y-4x%c2%b2-3x-5-tergolong-definit-positif-definit-negatif-atau-bukan-keduanya%e2%80%8b">3.
+                                            selidiki apakah fungsi y = 3x²- 4x - 2 dan y = 4x² - 3x + 5 tergolong definit positif, definit negatif atau bukan keduanya!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-kuadrat-y-ax2-4x-a-definit-positif-untuk-konstanta-a-yang-memenuhi-adalah">4.
+                                            Fungsi kuadrat y = ax2  + 4x + a definit positif untuk konstanta a yang memenuhi adalah </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hxx%c2%b2xn-2-definit-positif">5.
+                                            H(x)=x²+x+n-2 definit positif</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-grafik-fungsi-y-x2-2mx-3m-definit-positif-maka-m-haruslah">6.
+                                            agar grafik fungsi y = x^2 + 2mx +3m definit positif maka m haruslah ... ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-fungsi-fx-mx%c2%b2-2mx%c2%b2m2-definit-positif-maka-nilai-m-yang-memenuhi-adalah">7.
+                                            agar fungsi f(x) = mx² + 2mx²+(m+2) definit positif maka nilai m yang memenuhi adalah ...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#untuk-faktor-linear-dan-kuadrat-definit-positifx%c2%b3-a%c2%b3">8.
+                                            Untuk faktor linear dan kuadrat definit positif
+X³-a³</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#nilai-m-yang-menyebabkan-funsi-kuadrat-fxm-2%c2%b22mxm4-definit-positif-adalah">9.
+                                            Nilai m yang menyebabkan funsi kuadrat f(x)=(m-2)²+2mx+m+4 definit positif adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-grafik-fungsi-eksponensial-disebut-dengan-grafik-definit-positif-jelaskan">10.
+                                            MENGAPA GRAFIK FUNGSI EKSPONENSIAL DISEBUT DENGAN GRAFIK DEFINIT POSITIF ?JELASKAN</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kenapa-yang-dicari-cuman-2x%c2%b2-5x-30-aja-sekalian-jelasin-yang-definit-positifnya-ya-makasih%e2%80%8b">11.
+                                            kenapa yang dicari cuman 2x²-5x-3&lt;0 aja? sekalian jelasin yang definit positifnya ya, makasih​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-nilai-k-agar-fungsi-kuadrat-fx-x2k-bersifat-definit-positif">12.
+                                            tentukan nilai k agar fungsi kuadrat f(x) = x^2+k bersifat definit positif</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fx-4x2-px-p-3-0-definit-positif-nilai-p-yang-memenuhi-adalah">13.
+                                            f(x)= 4X2 - px +(p - 3) = 0 definit positif. Nilai p yang memenuhi adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#selidiki-apakah-fs-fx-x2-x-5-definit-positif-negatif">14.
+                                            selidiki apakah fs (fx) = x2 + x + 5 definit positif / negatif</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fxa-1x22axa4-definit-positif">15.
+                                            f(x)=(a-1)x2+2ax+(a+4) definit positif</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#diketahui-fungsi-fx-3x%c2%b2-2ax6-definit-positif-tentukan-interval-a-tolong-jawab">16.
+                                            diketahui fungsi f(x) = 3x²-2ax+6, definit positif tentukan interval a. tolong jawab...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-nilai-m-agar-fxx%c2%b2-6x-m-definit-positif%e2%80%8b">17.
+                                            Tentukan nilai m agar f(x)=x² +6x-m definit positif​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-nilai-p-agar-fungsi-kuadrat-fx2x%c2%b25xp-definit-positif%e2%80%8b">18.
+                                            tentukan nilai p agar fungsi kuadrat f(x)=2x²+5x+p definit positif​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#mengapa-grafik-fungsi-eksponensial-disebut-dengan-grafik-definit-positif-jelaskan">19.
+                                            MENGAPA GRAFIK FUNGSI EKSPONENSIAL DISEBUT DENGAN GRAFIK DEFINIT POSITIF ?JELASKAN</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#nilai-m-yang-memungkinkan-agar-fungsi-kuadrat-fx-2x%c2%b2-5x-m-termasuk-definit-positif-adalah-%e2%80%8b">20.
+                                            Nilai m yang memungkinkan agar fungsi kuadrat f(x) = 2x² - 5x - m termasuk definit positif adalah ...​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#a-hx-2x%c2%b2n-1x-8-definit-negatif-b-hxnx%c2%b2-nx3-definit-positif-c-hxn-1x%c2%b22n1xn3-definit-negatif">21.
+                                            a.)h(x)=-2x²+(n-1)x-8 definit negatif b.)h(x)=nx²-nx+3 definit positif C.)h(x)=(n-1)x²+(2n+1)x+n+3 definit negatif</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-batas-nilai-m-agar-fungsi-y-x-2%c2%b2-m-3-definit-positif%e2%80%8b">22.
+                                            Tentukan batas nilai m agar fungsi y = (x - 2)² + m - 3 definit positif​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-batas-nilai-m-agar-fungsi-y-x26xm-definit-positif">23.
+                                            Tentukan batas nilai m agar fungsi y= x^2+6x+m definit positif</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-k-agar-fungsi-kuadrat-fx-x2-kx-1-definit-positif">24.
+                                            Tentukan k agar fungsi kuadrat f(x) = x2 - kx + 1 definit positif</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#alasan-grafik-fungsi-eksponensial-disebut-dengan-grafik-definit-positiftolong-di-bantu-bsok-presentasi">25.
+                                            alasan grafik fungsi eksponensial disebut dengan grafik definit positif?
+tolong di bantu, bsok presentasi!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-fungsi-texfx-x2-2x-atex-definit-positif-nilai-a-yang-memenuhi-adalah">26.
+                                            Agar fungsi [tex]f(x) =  x^{2} + 2x + a[/tex] definit positif, nilai a yang memenuhi adalah...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tugas-mandiri1-apakah-syarat-suatu-grafik-fungsi-kuadrat-menyinggung-sumbu-koordinat2-selidikilah-apakah-fungsi-kuadrat-dengan-rumus-fx-x2-x-5-termasuk-definit-positif-ataudefinit-negatif-a">27.
+                                            Tugas Mandiri1. Apakah syarat suatu grafik fungsi kuadrat menyinggung sumbu koordinat?2. Selidikilah apakah fungsi kuadrat dengan rumus f(x) = x2 + x + 5 termasuk definit positif ataudefinit negatif atau tidak kedua-duanya?3. Apakah syarat suatu fungsi kuadrat dikatakan definit positif?4. Tentukan batas-batas nilai p agar fungsi f(x) = x2 - 4x + m definit positif!5. Suatu perusahaan memproduksi x buah barang. Setiap barang yang diproduksi memberikankeuntungan (224 - x) rupiah. Supaya total keuntungan mencapai maksimum, berapakahbanyak barang yang harus diproduksi?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#fungsi-fx-2x%c2%b2-ax2-akan-menjadi-fungsi-definit-positif-bila-a-berada-pada-interval">28.
+                                            Fungsi f(x) = 2x²-ax+2 akan menjadi fungsi definit positif bila a berada pada interval...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pernyataan-berikut-yang-benar-tentang-grafik-fungsi-kuadrat-fx-2x1%c2%b25-adalah-a-grafik-definit-positif-dan-memotong-sumbu-y-di-titik-05-b-grafik-definit-positif-dan-memotong-sumbu-y-di">29.
+                                            pernyataan berikut yang benar tentang grafik fungsi kuadrat f(x)= 2(x+1)²+5 adalah.. a.Grafik definit positif dan memotong sumbu y di titik (0,5). b.Grafik definit positif dan memotong sumbu y di titik (0,7).c. Grafik definit negatif dan memotong sumbu y di titik (0.7)d.Grafik definit negatif dan memotong sumbu y di titik (0.5)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#agar-fungsi-fx%c2%a0-4x%c2%b2-4mx-%c2%a0m-definit-positif-nilai-m-yang-memenuhi-adalah">30.
+                                            agar fungsi f(x) = 4x² + 4mx + m definit positif, nilai m yang memenuhi adalah...</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="mohon-bantuannya-kenapa-ini-definit-positif-trus-ciri2-definit-positif-di-pertidaksamaan-itu-apa-aja-ya">
+                            1. mohon bantuannya kenapa ini definit positif, trus ciri2 definit positif di pertidaksamaan itu apa aja ya? </h2><br />
+                        kenapa definit positif  misal (x-2)²  karena berapapun nilai x yg kamu masukan maka hasilnya pasti positif , kok bisa? karena dikuadratkan<br /><br />karena yg diminta &gt; 0 , pembilang yg definit positif diabaikan saja tinggal dicari penyebut yang &gt; 0 agar hasilnya &gt; 0<br /><br />ciri2 definit + yg lain utk fungsi kuadrat , nilai a &gt; 0 dan D &lt; 0 artinya parabola diatas sb x semua , misal 2x²-4x+10, D &lt; 0 a&gt; 0 definit +<br />coba kamu ganti x = - 1 dan x = 10 pasti hasilnya +<br /><br />
+                                            <h2 class="ez-toc-section" id="tentukan-apakah-definit-positif-atau-definit-negative-y-x2-x3">
+                            2. Tentukan apakah definit positif atau definit negative y = x2-x+3</h2><br />
+                        Definit positif karena jika x dimasukkan angka berapapun, hasilnya akan positif<br /><br />
+                                            <h2 class="ez-toc-section" id="selidiki-apakah-fungsi-y-3x%c2%b2-4x-2-dan-y-4x%c2%b2-3x-5-tergolong-definit-positif-definit-negatif-atau-bukan-keduanya%e2%80%8b">
+                            3. selidiki apakah fungsi y = 3x²- 4x - 2 dan y = 4x² - 3x + 5 tergolong definit positif, definit negatif atau bukan keduanya!​</h2><br />
+                        <p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>semoga bermanfaat yahhh</p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-kuadrat-y-ax2-4x-a-definit-positif-untuk-konstanta-a-yang-memenuhi-adalah">
+                            4. Fungsi kuadrat y = ax2  + 4x + a definit positif untuk konstanta a yang memenuhi adalah </h2><br />
+                        Fungsi Kuadrat<br /><br />y = ax² + 4x + a<br /><br />Definit Positif D &gt; 0 dan a ≠ 0<br />b² - 4ac &gt; 0<br />(4)² - 4(a)(a) &gt; 0<br />16 - 4a² &gt; 0<br />4a² -16 &lt; 0<br />4a² &lt; 16<br />a² &lt; 4<br />-2 &lt; a&lt; 2 dan  a ≠ 0<br />HP -2 &lt; a &lt; 0  atau  0 &lt; x&lt; 2<br /><br />
+                                            <h2 class="ez-toc-section" id="hxx%c2%b2xn-2-definit-positif">
+                            5. H(x)=x²+x+n-2 definit positif</h2><br />
+                        <p><strong>Jawab:</strong></p><p></p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p></p><p>PK  ax² + bx  + c = 0</p><p>definit positif , jika D&lt; 0 dan a &gt; 0 ,  dengan D= b² -4ac</p><p></p><p>soal</p><p>h(x) = x² + x  +  (n-2)</p><p>a= 1 </p><p>b = 1</p><p>c=  n-1</p><p>definit  positif   D&lt; 0 , a &gt;  0</p><p>D&lt; 0 </p><p>b² -4ac &lt;  0</p><p>1²- 4 (1)(n-2)  &lt;0</p><p>1 - 4n + 8 &lt;0</p><p>-4n  + 9 &lt; 0</p><p>-4n &lt; - 9</p><p>n &gt;  9/4</p><br />
+                                            <h2 class="ez-toc-section" id="agar-grafik-fungsi-y-x2-2mx-3m-definit-positif-maka-m-haruslah">
+                            6. agar grafik fungsi y = x^2 + 2mx +3m definit positif maka m haruslah ... ?</h2><br />
+                        Definit positif D&gt;0<br /><br />b" - 4ac &gt;0<br /><br />(2m)" -4 .1 3m &gt;0<br /><br />4m" - 12m &gt; 0<br /><br />4m( m -3) &gt; 0<br /><br />m&gt; 3<br />
+                                            <h2 class="ez-toc-section" id="agar-fungsi-fx-mx%c2%b2-2mx%c2%b2m2-definit-positif-maka-nilai-m-yang-memenuhi-adalah">
+                            7. agar fungsi f(x) = mx² + 2mx²+(m+2) definit positif maka nilai m yang memenuhi adalah ...</h2><br />
+                        soalnya itu bukan 2mx^2?kalo iya<br />jawabannya <br />m=1<br />
+                                            <h2 class="ez-toc-section" id="untuk-faktor-linear-dan-kuadrat-definit-positifx%c2%b3-a%c2%b3">
+                            8. Untuk faktor linear dan kuadrat definit positif
+X³-a³</h2><br />
+                        <p><strong>Jawab:</strong></p><p>[tex](x-a)(x^{2} +xa+a^{2} )[/tex]</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>[tex]a^{3} -b^{3} = (a-b)(a^{2} +ab+b^{2} )[/tex]</p><p>oleh karena itu </p><p>[tex]x^{3} -a^{3} = (x-a)(x^{2} +xa+a^{2} )[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="nilai-m-yang-menyebabkan-funsi-kuadrat-fxm-2%c2%b22mxm4-definit-positif-adalah">
+                            9. Nilai m yang menyebabkan funsi kuadrat f(x)=(m-2)²+2mx+m+4 definit positif adalah</h2><br />
+                        definit positif<br />D &lt; 0<br />(2m)² - 4(m-2)(m+4) &lt; 0<br />4m² - 4m² - 8m + 32 &lt; 0<br />-8m + 32 &lt; 0<br />-8m &lt; -32<br />m &gt; 32/8<br />m &gt; 4<br />a &gt; 0<br />m - 2 &gt; 0<br />m &gt; 2<br />maka nilai m yg memenuhi<br />m &gt; 4<br />
+                                            <h2 class="ez-toc-section" id="mengapa-grafik-fungsi-eksponensial-disebut-dengan-grafik-definit-positif-jelaskan">
+                            10. MENGAPA GRAFIK FUNGSI EKSPONENSIAL DISEBUT DENGAN GRAFIK DEFINIT POSITIF ?JELASKAN</h2><br />
+                        Definit adalah kondisi grafik dimana grafik tersebut tidak memotong sumbu x.<br />dalam grafik fungsi eksonensial seperti terlampir pada gambar adalah jenis grafik definit positif karena grafik tersebut tidak memotong sumbu x dan grafik berada di atas sumbu x. <br />sesuai definisi dasar dari fungsi eksponen dimana y = a^x, a&gt;0, a≠1 maka untuk nilai x berapapun, y tidak akan menghasilkan angka negatif, itulah yang menyebabkan kurva eksponensial merupakan kurva definit positif.<br />
+                                            <h2 class="ez-toc-section" id="kenapa-yang-dicari-cuman-2x%c2%b2-5x-30-aja-sekalian-jelasin-yang-definit-positifnya-ya-makasih%e2%80%8b">
+                            11. kenapa yang dicari cuman 2x²-5x-3&lt;0 aja? sekalian jelasin yang definit positifnya ya, makasih​</h2><br />
+                        alasan kenapa pakai 2x² -5x -3 ???<br /><br />1) x² - x + 3 ≤ 0 tidak ada hasil x1 dan x2<br /><br />2) x² + 1 ≤ tidak ada nilai x1 dan x2<br /><br />3) 2x² - 5x + 3 ≤ 0 mempunyai nilai x1 dan x2.<br /><br />dikarenakan posisinya di penyebut maka<br />tanda berubah menjadi &lt;<br /><br />dikarenakan tanda &lt; maka akan dapat hasil<br />x|  a &lt; x &lt; a (interval turun)<br /><br />jika tanda &gt; maka akan didapat hasil interval naik<br />x| x &gt; a atau x &lt; a<br /><br />semoga bermanfaat ya<br /><br />
+                                            <h2 class="ez-toc-section" id="tentukan-nilai-k-agar-fungsi-kuadrat-fx-x2k-bersifat-definit-positif">
+                            12. tentukan nilai k agar fungsi kuadrat f(x) = x^2+k bersifat definit positif</h2><br />
+                        definit positif klo a&gt; 0 dan D&lt;0<br />D &lt; 0<br />0² -4.1.k &lt; 0<br />-4k &lt; 0<br />k &gt; 0<br />nilai k harus &gt; 0<br />
+                                            <h2 class="ez-toc-section" id="fx-4x2-px-p-3-0-definit-positif-nilai-p-yang-memenuhi-adalah">
+                            13. f(x)= 4X2 - px +(p - 3) = 0 definit positif. Nilai p yang memenuhi adalah</h2><br />
+                        b²-4ac &gt; 0<br />(-p)²-4(4)(p-3)&gt;0<br />p²-16p+48&gt;0<br />(p-12)(p-4)<br />p&gt;12 atau p&gt;4<br />
+                                            <h2 class="ez-toc-section" id="selidiki-apakah-fs-fx-x2-x-5-definit-positif-negatif">
+                            14. selidiki apakah fs (fx) = x2 + x + 5 definit positif / negatif</h2><br />
+                        suatu fungsi dikatakan definit positif jika D &gt; 0 dan a&gt;0<br />sedangkan dapat dikatakan definit negatif jika D &lt;0 dan a&gt;0<br /><br />[tex]fungsi \: f (x) = \: x {}^{2}  + x + 5 \\ a = 1 \: b = 1 \: c = 5 \\ memiliki \: diskriminan \\D \:= \:  b {}^{2}  - 4ac \\ D \:= \:1 {}^{2}  - 4(1)(5) \\ D \:= \:1 - 20 \\ D \:= \: - 19[/tex]<br />Diketahui bahwa fungsi tersebut adalah definit negatif<br />
+                                            <h2 class="ez-toc-section" id="fxa-1x22axa4-definit-positif">
+                            15. f(x)=(a-1)x2+2ax+(a+4) definit positif</h2><br />
+                        [tex]f(x)=(a-1)x^2+2ax+(a+4)\\Syarat\ dfinit\ positif:\\a-1\ \textgreater \ 0\\a\ \textgreater \ 1~~~~......(1)\\\\D\ \textless \ 0\\(2a)^2-4(a-1)(a+4)\ \textless \ 0\\4a^2-4(a^2+3a-4)\ \textless \ 0\\4a^2-4a^2-12a+16\ \textless \ 0\\-12a+16\ \textless \ 0\\a\ \textgreater \ \dfrac{4}{3}~~~~~....(2)\\\\(1)\ dan\ (2)\ diperoleh:\ HP=\boxed{\boxed{\bold{a\ \textgreater \ \dfrac{4}{3}}}}[/tex]<br />
+                                            <h2 class="ez-toc-section" id="diketahui-fungsi-fx-3x%c2%b2-2ax6-definit-positif-tentukan-interval-a-tolong-jawab">
+                            16. diketahui fungsi f(x) = 3x²-2ax+6, definit positif tentukan interval a. tolong jawab...</h2><br />
+                        definit positid --&gt; D &gt; 0<br />f(x) = 3x² - 2a x + 6<br />a= 3 , b = - 2a  , c = 6<br />D = b² - 4ac<br /><br />b² - 4ac &gt; 0<br />b² &gt; 4ac<br />(-2a)² &gt;  4(3)(6) <br />4a² &gt;  72<br />a²  &gt; 18<br />-√18 &gt; a &gt; √18<br />-3√2 &gt; a &gt; 3√2<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="tentukan-nilai-m-agar-fxx%c2%b2-6x-m-definit-positif%e2%80%8b">
+                            17. Tentukan nilai m agar f(x)=x² +6x-m definit positif​</h2><br />
+                        <p>Nilai m agar fungsi kuadrat [tex]f(x)=x^2+6x-m[/tex] bernilai definit positif adalah <strong>m &lt; -9</strong>.</p><p></p>PEMBAHASAN<p><strong>Fungsi kuadrat</strong> merupakan suatu fungsi polinomial dimana pangkat tertinggi dari variabelnya adalah 2. Fungsi kuadrat memiliki bentuk umum :</p><p>[tex]y=ax^2+bx+c,~~a\neq 0[/tex]</p><p></p><p>Grafik dari fungsi kuadrat berbentuk kurva parabola. Ada 3 jenis kurva parabola, yaitu :</p><strong>Kurva parabola tidak memotong sumbu x</strong>, jika nilai D &lt; 0. Untuk jenis ini ada dua tipe. Pertama <strong>definit positif</strong> yaitu kondisi dimana fungsi bernilai positif untuk semua nilai x, dipenuhi oleh a &gt; 0. Kedua <strong>definit negatif</strong> yaitu kondisi dimana fungsi bernilai negatif untuk semua nilai x, dipenuhi oleh a &lt; 0.<strong>Kurva parabola menyinggung sumbu x di satu titik</strong>, jika nilai D = 0.<strong>Kurva parabola memotong sumbu x di dua titik</strong>, jika nilai D &gt; 0.<p></p><p>Dengan [tex]D=b^2-4ac[/tex]</p><p>.</p>DIKETAHUI<p>Fungsi kuadrat [tex]f(x)=x^2+6x-m[/tex].</p><p>.</p>DITANYA<p>Tentukan nilai m agar fungsi kuadrat definit positif.</p><p>.</p>PENYELESAIAN<p>[tex]f(x)=x^2+6x-m\left\{\begin{matrix}a=1\\ \\b=6\\ \\c=-m\end{matrix}\right.[/tex]</p><p></p><p>Syarat definit positif a &gt; 0 dan D &lt; 0.</p><p>.</p><p>Nilai a = 1 ( &gt; 0 OK)</p><p>Syarat satu lagi yang harus dipenuhi :</p><p>[tex]D&lt; 0[/tex]</p><p>[tex]b^2-4ac&lt; 0[/tex]</p><p>[tex]6^2-4(1)(-m)&lt; 0[/tex]</p><p>[tex]36+4m&lt; 0[/tex]</p><p>[tex]4m&lt; -36[/tex]</p><p>[tex]m&lt; -9[/tex]</p><p>.</p>KESIMPULAN<p>Nilai m agar fungsi kuadrat [tex]f(x)=x^2+6x-m[/tex] bernilai definit positif adalah <strong>m &lt; -9</strong>.</p><p>.</p>PELAJARI LEBIH LANJUTFungsi kuadrat definit positif : https://brainly.co.id/tugas/29438930Nilai minimum fungsi kuadrat : https://brainly.co.id/tugas/28910050Mencari PGS pada parabola : https://brainly.co.id/tugas/28729036<p>.</p>DETAIL JAWABAN<p>Kelas : 10</p><p>Mapel: Matematika</p><p>Bab : Persamaan dan Fungsi Kuadrat</p><p>Kode Kategorisasi: 10.2.5</p><p>Kata Kunci :  fungsi, kuadrat, parabola, definit, positif, diskriminan.</p><br />
+                                            <h2 class="ez-toc-section" id="tentukan-nilai-p-agar-fungsi-kuadrat-fx2x%c2%b25xp-definit-positif%e2%80%8b">
+                            18. tentukan nilai p agar fungsi kuadrat f(x)=2x²+5x+p definit positif​</h2><br />
+                        <p><strong>Jawab:</strong></p><p></p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p></p><p>f(x)=  2x² + 5x + p</p><p>a= 2</p><p>b = 5</p><p>c= p</p><p>D &lt; 0 </p><p>b² - 4ac &lt; 0</p><p>5² - 4. 2. p &lt;0</p><p>25 - 8p &lt;0</p><p>-8p &lt; - 25</p><p>p &gt; 25/8</p><br />
+                                            <h2 class="ez-toc-section" id="mengapa-grafik-fungsi-eksponensial-disebut-dengan-grafik-definit-positif-jelaskan">
+                            19. MENGAPA GRAFIK FUNGSI EKSPONENSIAL DISEBUT DENGAN GRAFIK DEFINIT POSITIF ?JELASKAN</h2><br />
+                        Arti dari definit positif adalah grafik fungsi tidak memotong sumbu X dan seluruh grafik berada di atas sumbu X.<br /><br />Nah, untuk sebarang grafik eksponensial, misalkan grafik f(x), f(x) selalu lebih besar dari nol, tidak pernah bernilai nol, dan tidak pernah bernilai negatif. Dengan demikian, grafik eksponensial adalah definit positif.<br /><br />Semoga membantu :)<br />
+                                            <h2 class="ez-toc-section" id="nilai-m-yang-memungkinkan-agar-fungsi-kuadrat-fx-2x%c2%b2-5x-m-termasuk-definit-positif-adalah-%e2%80%8b">
+                            20. Nilai m yang memungkinkan agar fungsi kuadrat f(x) = 2x² - 5x - m termasuk definit positif adalah ...​</h2><br />
+                        <p><strong>Jawab:</strong></p><p></p><p><strong>Untuk menentukan nilai m yang memungkinkan agar fungsi kuadrat f(x) = 2x² - 5x - m termasuk definit positif, kita dapat menggunakan kriteria definit positif pada matriks sebagai berikut:</strong></p><p><strong></strong></p><p><strong>Sebuah matriks 2x2 A = [a_ij] dikatakan definit positif jika determinannya positif dan a_11 &gt; 0 (dalam hal ini, a_11 adalah koefisien dari x^2).</strong></p><p><strong></strong></p><p><strong>Dalam hal ini, fungsi kuadrat f(x) dapat dituliskan dalam bentuk umum sebagai:</strong></p><p><strong></strong></p><p><strong>f(x) = 2x² - 5x - m</strong></p><p><strong></strong></p><p><strong>Koefisien dari x^2 adalah 2, sehingga a_11 = 2. Kita perlu mencari nilai m yang memenuhi kriteria determinan positif, yaitu:</strong></p><p><strong></strong></p><p><strong>D = b^2 - 4ac &gt; 0</strong></p><p><strong></strong></p><p><strong>Substitusikan nilai koefisien a, b, dan c pada rumus di atas dengan a = 2, b = -5, dan c = -m. Maka kita dapatkan:</strong></p><p><strong></strong></p><p><strong>(-5)^2 - 4(2)(-m) &gt; 0</strong></p><p><strong>25 + 8m &gt; 0</strong></p><p><strong>8m &gt; -25</strong></p><p><strong>m &gt; -25/8</strong></p><p><strong></strong></p><p><strong>Jadi, nilai m yang memungkinkan agar fungsi kuadrat f(x) = 2x² - 5x - m termasuk definit positif adalah m &gt; -25/8.</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="a-hx-2x%c2%b2n-1x-8-definit-negatif-b-hxnx%c2%b2-nx3-definit-positif-c-hxn-1x%c2%b22n1xn3-definit-negatif">
+                            21. a.)h(x)=-2x²+(n-1)x-8 definit negatif b.)h(x)=nx²-nx+3 definit positif C.)h(x)=(n-1)x²+(2n+1)x+n+3 definit negatif</h2><br />
+                        <p> Semoga jawabnnya bisa mmbntu ya</p><p></p><p> </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tentukan-batas-nilai-m-agar-fungsi-y-x-2%c2%b2-m-3-definit-positif%e2%80%8b">
+                            22. Tentukan batas nilai m agar fungsi y = (x - 2)² + m - 3 definit positif​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Fungsi kwadrat tidak memotong sumbu x. jd kesimpulannya...m&gt;-3/4</p><br />
+                                            <h2 class="ez-toc-section" id="tentukan-batas-nilai-m-agar-fungsi-y-x26xm-definit-positif">
+                            23. Tentukan batas nilai m agar fungsi y= x^2+6x+m definit positif</h2><br />
+                        definit positif berarti Determinan &lt; 0 ,dan a &gt; 0<br />a sudah memenuhi karena a = 1<br /><br />0&gt;D<br />0&gt; b²-4ac<br />0&gt; 6²-4.1.m<br />0&gt;36-4m<br />4m&gt; 36<br />m &gt; 9<br /><br />jadi batas nilai m, adalah { m &gt; 9 }<br />
+                                            <h2 class="ez-toc-section" id="tentukan-k-agar-fungsi-kuadrat-fx-x2-kx-1-definit-positif">
+                            24. Tentukan k agar fungsi kuadrat f(x) = x2 - kx + 1 definit positif</h2><br />
+                        f(x) = x² - kx + 1 <br /><br />a = 1<br />b = -k<br />c = 1<br /><br />D = b² - 4ac<br />D = (-k)² - 4(1)(1)<br />D = k² - 4<br /><br />Syarat denefit positif<br />a &gt; 0<br />D &lt; 0<br /><br />D &lt; 0<br />K² - 4 &lt; 0<br />K² &lt; 4<br />K &lt; √4<br />K &lt; 2<br />
+                                            <h2 class="ez-toc-section" id="alasan-grafik-fungsi-eksponensial-disebut-dengan-grafik-definit-positiftolong-di-bantu-bsok-presentasi">
+                            25. alasan grafik fungsi eksponensial disebut dengan grafik definit positif?
+tolong di bantu, bsok presentasi!</h2><br />
+                        Grafik fungsi eksponensial disebut difinit positif jika kedudukan dimana suatu kurva dari suatu fungsi kuadrat selalu berada di atas sumbu x, nilai fungsi kuadrat selalu positif (y = f (x) &gt; 0)
+Ya contohnya kayak digambar sorry lok kurang jelas<br />
+                                            <h2 class="ez-toc-section" id="agar-fungsi-texfx-x2-2x-atex-definit-positif-nilai-a-yang-memenuhi-adalah">
+                            26. Agar fungsi [tex]f(x) =  x^{2} + 2x + a[/tex] definit positif, nilai a yang memenuhi adalah...</h2><br />
+                        Definit positif ketika D &lt; 0<br />Mengingat pertidaksamaan.<br />[tex]$\begin{align}b^2-4ac&amp;\ \textless \ 0 \\ 2^2-4(1)(a)&amp;\ \textless \ 0 \\ 4-4a&amp;\ \textless \ 0 \\ -4a&amp;\ \textless \ -4 \\ a&amp;\ \textgreater \ -4/-4 \\ a&amp;\ \textgreater \ 1\end{align}[/tex]<br />Definit positif artinya berapapun nilai x nya kalo dimasukin ke f(x) bernilai positif<br /><br />syarat definit positif adalah a&gt;0 dan D&lt;0.<br /><br />f(x) = x² + 2x + a<br />D = b² - 4ac &lt; 0<br />      2² - 4.1.a  &lt;  0<br />      4 - 4a &lt; 0<br />       -4a  &lt;  -4<br />         a &gt; -4/-4   ==&gt;  <strong>tanda berubah dari "&lt;" menjadi "&gt;"</strong><br />         a &gt; 1<br /><br />
+                                            <h2 class="ez-toc-section" id="tugas-mandiri1-apakah-syarat-suatu-grafik-fungsi-kuadrat-menyinggung-sumbu-koordinat2-selidikilah-apakah-fungsi-kuadrat-dengan-rumus-fx-x2-x-5-termasuk-definit-positif-ataudefinit-negatif-a">
+                            27. Tugas Mandiri1. Apakah syarat suatu grafik fungsi kuadrat menyinggung sumbu koordinat?2. Selidikilah apakah fungsi kuadrat dengan rumus f(x) = x2 + x + 5 termasuk definit positif ataudefinit negatif atau tidak kedua-duanya?3. Apakah syarat suatu fungsi kuadrat dikatakan definit positif?4. Tentukan batas-batas nilai p agar fungsi f(x) = x2 - 4x + m definit positif!5. Suatu perusahaan memproduksi x buah barang. Setiap barang yang diproduksi memberikankeuntungan (224 - x) rupiah. Supaya total keuntungan mencapai maksimum, berapakahbanyak barang yang harus diproduksi?​</h2><br />
+                        <p>gambar yang pertama jawaban no.3 gambar yang ke-2 jawaban no.5</p><p><strong>Jawaban:</strong></p><p>1.)Persamaan Kuadrat</p><p></p><p>Persamaan kuadrat dalam x mempunyai bentuk umum:</p><p></p><p>ax2 + bx + c = 0 , a ¹ 0 a, b dan c adalah bilangan real.</p><p></p><p>1. Menyelesaikan Persamaan kuadrat</p><p></p><p>Persamaan kuadrat dapat diselesaikan dengan beberapa cara, yaitu dengan:</p><p></p><p>a) memfaktorkan,</p><p></p><p>b) melengkapkan kuadrat sempurna,</p><p></p><p>c) menggunakan rumus.</p><p></p><p>a. Menyelesaikan persamaan kuadrat dengan memfaktorkan</p><p></p><p>ax2 + bx + c = 0 dapat dinyatakan menjadi a (x – x1) (x – x2) = 0.</p><p></p><p>Nilai x1 dan x2 disebut akar-akar (penyelesaian) persamaan kuadrat.</p><p></p><p>Contoh 1 :</p><p></p><p>Selesaikan x2 – 4 x + 3 = 0</p><p></p><p>Jawab: x2 – 4 x + 3 = 0</p><p></p><p>(x – 3) (x – 1) = 0</p><p></p><p>x – 3 = 0 atau x – 1 = 0</p><p></p><p>x = 3 atau x = 1</p><p></p><p>Jadi, penyelesaian dari x2 – 4 x + 3 = 0 adalah 3 dan 1.</p><p></p><p>2.) suatu fungsi dikatakan definit positif jika D &gt; 0 dan a&gt;0</p><p>sedangkan dapat dikatakan definit negatif jika D &lt;0 dan a&gt;0</p><p></p><p>Diketahui bahwa fungsi tersebut adalah definit negatif.</p><p></p><p>3.) dikatakan parabola selalu berada di atas sumbu x untuk setiap nilai x R. Hal ini terjadi apabila nilai a&gt;0 dan D&lt;0.</p><p>Secara aljabar dapat dikatakan: Bentuk ax + bx + c disebut definit positif. Dengan demikian, syarat definit positif adalah a&gt;0 dan D&lt;0.jawaban/penjelasan no.3 ada di gambar(1)</p><p></p><p>5.)112</p><p>keuntungan x barang jawaban no.5 ada digambar ke-2</p><p></p>Penjelasan:Kunci jawaban:Sistem KordinatMapel:MatematikaKelas:Vlll<p></p><br />
+                                            <h2 class="ez-toc-section" id="fungsi-fx-2x%c2%b2-ax2-akan-menjadi-fungsi-definit-positif-bila-a-berada-pada-interval">
+                            28. Fungsi f(x) = 2x²-ax+2 akan menjadi fungsi definit positif bila a berada pada interval...</h2><br />
+                        akan menjadi fungsi definit positif bila a berada pada interval... f′(x)=4x−a<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="pernyataan-berikut-yang-benar-tentang-grafik-fungsi-kuadrat-fx-2x1%c2%b25-adalah-a-grafik-definit-positif-dan-memotong-sumbu-y-di-titik-05-b-grafik-definit-positif-dan-memotong-sumbu-y-di">
+                            29. pernyataan berikut yang benar tentang grafik fungsi kuadrat f(x)= 2(x+1)²+5 adalah.. a.Grafik definit positif dan memotong sumbu y di titik (0,5). b.Grafik definit positif dan memotong sumbu y di titik (0,7).c. Grafik definit negatif dan memotong sumbu y di titik (0.7)d.Grafik definit negatif dan memotong sumbu y di titik (0.5)</h2><br />
+                        C. Grafik definit negatif dan memotong sumbu y di titik (0,7)<br />
+                                            <h2 class="ez-toc-section" id="agar-fungsi-fx%c2%a0-4x%c2%b2-4mx-%c2%a0m-definit-positif-nilai-m-yang-memenuhi-adalah">
+                            30. agar fungsi f(x) = 4x² + 4mx + m definit positif, nilai m yang memenuhi adalah...</h2><br />
+                        syarat definit positif, a&gt;0 dan D&lt;0<br />f(x) = 4x² + 4mx + m<br />a=4<br /><br />a&gt;0<br />4&gt;0<br /><br />D&lt;0<br />b^2 - 4ac &lt; 0<br />(4m)^2 - 4(4)(m) &lt; 0<br />16m^2 - 16m &lt; 0<br />________________ : 16<br />m^2 - m &lt; 0<br />m(m - 1) &lt; 0<br />m &lt; 1<br /><br />CMIIWsyarat definit positif : a &gt; 0 , D &lt; 0<br /><br />4 &gt; 0 sudah memenuhi<br /><br />(4m)² - 4 x 4 x m &lt; 0<br />16m² - 16m2 &lt; 0<br />0 &lt; 0<br />tidak ada nilai yang memenuhi<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/jqah8Cfqo8o?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>matematika</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/percakapan-telepon-kantor-bahasa-indonesia.html">Percakapan Telepon Kantor Bahasa Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-surat-izin-sakit-dalam-bahasa-inggris.html">Contoh Surat Izin Sakit Dalam Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/surabaya-animal-clinic.html">Surabaya Animal Clinic</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/fakta-opini-iklan.html">Fakta Opini Iklan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/6h-busway.html">6h Busway</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/permainan-ayam-dan-elang-dapat-melatih.html">Permainan Ayam Dan Elang Dapat Melatih</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/disk-vision.html">Disk Vision</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/singkong-menyimpan-cadangan-makanan-pada.html">Singkong Menyimpan Cadangan Makanan Pada</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/lagu-desaku-dinyanyikan-dengan-tempo.html">Lagu Desaku Dinyanyikan Dengan Tempo</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/planet-indah.html">Planet Indah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/apa-itu-eod.html">Apa Itu Eod</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-soal-logaritma-un-smk.html">Contoh Soal Logaritma Un Smk</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/biaya-labschool-kebayoran.html">Biaya Labschool Kebayoran</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/dialog-expression-of-sadness.html">Dialog Expression Of Sadness</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/dongeng-sunda-dan-pengarangnya.html">Dongeng Sunda Dan Pengarangnya</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-soal-psikotes-satpam.html">Contoh Soal Psikotes Satpam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-soal-quality-assurance.html">Contoh Soal Quality Assurance</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/descriptive-text-tentang-wisata.html">Descriptive Text Tentang Wisata</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/download-eds-sd-2018.html">Download Eds Sd 2018</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/arti-kata-salty.html">Arti Kata Salty</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://prosschole.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://prosschole.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

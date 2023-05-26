@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoh Soal Insertion Sort Dan Jawabannya - BELAJAR</title>
+    <meta name="description" content="Contoh Soal Insertion Sort Dan Jawabannya, Insertion Sort (Bahasa Indonesia), , , , Mockingbear, 2018-01-06T22:34:35.000000Z, 21, Insertion Sort Algorithm | Studytonight, www.studytonight.com, 693 x 853, png, , 20, contoh-soal-insertion-sort-dan-jawabannya, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contoh Soal Insertion Sort Dan Jawabannya - BELAJAR" />
+    <meta property="og:description" content="Contoh Soal Insertion Sort Dan Jawabannya, Insertion Sort (Bahasa Indonesia), , , , Mockingbear, 2018-01-06T22:34:35.000000Z, 21, Insertion Sort Algorithm | Studytonight, www.studytonight.com, 693 x 853, png, , 20, contoh-soal-insertion-sort-dan-jawabannya, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contoh Soal Insertion Sort Dan Jawabannya - BELAJAR" />
+    <meta name="twitter:description" content="Contoh Soal Insertion Sort Dan Jawabannya, Insertion Sort (Bahasa Indonesia), , , , Mockingbear, 2018-01-06T22:34:35.000000Z, 21, Insertion Sort Algorithm | Studytonight, www.studytonight.com, 693 x 853, png, , 20, contoh-soal-insertion-sort-dan-jawabannya, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://prosschole.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://prosschole.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://prosschole.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://prosschole.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://prosschole.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://prosschole.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://prosschole.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://prosschole.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://prosschole.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://prosschole.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Contoh Soal Insertion Sort Dan Jawabannya</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">corry8535</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Contoh+Soal+Insertion+Sort+Dan+Jawabannya" alt="Contoh Soal Insertion Sort Dan Jawabannya">
+                    </div>
+                    <p></p>
+                    <p>insertion sort? dan algoritmanya</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#insertion-sort-dan-algoritmanya">1.
+                                            insertion sort? dan algoritmanya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-bubble-sort-selection-sort-dan-insertion-sort">2.
+                                            jelaskan perbedaan bubble sort, selection sort, dan insertion sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-contoh-program-sorting-yang-anda-ketahui-sebagai-berikut-1-bubble-sort2-selection-sort3-insertion-sort4-merge-sort5-quick-sort">3.
+                                            buatlah contoh program sorting yang anda  ketahui sebagai berikut :
+ 1. Bubble Sort
+2. Selection Sort
+3. Insertion Sort
+4. Merge Sort
+5. Quick Sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-pengurutan-dengan-menggunakan-metode-insertion-sort-%e2%80%8b">4.
+                                            buatlah pengurutan dengan menggunakan metode insertion sort ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#modifikasi-program-bubble-sort-atau-insertion-sort-sehingga-mampu-menampikan-pertukaran-data-ketentuan-data-yang-diinput-minimal-5-data">5.
+                                            - Modifikasi program bubble sort atau insertion sort sehingga mampu menampikan pertukaran data.
+- Ketentuan: data yang diinput minimal 5 data.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perhatikan-gambar-pseudocode-di-bawah-iniberdasarkan-pseudocode-di-atas-menggunakan-algoritma-pengurutana-bubble-sortb-insertion-sortc-selection-sortd-quick-sorte-merger-sort">6.
+                                            Perhatikan gambar pseudocode di bawah ini!
+Berdasarkan pseudocode di atas menggunakan algoritma pengurutan
+a. Bubble Sort
+b. Insertion Sort
+c. Selection Sort
+d. Quick Sort
+e. Merger Sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-di-antara-algoritma-pengurutan-berikut-yang-lebih-efisien-adalah-a-pencarian-bagi-duab-bubble-sortc-insertion-sortd-selection-sorte-sequential-beruntun6-algoritma-pengurutan-yang-melakuk">7.
+                                            5. di antara algoritma pengurutan berikut yang lebih efisien adalah ....a pencarian bagi duab. bubble sortc. insertion sortd. selection sorte. sequential (beruntun)6. algoritma pengurutan yang melakukan proses dengan menyisipkan elemen array pada posisi yang tepat adalahalgoritma ....a. pencarian bagi duab. bubble sortc. insertion sortd. selection sorte. sequential (beruntun)7. algoritma yang digunakan untuk menyembunyikan pesan adalah ....a. divide and conquerb. rekursifc. bubble sortd. kriptografie. insertion sort8. algoritma dimana suatu fungsi atau prosedur memanggil dirinya sendiri disebut ....a divide and conquerb. rekursifc. bubble sortd. kriptografie. insertion sort​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#implementasi-insertion-sortdengan-bahasa-pemrograman-yang-anda-kuasai-implementasikan-algoritma-insertion-sort-dengan-arah-pengurutan-ascending-untuk-array-berikut-ini-5-8-9-3-4-7-1-2-6">8.
+                                            Implementasi Insertion Sort
+Dengan bahasa pemrograman yang Anda kuasai, implementasikan algoritma Insertion Sort dengan arah pengurutan ascending, untuk array berikut ini.
+[5, 8, 9, 3, 4, 7, 1, 2, 6]
+Program harus dapat menampilkan urut-urutan langkah Insertion Sort, dan banyak langkah yang diperlukan sampai terurut.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#urutkan-array-3524-dengan-algoritma-insertion-sort">9.
+                                            Urutkan array (3,5,2,4) dengan algoritma insertion sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengurutan-dengan-algoritma-mencari-menyeleksi-bilangan-terkecilterbesar-bergantung-pada-urut-naik-atau-turun-dari-daftar-bilangan-yang-belum-terurut-dan-meletakkannya-dalam-daftar-bilangan-baru">10.
+                                            Pengurutan dengan algoritma mencari (menyeleksi) bilangan terkecil/terbesar (bergantung pada urut naik atau turun) dari daftar bilangan yang belum terurut dan meletakkannya dalam daftar bilangan baru yang dijaga keterurutannya disebut...A. bobble sortB. Insertion sortC. Ascending sortD. Merge sorE. Selection sort JAWAB JANGAN ASAL!GAK TAU? GA USAH JAWAB!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jenis-metode-yang-memiliki-pola-yang-sama-seperti-mengurutkan-kartu-adalaha-binary-sortb-bubble-sortc-insertion-sortd-selection-sorte-sequential-sort-%e2%80%8b">11.
+                                            jenis metode yang memiliki pola yang sama seperti mengurutkan kartu adalahA. binary sortB. bubble sortC. insertion sortD. selection sortE. sequential sort ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#diketahui-data-23-45-12-24-56-34-27-23-16-gunakan-metode-sort-berikut-1-metode-selection-sort-2-buble-sort-3-merge-sort-4-quick-sort-5-insertion">12.
+                                            diketahui data : 23 45 12 24 56 34 27 23 16. gunakan metode sort berikut: 1. metode selection sort. 2. buble sort. 3. merge sort. 4. quick sort. 5. insertion.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-perhatikan-urutan-data-berikut-324011435521-urutkan-data-tersebut-menjadi-urutan-yang-benar-kecil%e2%86%92besar-dengan-metode-insertion-sort">13.
+                                            
+1. Perhatikan urutan data berikut : 32,40,11,43,55,21 Urutkan data tersebut menjadi urutan yang benar (kecil→besar) Dengan metode Insertion sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#terdapat-deret-angka-993411502389652637-74-44urutkanlah-deret-angka-tersebut-dengan-menggunakan-teknik-sort-yang-sudah-di-jelaskanselection-sortbubble-sort-insertion-sort-quick-sort-dan">14.
+                                            Terdapat deret angka 99,34,11,50,23,89,65,2,6,37, 74, 44Urutkanlah deret angka Tersebut dengan menggunakan teknik sort yang sudah di jelaskan(Selection Sort,bubble sort, insertion Sort Quick Sort dan Merge Sort)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#minta-bantuan-teman-teman-semua%c2%a0tugas-pascal1-bubblesort-%c2%a0-2-selection-sort-%c2%a0-3-insertion-sort%c2%a0-4-quick-sort%c2%a0bagi-teman2-yang-bisa-saya-minta-bantuanya-trims">15.
+                                            Minta bantuan teman-teman semua,, Tugas pascal1.Bubble
+Sort   2.
+Selection Sort   3. Insertion Sort  4.
+Quick Sort Bagi teman2 yang bisa, saya minta bantuanya... Trims</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-buatlah-pengurutan-dari-data-29-27-10-8-7621-denganmetode-sorting-selection-sort-bubble-sort-merge-sortquick-sort-dan-insertion-sort">16.
+                                            1.Buatlah pengurutan dari data 29 ,27, 10 ,8 ,76,21 dengan
+metode sorting Selection Sort, Bubble Sort, Merge Sort,
+Quick Sort dan Insertion Sort.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#terdapat-data-yang-belum-berurutan-sebagai-berikut-101156188116143130-tulislah-langkah-mengurutkan-data-secara-descending-menggunakan-insertion-sort">17.
+                                            Terdapat data yang belum berurutan sebagai berikut :
+ 101,156,188,116,143,130 
+ Tulislah langkah mengurutkan data secara descending menggunakan insertion sort!.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikut-adalah-beberapa-jenis-algoritma-sorting-kecuali-a-merge-sort-b-bubble-sort-c-insertion-sort-d-cookie-sort">18.
+                                            Berikut adalah beberapa jenis algoritma sorting, kecuali 
+ A. Merge sort 
+ B. Bubble sort 
+C. Insertion Sort 
+ D. Cookie sort</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#23-45-12-24-56-34-27-23-16-gunakan-metode-sort-berikut-1-metode-selection-sort2-metode-buble-sort-3-metode-merge-sort-4-metode-quick-sort-5-metode-insertion">19.
+                                            23 45 12 24 56 34 27 23 16 , gunakan metode sort berikut : 
+1. metode selection sort
+2. metode buble sort .
+3. metode merge sort 
+4.metode quick sort 
+5.metode insertion</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#acslj-urutkan-abjad-di-atas-secara-ascending-menggunakan-metode-insertion-sort%e2%80%8b">20.
+                                            a,c,s,l,j Urutkan abjad di atas secara ascending menggunakan metode insertion sort​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#terdapat-deret-bilangan-seperti-berikut-12534-urutkan-bilangan-tersebut-secara-menarik-dengan-menggunakan-algoritma-insertion-sort-jawab-dengan-penjelasannya%e2%80%8b">21.
+                                            terdapat deret bilangan seperti berikut 1,2,5,3,4 urutkan bilangan tersebut secara menarik dengan menggunakan algoritma insertion sort, jawab dengan penjelasannya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kerjakan-soal-berikut-dengan-metode-insertion-selection-dan-bubble-sort-4-2-5-1-8-710-9-6-ascending-tolong-bantuannya-kakak-kakak%e2%80%8b">22.
+                                            Kerjakan soal berikut dengan metode insertion, selection dan bubble sort !4, 2, 5, 1, 8, 7,10, 9, 6 ( ascending )tolong bantuannya kakak-kakak​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#diketahui-data-array-sebagai-berikut-10-37-0-4-7-dari-data-tersebut-buatlah-tahapan-tahapan-proses-pengurutan-dengan-metode-insertion-sort-selection-sort-dan-bubble-sort-%e2%80%8b">23.
+                                            Diketahui data array sebagai berikut : [10, 37, 0, -4, 7] dari data tersebut buatlah tahapan-tahapan proses pengurutan dengan metode : Insertion Sort, Selection Sort dan Bubble Sort.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bilangan-insertion-sort-4765272-serta-rumus-nya-adalah">24.
+                                            bilangan insertion sort 4,7,6,5,2,7,2 serta rumus nya adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bilang-24753-bila-di-urutkan-menggunakan-insertion-sort-menjadi-%e2%80%8b">25.
+                                            bilang 2,4,7,5,3 bila di urutkan menggunakan insertion sort menjadi ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-berikut-ini-yang-termasuk-ke-dalam-algoritma-pencarian-adalah-a-bubble-sortb-insertion-sortc-selection-sortd-sequential-beruntune-shell2-berikut-ini-yang-termasuk-ke-dalam-algoritma-pen">26.
+                                            1. Berikut ini yang termasuk ke dalam algoritma pencarian adalah ....A. bubble sortB. insertion sortC. selection sortD. sequential (beruntun)E. shell2. Berikut ini yang termasuk ke dalam algoritma pencarian yang lebih efektif adalah ....A. pencarian bagi duaB. insertion sortC. selection sortD. sequential (beruntun)E. bubble sort3. Syarat data saat akan melakukan pencarian bagi dua adalah ....A. jumlah data harus genapB. jumlah data harus ganjilC. jumlah data harus banyakD. data harus sudah terurutE. tidak ada syarat yang harusdipenuhi4. Berikut ini yang termasuk ke dalam algoritma pengurutan adalah ....A. pencarian bagi duaB. insertion sortC. rekursifD. sequential (beruntun)E. shell​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-pengertian-dan-cara-membuat-program-tentang-insertion-sortheap-sort-shell-sort-beri-keteranganya-juga-terimakasih">27.
+                                            apa pengertian dan cara membuat program tentang insertion sort,heap sort, shell sort.
+beri keteranganya juga .
+terimakasih</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#uk-19-berikut-yang-bukan-merupakan-algoritme-a-selection-sort-b-bubble-sort-c-merge-sort-d-snap-sort-e-insertion-sort%e2%80%8b">28.
+                                            -uk 19. Berikut yang bukan merupakan algoritme... A. Selection sort B. Bubble sort C. Merge sort D. Snap sort E. Insertion sort​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengurutan-secara-menghasilkan-data-yang-tersusun-dari-nilai-tertinggi-ke-terendah-a-ascending-b-descending-c-linear-d-bubble-sort-e-insertion-sort%e2%80%8b">29.
+                                            Pengurutan secara... menghasilkan data yang tersusun dari nilai tertinggi ke terendah. a. ascending b. descending. c. linear d. bubble sort e. insertion sort​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#insertion-sort-ascending-dan-descending-data-100-30-90-20-70-60-10-15%e2%80%8b">30.
+                                            insertion sort ascending dan descending data = 100 30 90 20 70 60 10 15​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="insertion-sort-dan-algoritmanya">
+                            1. insertion sort? dan algoritmanya</h2><br />
+                        menyusun bilangan acak dari yang terkecil ke terbesar, semoga bermanfaat.Untuk penjelasan bisa agam lihat digambar<br /><br />Algoritmannya <br />1.Apabila di elemen pertama dan telah disortir return 1 <br />2.Ambil elemen berikutnya <br />3.Bandingkan <br />4.Ganti posisi dari kedua elemen yang dibandingkan <br />5.Ulangi apabila dilakukan pemindahan elemen pada pengulangan sekarang ini<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-bubble-sort-selection-sort-dan-insertion-sort">
+                            2. jelaskan perbedaan bubble sort, selection sort, dan insertion sort</h2><br />
+                        <p><strong>Jawaban dan Penjelasan:</strong></p><p><strong>Perbedaan utama Bubble Sort, Selection Sort, dan Insertion Sort</strong> terletak pada <strong>cara menentukan elemen data yang perlu ditukar tempatnya</strong>. <br />Penjelasan lebih rincinya, untuk jenis pengurutan menaik (dari yang terkecil hingga yang terbesar, atau ascending order) adalah sebagai berikut.</p>BUBBLE SORT<p><strong>Prinsip utama: pembandingan elemen data yang bersebelahan.</strong></p><p>Pada setiap tahapan (pass), dari elemen data pertama hingga terakhir dibandingkan secara berpasangan, antara dua elemen data yang bersebelahan (adjacent). Jika nilai elemen data yang sedang dievaluasi lebih dari nilai elemen data berikutnya, maka lakukan pertukaran elemen data. Begitu seterusnya hingga elemen data terakhir, lalu lanjutkan proses ke tahapan (pass) berikutnya, mulai dari elemen data pertama.</p>SELECTION SORT<p><strong>Prinsip utama: seleksi elemen data yang bernilai terbesar.</strong></p><p>Pada setiap tahapan (pass), dilakukan seleksi elemen data yang bernilai terbesar. Lalu tukar tempat elemen data terbesar itu dengan elemen terakhir data, sesuai dengan tahapannya, jika elemen data terbesar itu bernilai lebih dari elemen terakhir.</p><p>Sebagai contoh: <br />Ukuran data = n elemen.</p>Pada tahapan ke-1, elemen data terbesar yang ditemukan ditukar dengan elemen ke-n.Pada tahapan ke-2, elemen data terbesar yang ditemukan ditukar dengan elemen ke-(n–1).Pada tahapan ke-3, elemen data terbesar yang ditemukan ditukar dengan elemen ke-(n–2).Dan seterusnyaINSERTION SORT<p><strong>Prinsip utama: penyisipan elemen data yang lebih kecil, hingga posisi yang sesuai.</strong></p><p>Insertion sort hampir sama dengan bubble sort. Yang membedakan adalah setelah elemen data bersebelahan dibandingkan, dan elemen yang dievaluasi bernilai lebih dari elemen berikutnya, maka elemen berikutnya (yang lebih kecil) "disisipkan" ke kiri hingga menemukan elemen yang lebih kecil darinya. Hal ini menyebabkan bagian data sebelum (di sebelah kiri dari) elemen data yang sedang dievaluasi selalu berada dalam kondisi sudah terurut, pada setiap tahapan. </p><p>______________</p><p>Untuk memperjelas, kita gunakan <strong>contoh ilustrasi</strong>.</p><p>Diberikan data: <strong>7 5 6 2 3</strong></p><p><strong>Bubble Sort</strong></p><p>Pass 1:</p><strong>7</strong> ↔ 5 6 2 35 <strong>7</strong> ↔ 6 2 35 6 <strong>7</strong> ↔ 2 35 6 2 <strong>7</strong> ↔ 35 6 2 3 <strong>7</strong><p>Pass 2:</p><strong>5</strong> 6 2 3 7<br />⇒ tetap ada pembandingan data 5 dan 6, namun tidak ditukar karena 5 &lt; 65 <strong>6</strong> ↔ 2 3 75 2 <strong>6</strong> ↔ 3 75 2 3 <strong>6</strong> 7<p>Pass 3:</p><strong>5</strong> ↔ 2 3 6 72 <strong>5</strong> ↔ 3 6 72 3 <strong>5</strong> 6 7 <br />⇒ tetap ada pembandingan data 5 dan 6, namun tidak ditukar karena 5 &lt; 6<p>Pass 4</p><strong>2</strong> 3 5 6 7 <br />⇒ tetap ada pembandingan data 2 dan 3, namun tidak ditukar karena 2 &lt; 3<p>Selesai : <strong>2 3 5 6 7 </strong></p><p>Pada algoritme bubble sort original (tidak dioptimasi), elemen data akan terus diperbandingkan hingga yang terakhir. Jadi, pada setiap pass, terjadi n–1 kali pembandingan nilai. <br />____________</p><p><strong>Selection Sort</strong></p><p>Pass 1:</p>Inisialisasi: maxIndex = 1 <strong>7</strong> 5 6 2 3: 7 &gt; 5 ⇒ maxIndex = 1 <strong>7</strong> 5 6 2 3: 7 &gt; 6 ⇒ maxIndex = 1 <strong>7</strong> 5 6 2 3: 7 &gt; 2 ⇒ maxIndex = 1 <strong>7</strong> 5 6 2 3: 7 &gt; 3 ⇒ maxIndex = 1 Tukar 7 dan 3 <br />⇒ 3 5 6 2 7<p>Pass 2:</p>Inisialisasi: maxIndex = 1 <strong>3</strong> 5 6 2 7: 3 &lt; 5 ⇒ maxIndex = 23 <strong>5</strong> 6 2 7: 5 &lt; 6 ⇒ maxIndex = 33 5 <strong>6</strong> 2 7: 6 &gt; 2 ⇒ maxIndex = 3Tukar 6 dan 2 <br />⇒ 3 5 2 6 7<p>Pass 3:</p>Inisialisasi: maxIndex = 1 <strong>3</strong> 5 2 6 7: 3 &lt; 5 ⇒ maxIndex = 23 <strong>5</strong> 2 6 7: 5 &gt; 2 ⇒ maxIndex = 2Tukar 5 dan 2 <br />⇒ 3 2 5 6 7<p>Pass 4:</p>Inisialisasi: maxIndex = 1 3 2 5 6 7: 3 &lt; 2 ⇒ maxIndex = 1Tukar 3 dan 2 <br />⇒ 2 3 5 6 7<p>Selesai : <strong>2 3 5 6 7 <br /></strong>____________</p><p><strong>Insertion Sort</strong></p><p>Pass 1:</p><strong>7</strong> 5 6 2 3: 7 &gt; 5Tukar 7 dan 5: <br />⇒ 5 7 6 2 35 berada pada posisi indeks pertama, maka pass 1 selesai.<p>Pass 2:</p>5 <strong>7</strong> 6 2 3: 7 &gt; 6Tukar 7 dan 6: <br />⇒ 5 6 7 2 35 &lt; 6 maka pass 2 selesai.<p>Pass 3:</p>5 6 <strong>7</strong> 2 3: 7 &gt; 2Tukar 7 dan 2: <br />⇒ 5 6 <strong>2</strong> 7 3Tukar 6 dan 2 karena 6 &gt; 2: <br />⇒ 5 <strong>2</strong> 6 7 3Tukar 5 dan 2 karena 5 &gt; 2: <br />⇒ <strong>2</strong> 5 6 7 32 berada pada indeks pertama, maka pass 3 selesai.<p>Pass 4:</p>2 5 6 <strong>7</strong> 3: 7 &gt; 3Tukar 7 dan 3:<br />⇒ 2 5 6 3 7Tukar 6 dan 3:<br />⇒ 2 5 3 6 7Tukar 5 dan 3:<br />⇒ 2 3 5 6 72 &lt; 3, maka pass 4 selesai<p>Selesai : <strong>2 3 5 6 7 </strong></p><p><strong></strong></p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-contoh-program-sorting-yang-anda-ketahui-sebagai-berikut-1-bubble-sort2-selection-sort3-insertion-sort4-merge-sort5-quick-sort">
+                            3. buatlah contoh program sorting yang anda  ketahui sebagai berikut :
+ 1. Bubble Sort
+2. Selection Sort
+3. Insertion Sort
+4. Merge Sort
+5. Quick Sort</h2><br />
+                        <strong>Jawaban:</strong>1. Bubble Sort :<p>int main()</p><p></p><p>{   int a,k,c,d,g;</p><p></p><p>    k=4;</p><p></p><p>    int b[4];</p><p></p><p></p><p>    cout&lt;&lt;"BUBBLE SORT"&lt;&lt;endl;</p><p></p><p>    cout&lt;&lt;"mengurutkan nilai dari besar ke kecil"&lt;&lt;endl&lt;&lt;endl;</p><p></p><p>    for(a=0;a&lt;k;a++)</p><p></p><p>    {</p><p></p><p>        cout&lt;&lt;"Masukkan nilai "&lt;&lt;a+1&lt;&lt;" : ";cin&gt;&gt;b[a];</p><p></p><p>    }</p><p></p><p>    for(a=0;a&lt;k-1;a++)</p><p></p><p>    {</p><p></p><p></p><p>        for(d=a+1;d&lt;k;d++)</p><p></p><p>        {</p><p></p><p>        c=a;</p><p></p><p>            if(b[c]&lt;b[d])</p><p></p><p>            {</p><p></p><p>                c=d;</p><p></p><p>            }</p><p></p><p>        g=b[c];</p><p></p><p>        b[c]=b[a];</p><p></p><p>        b[a]=g;</p><p></p><p>        }</p><p></p><p></p><p>    }</p><p></p><p>    cout&lt;&lt;"\n setelah diurutkan akan menjadi : \n";</p><p></p><p>    for(a=0;a&lt;k;a++)</p><p></p><p>    {</p><p></p><p>        cout&lt;&lt;b[a]&lt;&lt;" \n";</p><p></p><p>    }</p><p></p><p>}</p><p></p>2. Selection Sort :<p>#include&lt;iostream&gt;</p><p></p><p>using namespace std;</p><p></p><p></p><p>int main()</p><p></p><p>{   int a,k,c,d,g;</p><p></p><p>    k=4;</p><p></p><p>    int b[4];</p><p></p><p>    cout&lt;&lt;"SELECTION SORT"&lt;&lt;endl;</p><p></p><p>    cout&lt;&lt;"mengurutkan nilai dari besar ke kecil"&lt;&lt;endl&lt;&lt;endl;</p><p></p><p>    for(a=0;a&lt;k;a++)</p><p></p><p>    {</p><p></p><p>        cout&lt;&lt;"Masukkan nilai "&lt;&lt;a+1&lt;&lt;" : ";cin&gt;&gt;b[a];</p><p></p><p>    }</p><p></p><p>    for(a=0;a&lt;k-1;a++)</p><p></p><p>    {</p><p></p><p>    c=a;</p><p></p><p>        for(d=a+1;d&lt;k;d++)</p><p></p><p>        {</p><p></p><p>            if(b[c]&lt;b[d])</p><p></p><p>            {</p><p></p><p>                c=d;</p><p></p><p>            }</p><p></p><p>        }</p><p></p><p>        g=b[c];</p><p></p><p>        b[c]=b[a];</p><p></p><p>        b[a]=g;</p><p></p><p>    }</p><p></p><p>    cout&lt;&lt;"\n setelah diurutkan akan menjadi : \n";</p><p></p><p>    for(a=0;a&lt;k;a++)</p><p></p><p>    {</p><p></p><p>        cout&lt;&lt;b[a]&lt;&lt;" \n";</p><p></p><p>    }</p><p></p><p>}</p><p></p>3. Insertion Sort<p>#include &lt;iostream&gt;</p><p></p><p>using namespace std;</p><p></p><p></p><p>int data[10], data2[10];</p><p></p><p>int n;</p><p></p><p></p><p>void insertion_sort()</p><p></p><p>{</p><p></p><p> int temp, i, j;</p><p></p><p> for(i=1;i&lt;=n;i++)</p><p></p><p> {</p><p></p><p>  temp = data[i];</p><p></p><p>  j = i -1;</p><p></p><p>  while(data[j]&gt;temp &amp;&amp; j&gt;=0)</p><p></p><p>  {</p><p></p><p>   data[j+1] = data[j];</p><p></p><p>   j--;</p><p></p><p>  }</p><p></p><p>  </p><p></p><p>  data[j+1] = temp;</p><p></p><p> }</p><p></p><p>}</p><p></p><p></p><p>main()</p><p></p><p>{</p><p></p><p> cout &lt;&lt; "Masukkan jumlah data: ";</p><p></p><p> cin &gt;&gt; n;</p><p></p><p> cout &lt;&lt; endl;</p><p></p><p> for(int i=1; i&lt;=n; i++)</p><p></p><p> {</p><p></p><p>  cout &lt;&lt; "Masukkan data ke-" &lt;&lt; i &lt;&lt; ": ";</p><p></p><p>  cin &gt;&gt; data[i];</p><p></p><p>  data2[i] = data[i];</p><p></p><p> }</p><p></p><p></p><p> insertion_sort();</p><p></p><p>  </p><p> cout &lt;&lt; "\nData Setelah diurutkan" &lt;&lt; endl;</p><p></p><p> cout &lt;&lt; "------------------------" &lt;&lt; endl;</p><p></p><p> for(int i=1; i&lt;=n; i++)</p><p></p><p> {</p><p></p><p>  cout &lt;&lt; data[i] &lt;&lt; " ";</p><p></p><p> }</p><p></p><p> cout &lt;&lt; endl;</p><p></p><p> system("pause");</p><p></p><p>}</p><p></p>4. Merge Sort<p>#include &lt;iostream&gt;</p><p></p><p>#include &lt;conio.h&gt;</p><p></p><p>using namespace std;</p><p></p><p></p><p>int a[50];</p><p></p><p>void merge(int,int,int);</p><p></p><p>void merge_sort(int low,int high)</p><p></p><p>{</p><p></p><p> int mid;</p><p></p><p> if(low&lt;high)</p><p></p><p> {</p><p></p><p>  mid=(low+high)/2;</p><p></p><p>  merge_sort(low,mid);</p><p></p><p>  merge_sort(mid+1,high);</p><p></p><p>  merge(low,mid,high);</p><p></p><p> }</p><p></p><p>}</p><p></p><p>void merge(int low,int mid,int high)</p><p></p><p>{</p><p></p><p> int h,i,j,b[50],k;</p><p></p><p> h=low;</p><p></p><p> i=low;</p><p></p><p> j=mid+1;</p><p></p><p> while((h&lt;=mid)&amp;&amp;(j&lt;=high))</p><p></p><p> {</p><p></p><p>  if(a[h]&lt;=a[j])</p><p></p><p>  {</p><p></p><p>   b[i]=a[h]; h++;</p><p></p><p>  }</p><p></p><p>  else</p><p></p><p>  {</p><p></p><p>   b[i]=a[j]; j++;</p><p></p><p>  } i++;</p><p></p><p> }</p><p></p><p> if(h&gt;mid)</p><p></p><p> {</p><p></p><p>  for(k=j;k&lt;=high;k++)</p><p></p><p>  {</p><p></p><p>   b[i]=a[k]; i++;</p><p></p><p>  }</p><p></p><p> }</p><p></p><p> else</p><p></p><p> {</p><p></p><p>  for(k=h;k&lt;=mid;k++)</p><p></p><p>  {</p><p></p><p>   b[i]=a[k]; i++;</p><p></p><p>  }</p><p></p><p> }</p><p></p><p> for(k=low;k&lt;=high;k++)</p><p></p><p>  a[k]=b[k];</p><p></p><p>}</p><p></p><p>main()</p><p></p><p>{</p><p></p><p> int num,i;</p><p></p><p> cout&lt;&lt;"Hardifal "&lt;&lt;endl;</p><p></p><p> cout&lt;&lt;"---------------------------"&lt;&lt;endl;</p><p></p><p> cout&lt;&lt;"    ALGORITMA MERGE SORT C++ "&lt;&lt;endl;</p><p></p><p> cout&lt;&lt;"---------------------------"&lt;&lt;endl;</p><p></p><p> cout&lt;&lt;endl;</p><p></p><p> cout&lt;&lt;"Masukkan Banyak Bilangan: ";cin&gt;&gt;num;</p><p></p><p> cout&lt;&lt;endl;</p><p></p><p> cout&lt;&lt;"Sekarang masukkan "&lt;&lt; num &lt;&lt;" Bilangan yang ingin Diurutkan :"&lt;&lt;endl;</p><p></p><p> for(i=1;i&lt;=num;i++)</p><p></p><p> {</p><p></p><p>  cout&lt;&lt;"Bilangan ke-"&lt;&lt;i&lt;&lt;" ";cin&gt;&gt;a[i] ;</p><p></p><p> }</p><p></p><p> merge_sort(1,num);</p><p></p><p> cout&lt;&lt;endl;</p><p></p><p> cout&lt;&lt;"Hasil akhir pengurutan :"&lt;&lt;endl;</p><p></p><p> cout&lt;&lt;endl;</p><p></p><p> for(i=1;i&lt;=num;i++)</p><p></p><p>  cout&lt;&lt;a[i]&lt;&lt;" ";</p><p></p><p> cout&lt;&lt;endl&lt;&lt;endl&lt;&lt;endl&lt;&lt;endl;</p><p></p><p> }</p><p></p>5. Quick Sort<p>#include &lt;iostream&gt;</p><p></p><p>#include &lt;conio.h&gt;</p><p></p><p>using namespace std;</p><p></p><p>void quick_sort(int arr[], int left, int right)</p><p></p><p>{</p><p></p><p>      int i = left, j = right;int tmp;</p><p></p><p>      int pivot = arr[(left+right)/2];/* partition */</p><p></p><p>  while (i&lt;j){</p><p></p><p>   while (arr[i] &lt; pivot)</p><p></p><p>   i++;</p><p></p><p>   while (arr[j] &gt; pivot)</p><p></p><p>   j--;</p><p></p><p>   if (i&lt;=j){</p><p></p><p>    tmp = arr[i];</p><p></p><p>    arr[i] = arr[j];</p><p></p><p>    arr[j] = tmp;</p><p></p><p>    i++;j--;</p><p></p><p>                                                    };</p><p></p><p>         }; /* recursion */</p><p></p><p>      if (left &lt; j)</p><p></p><p>            quick_sort(arr, left, j);</p><p></p><p>      if (i &lt; right)</p><p></p><p>            quick_sort(arr, i, right);</p><p></p><p>}</p><p></p><p>int main()</p><p></p><p>{</p><p></p><p>int i,n,data[50];</p><p></p><p>cout&lt;&lt;"Masukan banyak data: ";cin&gt;&gt;n;</p><p></p><p>for(i=0;i&lt;n;i++)</p><p></p><p>{cout&lt;&lt;"Masukan data ["&lt;&lt;i&lt;&lt;"] : ";cin&gt;&gt;data[i];}</p><p></p><p>cout&lt;&lt;"\nData sebelum diurutkan: "&lt;&lt;endl;</p><p></p><p>for(i=0;i&lt;n;i++)</p><p></p><p>{</p><p></p><p>cout&lt;&lt;data[i]&lt;&lt;" ";</p><p></p><p>}cout&lt;&lt;"\n";</p><p></p><p>quick_sort(data,0,n-1);//hasil pengurutan</p><p></p><p>cout&lt;&lt;"\nHasil pengurutan:\n";</p><p></p><p>{</p><p></p><p>int i;</p><p></p><p>for (i=0;i&lt;n;i++)</p><p></p><p>cout&lt;&lt;data[i]&lt;&lt;" ";</p><p></p><p>cout&lt;&lt;"\n";</p><p></p><p>}getch();</p><p></p><p>}</p><p></p><p></p><strong>Penjelasan:</strong><p>Semua koding program diatas dibuat menggunakan Bahasa Pemrograman C++.</p><strong>Semoga membantu :)</strong><br />
+                                            <h2 class="ez-toc-section" id="buatlah-pengurutan-dengan-menggunakan-metode-insertion-sort-%e2%80%8b">
+                            4. buatlah pengurutan dengan menggunakan metode insertion sort ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Dilansir dari website Binus university Insertion Sort merupakan sebuah teknik pengurutan dengan cara membandingkan dan mengurutkan dua data pertama pada array, kemudian membandingkan data para array berikutnya apakah sudah berada di tempat semestinya. Algorithma insertion sort seperti proses pengurutan kartu yang berada di tangan kita. Algorithma ini dapat mengurutkan data dari besar ke kecil (Ascending) dan kecil ke besar (Descending). Algoritma ini tidak cocok untuk set data dengan jumlah besar karena kompleksitas dari algorithma ini adalah Ο() di mana n adalah jumlah item.</p><p></p><p>Berikut gambaran dari implementasi Insertion Sort:</p><p></p><p>1st Cycle:</p><p>(70, 60, 30, 50, 40, 20) -&gt; (60, 70, 30, 50, 40, 20)</p><p>(60, 70, 30, 50, 40, 20)</p><p></p><p>2nd Cycle:</p><p>(60, 70, 30, 50, 40, 20) -&gt; (60, 30, 70, 50, 40, 20)</p><p>(60, 30, 70, 50, 40, 20) -&gt; (30, 60, 70, 50, 40, 20)</p><p>(30, 60, 70, 50, 40, 20)</p><p></p><p>3rd Cycle:</p><p>(30, 60, 70, 50, 40, 20) -&gt; (30, 60, 50, 70, 40, 20)</p><p>(30, 60, 50, 70, 40, 20) -&gt; (30, 50, 60, 70, 40, 20)</p><p>(30, 50, 60, 70, 40, 20) -&gt; (30, 50, 60, 70, 40, 20)</p><p>(30, 50, 60, 70, 40, 20)</p><p></p><p>4th Cycle:</p><p>(30, 50, 60, 70, 40, 20) -&gt; (30, 50, 60, 40, 70, 20)</p><p>(30, 50, 60, 40, 70, 20) -&gt; (30, 50, 40, 60, 70, 20)</p><p>(30, 50, 40, 60, 70, 20) -&gt; (30, 40, 50, 60, 70, 20)</p><p>(30, 40, 50, 60, 70, 20) -&gt; (30, 40, 50, 60, 70, 20)</p><p>(30, 40, 50, 60, 70, 20)</p><p></p><p>5th Cycle:</p><p>(30, 40, 50, 60, 70, 20) -&gt; (30, 40, 50, 60, 20, 70)</p><p>(30, 40, 50, 60, 20, 70) -&gt; (30, 40, 50, 20, 60, 70)</p><p>(30, 40, 50, 20, 60, 70) -&gt; (30, 40,20, 50, 60, 70)</p><p>(30, 40, 20, 50, 60, 70) -&gt; (30, 20, 40, 50, 60, 70)</p><p>(30, 20, 40, 50, 60, 70) -&gt; (20, 30, 40, 50, 60, 70)</p><p>(20, 30, 40, 50, 60, 70)</p><br />
+                                            <h2 class="ez-toc-section" id="modifikasi-program-bubble-sort-atau-insertion-sort-sehingga-mampu-menampikan-pertukaran-data-ketentuan-data-yang-diinput-minimal-5-data">
+                            5. - Modifikasi program bubble sort atau insertion sort sehingga mampu menampikan pertukaran data.
+- Ketentuan: data yang diinput minimal 5 data.</h2><br />
+                        <p><strong>Penjelasan:<br /></strong>contoh modifikasi program bubble sort yang dapat menampilkan pertukaran data:</p><p></p><p># Program bubble sort</p><p></p><p># Fungsi bubble sort</p><p>def bubble_sort(list):</p><p>  # Panjang list</p><p>  n = len(list)</p><p></p><p>  # Lakukan iterasi sebanyak panjang list</p><p>  for i in range(n):</p><p>    # Bandingkan setiap pasangan elemen</p><p>    for j in range(0, n-i-1):</p><p>      # Jika elemen sebelumnya lebih besar dari elemen setelahnya, tukar posisi keduanya</p><p>      if list[j] &gt; list[j+1]:</p><p>        list[j], list[j+1] = list[j+1], list[j]</p><p>        # Tampilkan pertukaran data</p><p>        print("Tukar elemen ke-{} dengan elemen ke-{}".format(j+1, j+2))</p><p></p><p># Main program</p><p>list = [5, 2, 8, 1, 9]</p><p>bubble_sort(list)</p><p></p><p>print("Data setelah diurutkan:", list)<br /></p><p>Lalu contoh modifikasi program insertion sort yang dapat menampilkan pertukaran data:</p><p></p><p># Program insertion sort</p><p></p><p># Fungsi insertion sort</p><p>def insertion_sort(list):</p><p>  # Panjang list</p><p>  n = len(list)</p><p></p><p>  # Lakukan iterasi sebanyak panjang list</p><p>  for i in range(1, n):</p><p>    # Elemen yang akan diurutkan</p><p>    elemen = list[i]</p><p>    j = i-1</p><p>    # Cari posisi elemen yang tepat</p><p>    while j &gt;= 0 and list[j] &gt; elemen:</p><p>      # Tukar posisi elemen dengan elemen setelahnya</p><p>      list[j+1] = list[j]</p><p>      j -= 1</p><p>      # Tampilkan pertukaran data</p><p>      print("Tukar elemen ke-{} dengan elemen ke-{}".format(j+2, j+3))</p><p>    # Masukkan elemen ke posisi yang tepat</p><p>    list[j+1] = elemen</p><p></p><p># Main program</p><p>list = [5, 2, 8, 1, 9]</p><p>insertion_sort(list)</p><p></p><p>print("Data setelah diurutkan:", list)<br /></p><p>Harap diingat bahwa modifikasi program di atas hanya sebagai contoh saja, dan tidak menjamin bahwa program tersebut akan bekerja dengan baik pada semua kondisi atau data yang diinput.</p><br />
+                                            <h2 class="ez-toc-section" id="perhatikan-gambar-pseudocode-di-bawah-iniberdasarkan-pseudocode-di-atas-menggunakan-algoritma-pengurutana-bubble-sortb-insertion-sortc-selection-sortd-quick-sorte-merger-sort">
+                            6. Perhatikan gambar pseudocode di bawah ini!
+Berdasarkan pseudocode di atas menggunakan algoritma pengurutan
+a. Bubble Sort
+b. Insertion Sort
+c. Selection Sort
+d. Quick Sort
+e. Merger Sort</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>a. Bubble Sort</p><p><strong>Penjelasan:</strong></p><p>bisa didefenisikan algoritma Bubble Sort adalah pengurutan dengan cara <strong>pertukaran data</strong> dengan data disebelahnya secara terus menerus sampai dalam satu iterasi tertentu tidak ada lagi perubahan. seperti yang ada pada gambar tersebut untuk melakukan perintah swap(pertukaran)</p><br />
+                                            <h2 class="ez-toc-section" id="5-di-antara-algoritma-pengurutan-berikut-yang-lebih-efisien-adalah-a-pencarian-bagi-duab-bubble-sortc-insertion-sortd-selection-sorte-sequential-beruntun6-algoritma-pengurutan-yang-melakuk">
+                            7. 5. di antara algoritma pengurutan berikut yang lebih efisien adalah ....a pencarian bagi duab. bubble sortc. insertion sortd. selection sorte. sequential (beruntun)6. algoritma pengurutan yang melakukan proses dengan menyisipkan elemen array pada posisi yang tepat adalahalgoritma ....a. pencarian bagi duab. bubble sortc. insertion sortd. selection sorte. sequential (beruntun)7. algoritma yang digunakan untuk menyembunyikan pesan adalah ....a. divide and conquerb. rekursifc. bubble sortd. kriptografie. insertion sort8. algoritma dimana suatu fungsi atau prosedur memanggil dirinya sendiri disebut ....a divide and conquerb. rekursifc. bubble sortd. kriptografie. insertion sort​</h2><br />
+                        <strong>Algoritma pengurutan</strong> yang lebih efisien adalah insetion sort (c)Algoritma pengurutan yang melakukan <strong>proses dengan menyisipkan elemen array</strong> pada posisi yang tepat adalah insertion sort (c)Untuk <strong>menyembunyikan pesan</strong> digunakan algoritma kriptografi (d)Algoritma yang <strong>memanggil fungsi</strong> atau prosedur <strong>dirinya sendiri</strong> disebut rekursif (b)Pembahasan<p>Pada pertanyaan nomor lima, digunakan <strong>algoritma insertion sort</strong> lebih efisien karena merupakan implementasi paling sederhana untuk data berukuran kecil.</p><p>Pada pertanyaan nomor enam, algoritma yang dipakai untuk <strong>mengurutkan elemen array pada posisi yang tepat</strong> yaitu <strong>insertion</strong> <strong>sort </strong>karena algoritma ini membandingkan dua elemen yaitu elemen pertama dengan elemen yang sudah diurutkan. Perbandingan akan terus dilakukan sehingga tidak ada elemen yang tersisa.</p><p>Pada pertanyaan nomor tujuh algoritma yang dipakai untuk m<strong>enyembunyikan pesan</strong> adalah <strong>algoritma kriptografi</strong> melalui perantara media. Kriptografi bisa juga disebut dengan "enkripsi".</p><p>Pada pertanyaan nomor delapan <strong>fungsi yang memanggil dirinya</strong> sendiri disebut <strong>rekursif</strong>. Fungsinya seperti pengulangan untuk mengembalikan atau menghasilkan satu nilai pada bagian program.</p>Pelajari Lebih LanjutMateri tentang keamanan kriptografi, pada https://brainly.co.id/tugas/14318881Materi tentang penjelasan algoritma, pada https://brainly.co.id/tugas/18086381<p><strong>#BelajarBersamaBrainly</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="implementasi-insertion-sortdengan-bahasa-pemrograman-yang-anda-kuasai-implementasikan-algoritma-insertion-sort-dengan-arah-pengurutan-ascending-untuk-array-berikut-ini-5-8-9-3-4-7-1-2-6">
+                            8. Implementasi Insertion Sort
+Dengan bahasa pemrograman yang Anda kuasai, implementasikan algoritma Insertion Sort dengan arah pengurutan ascending, untuk array berikut ini.
+[5, 8, 9, 3, 4, 7, 1, 2, 6]
+Program harus dapat menampilkan urut-urutan langkah Insertion Sort, dan banyak langkah yang diperlukan sampai terurut.</h2><br />
+                        Kode Program (Python)<p># insertionsort.py<br /># oleh: HY<br />from rich.console import Console<br />from rich.panel import Panel<br />console = Console(width=45)<br />langkah = 0<br /># -------------------------------------<br />def list_with_key_to_str(l, i) -&gt; str:<br />    # Menerima list dan indeks<br />    # Mengembalikan string terformat dari list<br />    if len(l) &gt; 0 and i &gt; 0:<br />        s = str(l)<br />        sl = s[1:len(s)-1].split(", ")<br />        sl[i-1] = f"[bold bright_red]{sl[i-1]}[/]"<br />        sl[i] = f"[bold underline gold1]{sl[i]}[/]"<br />        return "[" + ", ".join(sl) + "]"<br />    else:<br />        return "error"<br /># -------------------------------------<br /><strong>def insertion_sort(data) -&gt; None:</strong><br />    # Insertion sort teroptimasi<br />    for i in range(1, len(data)):<br />        current_elmt = data[i]<br />        j = i - 1<br />        while j &gt;= 0 and current_elmt &lt; data[j]:<br />            data[j + 1] = data[j]<br />            j -= 1<br />        data[j + 1] = current_elmt<br /># -------------------------------------<br /><strong>def insertion_sort_original(data) -&gt; None:</strong><br />    # Insertion sort original<br />    # dengan penambahan output<br />    global langkah<br />    langkah = 0<br />    for i in range(1, len(data)):<br />        console.rule(title = f"(i = {i})", align = "left")<br />        j = i<br />        while j &gt; 0:<br />            langkah += 1<br />            console.print(f"   Iterasi ke-{langkah:2d}: ", <br />                end = "", highlight=False)<br />            console.print(list_with_key_to_str(data, j))<br />            if data[j-1] &gt; data[j]:<br />                tmp = data[j]<br />                data[j] = data[j-1]<br />                data[j-1] = tmp<br />            j = j-1<br /># -------------------------------------<br />### PROGRAM UTAMA ###<br />if __name__ == '__main__':<br />    print()<br />    data = [5, 8, 9, 3, 4, 7, 1, 2, 6]<br />    console.print(f"Data: [bold white]{str(data)}[/]")<br />    print("INSERTION SORT")<br />    insertion_sort_original(data)<br />    console.rule()<br />    console.print(Panel.fit(f"Hasil: [bold white]{str(data)}[/]\n" + <br />        f"Banyak langkah: [bold white]{langkah}[/]\n" +<br />        "G(n) = [bold]n(n-1)/2[/] ==&gt; [bold]O(n^2)[/]"))<br />    print()<br />### AKHIR PROGRAM ###<br /> </p>Pembahasan<p><strong>Insertion Sort</strong> adalah salah satu jenis pengurutan yang sederhana. Urut-urutan langkahnya dapat dianalogikan dengan pengurutan kartu berdasarkan angka/nilai kartu pada sebuah permainan kartu. </p><p>Pada program di atas, diberikan dua versi fungsi insertion sort: versi yang sedikit dioptimasi, dan versi original.<br />Agar dapat lebih menampilkan urut-urutan insertion sort sesuai definisi, maka dipilih algoritma insertion sort yang original.</p><p>Terkait dengan kompleksitas algoritma, insertion sort memiliki <strong>G(n) = n(n-1)/2</strong>, sama dengan algoritma pengurutan sederhana yang lain, yaitu bubble sort. Kompleksitas algoritmanya adalah <strong>O(n²)</strong>.</p><p><strong>Contoh hasil eksekusi</strong> dapat dilihat pada gambar. Karena output yang cukup panjang, maka hasil tangkapan layar dari eksekusi program dibagi menjadi 2 gambar.<br /></p><br />
+                                            <h2 class="ez-toc-section" id="urutkan-array-3524-dengan-algoritma-insertion-sort">
+                            9. Urutkan array (3,5,2,4) dengan algoritma insertion sort</h2><br />
+                        <p>Pengurutan<strong> array</strong> (3,5,2,4) secara algoritma insertion sort adalah sebagai berikut langkahnya: </p>3  5  2  43  2  5  43  2  5  42  3  5  42  3  4  5<p><strong>Insertion sort</strong> membandingkan suku ke n dan n+1 jika n+1 lebih kecil dari n maka dipindah paling kiri. Begitupun terjadi secara berulang.</p><p><strong>Pembahasan</strong></p><p><strong>Algoritma</strong> adalah sekumpulan instruksi  terstruktur dan terbatas yang diimplementasikan dalam bentuk program komputer untuk memecahkan masalah komputasi tertentu. Dalam matematika dan ilmu komputer, algoritma adalah prosedur langkah demi langkah untuk perhitungan, instruksi yang diberikan kepada komputer untuk melakukan tugas tertentu. Instruksi secara khusus ditulis untuk menyelesaikan tugas  tanpa kesalahan. Dimulai dengan istilah yang digunakan dan diakhiri dengan prosedur: <strong>Algoritma</strong> pengurutan penyisipan pada dasarnya mengurutkan data yang akan diurutkan menjadi dua bagian: bagian yang tidak disortir dan bagian yang  diurutkan. Elemen pertama diambil dari bagian array yang tidak disortir dan ditempatkan di bagian lain dari array yang diurutkan sesuai dengan posisinya.</p><p></p>Pelajari lebih lanjut<p>Pelajari lebih lanjut materi tentang Algoritma Insertion Sort: https://brainly.co.id/tugas/14723268</p><p></p><p><strong>#BelajarBersamaBrainly #SPJ9</strong></p><br />
+                                            <h2 class="ez-toc-section" id="pengurutan-dengan-algoritma-mencari-menyeleksi-bilangan-terkecilterbesar-bergantung-pada-urut-naik-atau-turun-dari-daftar-bilangan-yang-belum-terurut-dan-meletakkannya-dalam-daftar-bilangan-baru">
+                            10. Pengurutan dengan algoritma mencari (menyeleksi) bilangan terkecil/terbesar (bergantung pada urut naik atau turun) dari daftar bilangan yang belum terurut dan meletakkannya dalam daftar bilangan baru yang dijaga keterurutannya disebut...A. bobble sortB. Insertion sortC. Ascending sortD. Merge sorE. Selection sort JAWAB JANGAN ASAL!GAK TAU? GA USAH JAWAB!​</h2><br />
+                        <p><strong>JAWABANNYA</strong></p><p>B.Insertion sort</p><br />
+                                            <h2 class="ez-toc-section" id="jenis-metode-yang-memiliki-pola-yang-sama-seperti-mengurutkan-kartu-adalaha-binary-sortb-bubble-sortc-insertion-sortd-selection-sorte-sequential-sort-%e2%80%8b">
+                            11. jenis metode yang memiliki pola yang sama seperti mengurutkan kartu adalahA. binary sortB. bubble sortC. insertion sortD. selection sortE. sequential sort ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Indeks algoritma dari metode insertion sort ini dapat dianalogikan sama seperti mengurutkan kartu, dimana jika suatu kartu dipindah tempatkan menurut posisinya, maka kartu yang lain akan bergeser mundur atau maju sesuai kondisi pemindahanan kartu tersebut.</p><p><strong>Penjelasan:</strong></p>Semoga membantu :)<br />
+                                            <h2 class="ez-toc-section" id="diketahui-data-23-45-12-24-56-34-27-23-16-gunakan-metode-sort-berikut-1-metode-selection-sort-2-buble-sort-3-merge-sort-4-quick-sort-5-insertion">
+                            12. diketahui data : 23 45 12 24 56 34 27 23 16. gunakan metode sort berikut: 1. metode selection sort. 2. buble sort. 3. merge sort. 4. quick sort. 5. insertion.</h2><br />
+                        Jawabannya 2. Buble Sort<br />
+                                            <h2 class="ez-toc-section" id="1-perhatikan-urutan-data-berikut-324011435521-urutkan-data-tersebut-menjadi-urutan-yang-benar-kecil%e2%86%92besar-dengan-metode-insertion-sort">
+                            13. 
+1. Perhatikan urutan data berikut : 32,40,11,43,55,21 Urutkan data tersebut menjadi urutan yang benar (kecil→besar) Dengan metode Insertion sort</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>11, 21, 32, 40, 43, 55</p><p><strong>Penjelasan:</strong></p><p> Maaf kalau salah</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="terdapat-deret-angka-993411502389652637-74-44urutkanlah-deret-angka-tersebut-dengan-menggunakan-teknik-sort-yang-sudah-di-jelaskanselection-sortbubble-sort-insertion-sort-quick-sort-dan">
+                            14. Terdapat deret angka 99,34,11,50,23,89,65,2,6,37, 74, 44Urutkanlah deret angka Tersebut dengan menggunakan teknik sort yang sudah di jelaskan(Selection Sort,bubble sort, insertion Sort Quick Sort dan Merge Sort)</h2><br />
+                        <p>Contoh menggunakan program C/C++
+</p><p>
+</p> Selection Sort
+<p>
+</p><p>#include &lt;stdio.h&gt;    
+</p><p>void swap(int *xp, int *yp)  </p><p>{  </p><p>    int temp = *xp;  </p><p>    *xp = *yp;  </p><p>    *yp = temp;  </p><p>}    
+</p><p>void selectionSort(int arr[], int n)  </p><p>{  </p><p>    int i, j, min_idx;    
+</p><p>    // Digunakan untuk memindahkan angka satu per satu
+</p><p>    for (i = 0; i &lt; n-1; i++)  </p><p>    {  </p><p>        // Mencari nilai minimum dari deret angka  </p><p>        min_idx = i;  </p><p>        for (j = i+1; j &lt; n; j++)  </p><p>          if (arr[j] &lt; arr[min_idx])  </p><p>            min_idx = j;    </p><p>        // Menukar nilai minimum dengan angka pertama
+</p><p>        swap(&amp;arr[min_idx], &amp;arr[i]);  </p><p>    }  </p><p>}    
+</p><p>void printArray(int arr[], int size)  </p><p>{  </p><p>    int i;  </p><p>    for (i=0; i &lt; size; i++)  </p><p>        printf("%d ", arr[i]);  </p><p>    printf("\n");  </p><p>}  </p><p>int main()  </p><p>{  </p><p>    int arr[] = {99,34,11,50,23,89,65,2,6,37,74,44};  </p><p>    int n = sizeof(arr)/sizeof(arr[0]);  </p><p>    selectionSort(arr, n);  </p><p>    printf("Sorted array: \n");  </p><p>    printArray(arr, n);  </p><p>    return 0;  </p><p>}  </p><p>
+</p> Bubble Sort
+<p>#include &lt;stdio.h&gt;  </p><p>  
+void swap(int *xp, int *yp)  </p><p>{  </p><p>    int temp = *xp;  </p><p>    *xp = *yp;  </p><p>    *yp = temp;  </p><p>}  </p><p>void bubbleSort(int arr[], int n)  </p><p>{  </p><p>   int i, j;  </p><p>   for (i = 0; i &lt; n-1; i++)          
+</p><p>       for (j = 0; j &lt; n-i-1; j++)  
+</p><p>           if (arr[j] &gt; arr[j+1])  </p><p>              swap(&amp;arr[j], &amp;arr[j+1]);  </p><p>}  </p><p>void printArray(int arr[], int size)  </p><p>{  </p><p>    int i;  </p><p>    for (i=0; i &lt; size; i++)  </p><p>        printf("%d ", arr[i]);  </p><p>    printf("n");  </p><p>}  
+</p><p>int main()  </p><p>{  </p><p>    int arr[] = {99,34,11,50,23,89,65,2,6,37,74,44};  </p><p>    int n = sizeof(arr)/sizeof(arr[0]);  </p><p>    bubbleSort(arr, n);  </p><p>    printf("Sorted array: \n");  </p><p>    printArray(arr, n);  </p><p>    return 0;  </p><p>}  </p><p>
+</p> Insertion Sort
+<p>
+</p><p>#include &lt;stdio.h&gt;  </p><p>#include &lt;math.h&gt;  
+</p><p>void insertionSort(int arr[], int n)  </p><p>{  </p><p>   int i, key, j;  </p><p>   for (i = 1; i &lt; n; i++)  </p><p>   {  </p><p>       key = arr[i];  </p><p>       j = i-1;  </p><p>         /*Memindahkan elemen dari arr[0..i-1], yang lebih besar dari key, satu posisi diatas posisi saat ini */
+</p><p>       while (j &gt;= 0 &amp;&amp; arr[j] &gt; key)  </p><p>       {  </p><p>           arr[j+1] = arr[j];  </p><p>           j = j-1;  </p><p>       }  </p><p>       arr[j+1] = key;  </p><p>   }  </p><p>}    
+</p><p>void printArray(int arr[], int n)  </p><p>{  </p><p>   int i;  </p><p>   for (i=0; i &lt; n; i++)  </p><p>       printf("%d ", arr[i]);  </p><p>   printf("\n");  </p><p>}    </p><p>int main()  </p><p>{  </p><p>    int arr[] = {99,34,11,50,23,89,65,2,6,37,74,44};  </p><p>    int n = sizeof(arr)/sizeof(arr[0]);    
+</p><p>    insertionSort(arr, n);  </p><p>    printArray(arr, n);    
+</p><p>    return 0;  </p><p>}
+</p><p>
+</p> Quick Sort
+<p>
+</p><p>#include&lt;stdio.h&gt;  
+</p><p>void swap(int* a, int* b)  </p><p>{  </p><p>    int t = *a;  </p><p>    *a = *b;  </p><p>    *b = t;  </p><p>}    </p><p>/* Fungsi ini mengambil elemen terakhir sebagai pivot, menempatkan pivot di posisi yang tepat dalam array yang telah di sort, menempatkan nilai yang lebih kecil dari pivot ke bagian kiri pivot dan nilai yang lebih besar dari pivot ke bagian kanan pivot */
+</p><p>
+</p><p>int partition (int arr[], int low, int high)  </p><p>{  </p><p>    int pivot = arr[high];    // pivot  </p><p>    int i = (low - 1);  // Index dari element yang lebih kecil
+</p><p>  
+</p><p>    for (int j = low; j &lt;= high- 1; j++)  </p><p>    {  </p><p>        if (arr[j] &lt;= pivot)  </p><p>        {  </p><p>            i++;    // increment dari indeks elemen yang lebih kecil
+</p><p>            swap(&amp;arr[i], &amp;arr[j]);  </p><p>        }  </p><p>    }  </p><p>    swap(&amp;arr[i + 1], &amp;arr[high]);  </p><p>    return (i + 1);  </p><p>}    </p><p>/* arr[] --&gt; Array yang akan di sort,  </p><p>  low  --&gt; Indeks awal,  </p><p>  high  --&gt; Indeks akhir */
+</p><p>void quickSort(int arr[], int low, int high)  </p><p>{  </p><p>    if (low &lt; high)  </p><p>    {  </p><p>        /* pi adalah indeks partisi */
+</p><p>        int pi = partition(arr, low, high);  </p><p>        quickSort(arr, low, pi - 1);  </p><p>        quickSort(arr, pi + 1, high);  </p><p>    }  </p><p>}    
+</p><p>void printArray(int arr[], int size)  </p><p>{  </p><p>    int i;  </p><p>    for (i=0; i &lt; size; i++)  </p><p>        printf("%d ", arr[i]);  </p><p>    printf("n");  </p><p>}    
+</p><p>int main()  </p><p>{  </p><p>    int arr[] = {99,34,11,50,23,89,65,2,6,37,74,44};  
+</p><p>    int n = sizeof(arr)/sizeof(arr[0]);  </p><p>    quickSort(arr, 0, n-1);  </p><p>    printf("Sorted array: n");  </p><p>    printArray(arr, n);  </p><p>    return 0;  </p><p>}  </p><p>
+</p><p>
+</p>Merge Sort
+<p>
+</p><p>#include&lt;stdlib.h&gt;  </p><p>#include&lt;stdio.h&gt;    
+</p><p>void merge(int arr[], int l, int m, int r)  </p><p>{  </p><p>    int i, j, k;  </p><p>    int n1 = m - l + 1;  </p><p>    int n2 =  r - m;    
+</p><p>    int L[n1], R[n2];    
+</p><p>    for (i = 0; i &lt; n1; i++)  </p><p>        L[i] = arr[l + i];  </p><p>    for (j = 0; j &lt; n2; j++)  </p><p>        R[j] = arr[m + 1+ j];  </p><p>       i = 0;  </p><p>    j = 0;  </p><p>    k = l;  
+</p><p>    while (i &lt; n1 &amp;&amp; j &lt; n2)  </p><p>    {  </p><p>        if (L[i] &lt;= R[j])  </p><p>        {  </p><p>            arr[k] = L[i];  </p><p>            i++;  </p><p>        }  </p><p>        else
+</p><p>        {  </p><p>            arr[k] = R[j];  </p><p>            j++;  </p><p>        }  </p><p>        k++;  </p><p>    }  </p><p>      while (i &lt; n1)  </p><p>    {  </p><p>        arr[k] = L[i];  </p><p>        i++;  </p><p>        k++;  </p><p>    }  </p><p>       while (j &lt; n2)  </p><p>    {  </p><p>        arr[k] = R[j];  </p><p>        j++;  </p><p>        k++;  </p><p>    }  </p><p>}    
+</p><p>void mergeSort(int arr[], int l, int r)  </p><p>{  </p><p>    if (l &lt; r)  </p><p>    {  </p><p>        int m = l+(r-l)/2;  </p><p>        mergeSort(arr, l, m);  </p><p>        mergeSort(arr, m+1, r);  </p><p>        merge(arr, l, m, r);  </p><p>    }  </p><p>}    
+</p><p>void printArray(int A[], int size)  </p><p>{      int i;  </p><p>    for (i=0; i &lt; size; i++)  </p><p>        printf("%d ", A[i]);  </p><p>    printf("\n");  </p><p>}    
+</p><p>int main()  </p><p>{  </p><p>    int arr[] = {99,34,11,50,23,89,65,2,6,37,74,44};  
+</p><p>    int arr_size = sizeof(arr)/sizeof(arr[0]);    </p><p>    printf("Given array is \n");  </p><p>    printArray(arr, arr_size);    
+</p><p>    mergeSort(arr, 0, arr_size - 1);    
+</p><p>    printf("\nSorted array is \n");  </p><p>    printArray(arr, arr_size);  </p><p>    return 0;  </p><p>}  </p><p>
+</p><p>
+</p><p>Kelas : SMP
+</p><p>Mapel : TIK
+</p><p>Kode : 7.11.8
+</p><p>Kategori : Perangkat Lunak Komputer
+</p><p>Kata kunci : Selection Sort, Bubble Sort, Insertion Sort, Quick Sort, Merge Sort</p><br />
+                                            <h2 class="ez-toc-section" id="minta-bantuan-teman-teman-semua%c2%a0tugas-pascal1-bubblesort-%c2%a0-2-selection-sort-%c2%a0-3-insertion-sort%c2%a0-4-quick-sort%c2%a0bagi-teman2-yang-bisa-saya-minta-bantuanya-trims">
+                            15. Minta bantuan teman-teman semua,, Tugas pascal1.Bubble
+Sort   2.
+Selection Sort   3. Insertion Sort  4.
+Quick Sort Bagi teman2 yang bisa, saya minta bantuanya... Trims</h2><br />
+                        Itu Bahasa pemrograman gak di pelajari di sekolah saya, adanya c++<br /><br />
+                                            <h2 class="ez-toc-section" id="1-buatlah-pengurutan-dari-data-29-27-10-8-7621-denganmetode-sorting-selection-sort-bubble-sort-merge-sortquick-sort-dan-insertion-sort">
+                            16. 1.Buatlah pengurutan dari data 29 ,27, 10 ,8 ,76,21 dengan
+metode sorting Selection Sort, Bubble Sort, Merge Sort,
+Quick Sort dan Insertion Sort.</h2><br />
+                        <p>METODE SORTING</p><p></p><p>Seringkali perancang program perlu mengurutkan sekumpulan data yang dimiliki untuk memudahkan pemrosesan selanjutnya terhadap data tersebut. Pengurutan adalah sebuah algoritma dasar yang sering diperlukan dalam pembuatan program. Berbagai algoritma pengurutan telah diciptakan dan dapat digunakan. Pemahaman tentang beberapa algoritma pengurutan dasar perlu diketahui, termasuk cara penggunaannya dalam program.</p><p></p><p>PENGERTIAN SORT</p><p></p><p>Sorting atau pengurutan data adalah proses yang sering harus dilakukan dalam pengolahan data. Sort dalam hal ini diartikan mengurutkan data yang berada dalam suatu tempat penyimpanan, dengan urutan tertentu baik urut menaik (ascending) dari nilai terkecil sampai dengan nilai terbesar, atau urut menurun (descending) dari nilai terbesar sampai dengan nilai terkecil. Sorting adalah proses pengurutan.</p><p></p><p>Terdapat dua macam pengurutan:</p><p></p><p>Pengurutan internal (internal sort), yaitu pengurutan terhadap sekumpulan data yang disimpan dalam media   internal komputer yang dapat diakses setiap elemennya secara langsung. Dapat dikatakan sebagai   pengurutan tabel</p><p>Pengurutan eksternal (external sort), yaitu pengurutan data yang disimpan dalam memori sekunder, biasanya data   bervolume besar sehingga tidak mampu untuk dimuat semuanya dalam memori.</p><p>Dalam courseware ini, hanya akan dibahas algoritma pengurutan internal, dengan data berada dalam array satu dimensi.</p><p></p><p>Algoritma pengurutan internal yang utama antara lain:</p><p></p><p>1.Bubble Sort</p><p></p><p>2.Selection Sort</p><p></p><p>3.Insertion Sort</p><p></p><p>4.Shell Sort</p><p></p><p>5.Merge Sort</p><p></p><p>6.Radix Sort</p><p></p><p>7.Quick Sort</p><p></p><p>8.Heap Sort</p><p></p><p></p><p>Dalam courseware ini hanya akan dibahas tiga metode sort yang pertama yang dianggap mudah, yaitu: Bubble Sort , Selection Sort dan Insertion Sort</p><p></p><p>1.1         BUBBLE SORT</p><p></p><p>Bubble sort adalah proses pengurutan sederhana yang bekerja dengan cara berulang kali membandingkan dua elemen data pada suatu saat dan menukar elemen data yang urutannya salah. Ide dari Bubble sort adalah gelembung air yang akan “mengapung” untuk table yang terurut menaik (ascending). Elemen bernilai kecil akan “diapungkan” (ke indeks terkecil), artinya diangkat ke “atas” (indeks terkecil) melalui pertukaran. Karena</p><p></p><p>algoritma ini melakukan pengurutan dengan cara membandingkan elemen-elemen data satu sama lain, maka bubble sort termasuk ke dalam jenis algoritma comparison-based sorting.</p><p></p><p>Proses dalam Bubble sort dilakukan sebanyak N-1 langkah (pass) dengan N adalah ukuran array. Pada akhir setiap langkah ke – I , array L[0..N] akan terdiri atas dua bagian, yaitu bagian yang sudah terurut L[0..I] dan bagian yang belum terurut L[I+1..N-1]. Setelah langkah terakhir, diperoleh array L[0..N-1] yang terurut menaik.</p><p></p><p>0</p><p></p><p>terurut</p><p></p><p>Untuk mendapatkan urutan yang menaik, algoritmanya </p><br />
+                                            <h2 class="ez-toc-section" id="terdapat-data-yang-belum-berurutan-sebagai-berikut-101156188116143130-tulislah-langkah-mengurutkan-data-secara-descending-menggunakan-insertion-sort">
+                            17. Terdapat data yang belum berurutan sebagai berikut :
+ 101,156,188,116,143,130 
+ Tulislah langkah mengurutkan data secara descending menggunakan insertion sort!.</h2><br />
+                        <p>Langkah mengurutkan data secara descending menggunakan insertion sort adalah sebagai berikut:</p>Mulailah dengan memilih elemen pertama dari data yang belum terurut sebagai elemen yang akan diproses. Misalnya, ambil elemen 101.Temukan posisi yang tepat untuk elemen yang dipilih pada langkah 1 di antara elemen yang sudah terurut. Untuk mencari posisi yang tepat, bandingkan elemen yang dipilih dengan setiap elemen yang sudah terurut satu per satu, dari kanan ke kiri. Jika elemen yang dipilih lebih besar dari elemen yang sudah terurut, maka tukarkan posisi kedua elemen tersebut. Jika elemen yang dipilih lebih kecil dari elemen yang sudah terurut, maka abaikan elemen tersebut dan lanjutkan ke elemen sebelah kiri.Setelah menemukan posisi yang tepat, masukkan elemen yang dipilih pada langkah 1 ke dalam posisi tersebut.Ulangi langkah 1 sampai 3 untuk setiap elemen yang belum terurut sampai semua elemen terurut.<p>Contoh:</p>Pilih elemen 101.Elemen 101 lebih kecil dari semua elemen yang sudah terurut, jadi tidak perlu ditukar dengan elemen yang sudah terurut. Masukkan elemen 101 ke posisi pertama dari data terurut. Data terurut saat ini adalah: 101, _, _, _, _, _Pilih elemen 156.Elemen 156 lebih besar dari elemen pertama (101), tapi lebih kecil dari elemen kedua (_). Tukar posisi elemen 156 dengan elemen kedua. Data terurut saat ini adalah: 101, 156, _, _, _, _Pilih elemen 188.Elemen 188 lebih besar dari elemen pertama (101) dan elemen kedua (156), tapi lebih kecil dari elemen ketiga (_). Tukar posisi elemen 188 dengan elemen ketiga. Data terurut saat ini adalah: 101, 156, 188, _, _, _Pilih elemen 116.Elemen 116 lebih kecil dari elemen pertama (101), tapi lebih besar dari elemen kedua (156). Tukar posisi elemen 116 dengan elemen kedua. Data terurut saat ini adalah: 101, 116, 188, _, _, _Pilih elemen 143.Elemen 143 lebih kecil dari elemen pertama (101) dan elemen kedua (116), tapi lebih besar dari elemen ketiga (188). Tukar posisi elemen 143 dengan elemen ketiga. Data terurut saat ini adalah: 101, 116, 143, 188, _, _Pilih elemen 130.Elemen 130 lebih kecil dari elemen pertama (101) dan elemen kedua (116), tapi lebih besar dari elemen ketiga (143). Tukar posisi elemen 130 dengan elemen ketiga. Data terurut saat ini adalah: 101, 116, 130, 188, _, _<p>Setelah mengulangi langkah 1 sampai 3 sebanyak 6 kali, data terurut secara descending adalah: 188, 143, 130, 116, 101.</p><p>Semoga membantu!</p><br />
+                                            <h2 class="ez-toc-section" id="berikut-adalah-beberapa-jenis-algoritma-sorting-kecuali-a-merge-sort-b-bubble-sort-c-insertion-sort-d-cookie-sort">
+                            18. Berikut adalah beberapa jenis algoritma sorting, kecuali 
+ A. Merge sort 
+ B. Bubble sort 
+C. Insertion Sort 
+ D. Cookie sort</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jawabannya cookie sort</p><p>D.cookie sort</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="23-45-12-24-56-34-27-23-16-gunakan-metode-sort-berikut-1-metode-selection-sort2-metode-buble-sort-3-metode-merge-sort-4-metode-quick-sort-5-metode-insertion">
+                            19. 23 45 12 24 56 34 27 23 16 , gunakan metode sort berikut : 
+1. metode selection sort
+2. metode buble sort .
+3. metode merge sort 
+4.metode quick sort 
+5.metode insertion</h2><br />
+                        Saya punya caranya kecuali merge dan quick. Cuman sangat panjang jika kodingan ditulis di sini. Untuk itu saya berikan logikanya saja.<br />1. Selection sort : menentukan nilai terbesar atau terkecilnya dulu untuk kemudian dibandingkan dan ditukar posisinya.<br />2. Bubble sort : melakukan pembandingan pada setiap nilai dari nilai elemen array kemudian menukarnya.<br />3. Insertion sort : Mengambil salah satu nilai untuk dicarikan posisinya dengan cara menggeser posisi elemen lain yg tidak sesuai. Sederhananya seperti mengurut kartu.<br /><br />Semoga membantu.<br />
+                                            <h2 class="ez-toc-section" id="acslj-urutkan-abjad-di-atas-secara-ascending-menggunakan-metode-insertion-sort%e2%80%8b">
+                            20. a,c,s,l,j Urutkan abjad di atas secara ascending menggunakan metode insertion sort​</h2><br />
+                        <p><strong>Jawaban dan Penjelasan:</strong></p>INSERTION SORTData yang akan diurutkan: <strong>A, C, S, L, J</strong>Mode pengurutan: <strong>ascending</strong> (menaik)Tahapan Insertion Sort<p><strong>Iterasi Pertama</strong></p><p>[tex]\Large\text{$\begin{aligned}&amp;\boxed{\tt A}\boxed{\tt C}\boxed{\tt S}\boxed{\tt L}\boxed{\tt J}\\&amp;\quad\Uparrow\end{aligned}$}[/tex]<br />⇒ Tinjau huruf ke-2: C<br />⇒ Bandingkan dengan huruf ke-1: C &gt; A<br />⇒ Sudah terurut menaik.</p><p><strong>Iterasi Kedua</strong></p><p>[tex]\Large\text{$\begin{aligned}&amp;\boxed{\tt A}\boxed{\tt C}\boxed{\tt S}\boxed{\tt L}\boxed{\tt J}\\&amp;\quad\quad\Uparrow\end{aligned}$}[/tex]<br />⇒ Tinjau huruf ke-3: S<br />⇒ Bandingkan dengan huruf ke-2: S &gt; C<br />⇒ Sudah terurut menaik.</p><p><strong>Iterasi Ketiga</strong></p><p>[tex]\Large\text{$\begin{aligned}&amp;\boxed{\tt A}\boxed{\tt C}\boxed{\tt S}\boxed{\tt L}\boxed{\tt J}\\&amp;\quad\quad\quad\Uparrow\end{aligned}$}[/tex]<br />⇒ Tinjau huruf ke-4: L<br />⇒ Bandingkan dengan huruf ke-3: L &lt; S<br />⇒ Belum terurut menaik, maka tukar huruf ke-4 dengan huruf ke-3.<br />[tex]\Large\text{$\begin{aligned}&amp;\quad\quad\downarrow\\&amp;\boxed{\tt A}\boxed{\tt C}\boxed{\tt L}\boxed{\tt S}\boxed{\tt J}\\&amp;\quad\quad\quad\Uparrow\end{aligned}$}[/tex]<br />⇒ Bandingkan huruf ke-3 dengan huruf ke-2: L &gt; C<br />⇒ Sudah terurut menaik.</p><p><strong>Iterasi Keempat</strong></p><p>[tex]\Large\text{$\begin{aligned}&amp;\boxed{\tt A}\boxed{\tt C}\boxed{\tt L}\boxed{\tt S}\boxed{\tt J}\\&amp;\quad\quad\quad\quad\Uparrow\end{aligned}$}[/tex]<br />⇒ Tinjau huruf ke-5: J<br />⇒ Bandingkan dengan huruf ke-4: J &lt; S<br />⇒ Belum terurut menaik, maka tukar huruf ke-5 dengan huruf ke-4.<br />[tex]\Large\text{$\begin{aligned}&amp;\quad\quad\quad\downarrow\\&amp;\boxed{\tt A}\boxed{\tt C}\boxed{\tt L}\boxed{\tt J}\boxed{\tt S}\\&amp;\quad\quad\quad\quad\Uparrow\end{aligned}$}[/tex]<br />⇒ Bandingkan huruf ke-4 dengan huruf ke-3: J &lt; L<br />⇒ Belum terurut menaik, maka tukar huruf ke-4 dengan huruf ke-3.</p><p>[tex]\Large\text{$\begin{aligned}&amp;\quad\quad\downarrow\\&amp;\boxed{\tt A}\boxed{\tt C}\boxed{\tt J}\boxed{\tt L}\boxed{\tt S}\\&amp;\quad\quad\quad\quad\Uparrow\end{aligned}$}[/tex]<br />⇒ Bandingkan huruf ke-3 dengan huruf ke-2: J &gt; C<br />⇒ Sudah terurut menaik.</p><p>Karena indeks terakhir yang dievaluasi (tanda panah ganda ke atas) sudah mencapai banyaknya huruf yang diurutkan, maka iterasi proses insertion sort selesai.</p><p><strong>Hasil pengurutan</strong>:<br />[tex]\Large\text{$\begin{aligned}&amp;\boxed{\tt A}\boxed{\tt C}\boxed{\tt J}\boxed{\tt L}\boxed{\tt S}\\\end{aligned}$}[/tex]</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="terdapat-deret-bilangan-seperti-berikut-12534-urutkan-bilangan-tersebut-secara-menarik-dengan-menggunakan-algoritma-insertion-sort-jawab-dengan-penjelasannya%e2%80%8b">
+                            21. terdapat deret bilangan seperti berikut 1,2,5,3,4 urutkan bilangan tersebut secara menarik dengan menggunakan algoritma insertion sort, jawab dengan penjelasannya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>(pada bagian penjelasan)</p><p></p><p><strong>Penjelasan:</strong></p>Insertion sort<p>Terdapat deret bilangan: (1, 2, 5, 3, 4)</p><p>Tahap-tahap insertion sort terhadap deret ini:</p><p></p>Siklus 0<p>(1, 2, 5, 3, 4)</p><p></p>Siklus 1<p>Key/kunci ada pada<strong> elemen ke-2</strong>.</p><p>(1, <strong>2</strong>, 5, 3, 4)</p><p>PERIKSA: Elemen ke-2 LEBIH BESAR DARI elemen ke-1, maka lanjutkan.</p><p></p>Siklus 2<p>Key/kunci ada pada <strong>elemen ke-3</strong>.</p><p>(1, 2, <strong>5</strong>, 3, 4)</p><p>PERIKSA: Elemen ke-3 LEBIH BESAR DARI elemen ke-2, maka lanjutkan.</p><p></p>Siklus 3<p>Key/kunci ada pada <strong>elemen ke-4</strong>.</p><p>(1, 2, 5, <strong>3</strong>, 4)</p><p>PERIKSA: Elemen ke-4 (3) TIDAK LEBIH BESAR DARI elemen ke-3 (5), maka elemen ke-3 ditukar (swap) dengan elemen ke-3.</p><p>(1, 2, <strong>3</strong>, 5, 4)</p><p>PERIKSA: Elemen ke-3 (3) LEBIH BESAR DARI elemen ke-2 (2), maka lanjutkan.</p><p></p>Siklus 4<p>Key/kunci ada pada <strong>elemen ke-5</strong>.</p><p>(1, 2, 3, 5, <strong>4</strong>)</p><p>PERIKSA: Elemen ke-5 (4) TIDAK LEBIH BESAR DARI elemen ke-4 (5), maka elemen ke-5 ditukar (swap) dengan elemen ke-4.</p><p>(1, 2, 3, <strong>4</strong>, 5)</p><p>PERIKSA: Elemen ke-4 (4) LEBIH BESAR DARI elemen ke-3 (3), maka SELESAI.</p><p></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="kerjakan-soal-berikut-dengan-metode-insertion-selection-dan-bubble-sort-4-2-5-1-8-710-9-6-ascending-tolong-bantuannya-kakak-kakak%e2%80%8b">
+                            22. Kerjakan soal berikut dengan metode insertion, selection dan bubble sort !4, 2, 5, 1, 8, 7,10, 9, 6 ( ascending )tolong bantuannya kakak-kakak​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>4, 2, 5, 1, 8, 7,10, 9, 6 ( ascending ) </p><p></p><p><strong>Penjelasan:</strong></p><p></p><p><strong>&gt; Insertion Sort</strong></p><p>#include&lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>void InsertionSort(int data[], int n);</p><p></p><p>int main()</p><p>{</p><p>	int i, </p><p>		jmlData = 9, </p><p>		n = jmlData - 1,</p><p>		data[] = {4, 2, 5, 1, 8, 7, 10, 9, 6};</p><p>	</p><p>	cout&lt;&lt;"Insertion Sort: "&lt;&lt;endl;</p><p>	cout&lt;&lt;"--------------------------------"&lt;&lt;endl;</p><p>	cout&lt;&lt;"Sebelum diurutkan: "&lt;&lt;endl;</p><p>	for (i = 0; i &lt;= n; i++)</p><p>	{</p><p>		cout&lt;&lt;data[i]&lt;&lt;" ";</p><p>	}</p><p>	cout&lt;&lt;endl;</p><p>	</p><p>	cout&lt;&lt;"----------------------------------"&lt;&lt;endl;</p><p>	</p><p>	InsertionSort(data, n);</p><p>	</p><p>	cout&lt;&lt;"Setelah diurutkan: "&lt;&lt;endl;</p><p>	for (i = 0; i &lt;= n; i++)</p><p>	{</p><p>		cout&lt;&lt;data[i]&lt;&lt;" ";</p><p>	}</p><p>	cout&lt;&lt;endl;</p><p>}</p><p></p><p>void InsertionSort(int array1[], int n)</p><p>{	</p><p>	int i, j, x;</p><p>	bool ketemu;</p><p>	</p><p>	for(i = 1; i &lt;= n; i++)</p><p>	{</p><p>		x = array1[i];</p><p>		j = i - 1;</p><p>		ketemu = false;</p><p>		</p><p>		while ((j &gt;= 0) &amp;&amp; (!ketemu))</p><p>		{</p><p>			if (x &lt; array1[j])</p><p>			{</p><p>				array1[j+1] = array1[j];</p><p>				j = j - 1;</p><p>			}</p><p>			else</p><p>			{</p><p>				ketemu = true;	</p><p>			}		</p><p>		}</p><p>		</p><p>		array1[j+1] = x;</p><p>	}</p><p>}</p><p> </p><p><strong>&gt; Selection Sort</strong></p><p>#include&lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>void selectionSort(int data[], int n);</p><p></p><p>int main()</p><p>{</p><p>	int i,</p><p>	n = 9,</p><p>	data[] = {4, 2, 5, 1, 8, 7, 10, 9, 6};</p><p>	cout&lt;&lt;"Selection Sort: "&lt;&lt;endl;</p><p>	cout&lt;&lt;"--------------------------------"&lt;&lt;endl;</p><p>	cout&lt;&lt;"Sebelum diurutkan: "&lt;&lt;endl;</p><p>	for(i = 0; i &lt; n; i++)</p><p>	{</p><p>		cout&lt;&lt;data[i]&lt;&lt;" ";</p><p>	}</p><p>	cout&lt;&lt;endl;</p><p>	cout&lt;&lt;"--------------------------------"&lt;&lt;endl;</p><p>	selectionSort(data, n);</p><p>	cout&lt;&lt;"Setelah diurutkan: "&lt;&lt;endl;</p><p>	</p><p>	for(i = 0; i &lt; n; i++)</p><p>	{</p><p>		cout&lt;&lt;data[i]&lt;&lt;" ";</p><p>	}</p><p>	</p><p>	cout&lt;&lt;endl;</p><p>	</p><p>	return 0;</p><p>}</p><p></p><p>void selectionSort(int array[], int n) </p><p>{</p><p>	int i, j, imin, temp;</p><p>	for(i = 0; i &lt; n - 1; i++) </p><p>	{</p><p>		imin = i;</p><p>		for(j = i+1; j &lt; n; j++)</p><p>    	{</p><p>    		if(array[j] &lt; array[imin])</p><p>    		{</p><p>    			imin = j;</p><p>    			temp = array[i];</p><p>			    array[i] = array[imin];</p><p>			    array[imin] = temp;</p><p>			}</p><p>		}</p><p>   }</p><p>}</p><p> </p><p><strong>&gt; Bubble Sort</strong></p><p>#include&lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>void BubbleSort(int data[], int n);</p><p></p><p>int main()</p><p>{</p><p>	int i,</p><p>	n = 9,</p><p>	data[] = {4, 2, 5, 1, 8, 7, 10, 9, 6};</p><p>	cout&lt;&lt;"Bubble Sort: "&lt;&lt;endl;</p><p>	cout&lt;&lt;"--------------------------------"&lt;&lt;endl;</p><p>	cout&lt;&lt;"Sebelum diurutkan: "&lt;&lt;endl;</p><p>	for(i = 0; i &lt; n; i++)</p><p>	{</p><p>		cout&lt;&lt;data[i]&lt;&lt;" ";</p><p>	}</p><p>	cout&lt;&lt;endl;</p><p>	cout&lt;&lt;"--------------------------------"&lt;&lt;endl;</p><p>	BubbleSort(data, n);</p><p>	cout&lt;&lt;"Setelah diurutkan: "&lt;&lt;endl;</p><p>	</p><p>	for(i = 1; i &lt;= n; i++)</p><p>	{</p><p>		cout&lt;&lt;data[i]&lt;&lt;" ";</p><p>	}</p><p>	</p><p>	cout&lt;&lt;endl;</p><p>	</p><p>	return 0;</p><p>}</p><p></p><p>void BubbleSort(int array1[], int n)</p><p>{</p><p>	int i, j, tmp;</p><p>	for(i = 0; i &lt; n; i++)</p><p>	{</p><p>		for(j = n; j &gt; i; j--)</p><p>		{</p><p>			if(array1[j] &lt; array1[j-1])</p><p>			{</p><p>				tmp = array1[j];</p><p>				array1[j] = array1[j-1];</p><p>				array1[j-1] = tmp;</p><p>			}</p><p>		}</p><p>	}</p><p>}</p><p></p><p>maaf kalau salah</p><br />
+                                            <h2 class="ez-toc-section" id="diketahui-data-array-sebagai-berikut-10-37-0-4-7-dari-data-tersebut-buatlah-tahapan-tahapan-proses-pengurutan-dengan-metode-insertion-sort-selection-sort-dan-bubble-sort-%e2%80%8b">
+                            23. Diketahui data array sebagai berikut : [10, 37, 0, -4, 7] dari data tersebut buatlah tahapan-tahapan proses pengurutan dengan metode : Insertion Sort, Selection Sort dan Bubble Sort.​</h2><br />
+                        <p>jawab :</p><p>int a [] = {10,37,0,-4.7};</p><p>for(int i = 0; i &lt; a.langh - 1; i++){</p><p>      for(int j = i + 1; j &lt; a.langh; j++){</p><p>             if(a[i] &gt;= a[j]){</p><p>                 int bantu = a[i];</p><p>                 a[i] = a[j];</p><p>                 a[j] = bantu;</p><p>}</p><p>}</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="bilangan-insertion-sort-4765272-serta-rumus-nya-adalah">
+                            24. bilangan insertion sort 4,7,6,5,2,7,2 serta rumus nya adalah</h2><br />
+                        <p><strong>Penjelasan dengan langkah-langkah:</strong></p><p> Insertion sort adalah salah satu algoritma sorting yang paling sederhana. Algoritma ini bekerja dengan cara memindahkan elemen-elemen dari sebuah array satu per satu ke posisi yang tepat, sehingga array yang dihasilkan terurut dari yang terkecil hingga yang terbesar.</p><p></p><p>Untuk menyortir bilangan 4, 7, 6, 5, 2, 7, 2 menggunakan insertion sort, kita dapat menggunakan algoritma berikut:</p><p></p><p>Pertama-tama, simpan bilangan 4 pada array baru.</p><p>Selanjutnya, bandingkan bilangan 7 dengan 4. Karena 7 lebih besar dari 4, maka letakkan bilangan 7 setelah 4 dalam array baru.</p><p>Bandingkan bilangan 6 dengan 7. Karena 6 lebih kecil dari 7, maka letakkan bilangan 6 sebelum 7 dalam array baru.</p><p>Bandingkan bilangan 5 dengan 6. Karena 5 lebih kecil dari 6, maka letakkan bilangan 5 sebelum 6 dalam array baru.</p><p>Bandingkan bilangan 2 dengan 5. Karena 2 lebih kecil dari 5, maka letakkan bilangan 2 sebelum 5 dalam array baru.</p><p>Bandingkan bilangan 7 dengan 2. Karena 7 lebih besar dari 2, maka letakkan bilangan 7 setelah 2 dalam array baru.</p><p>Bandingkan bilangan 2 dengan 7. Karena 2 lebih kecil dari 7, maka letakkan bilangan 2 sebelum 7 dalam array baru.</p><p>Setelah melakukan semua perbandingan di atas, array yang dihasilkan akan terurut dari yang terkecil hingga yang terbesar, yaitu 2, 2, 4, 5, 6, 7, 7.</p><p></p><p>Untuk menuliskan rumus insertion sort, kita dapat menggunakan pseudocode berikut:</p><p></p><p>Copy code</p><p>function insertionSort(array)</p><p>  for i = 1 to length(array)</p><p>    j = i</p><p>    while j &gt; 0 and array[j] &lt; array[j-1]</p><p>      swap arr</p><br />
+                                            <h2 class="ez-toc-section" id="bilang-24753-bila-di-urutkan-menggunakan-insertion-sort-menjadi-%e2%80%8b">
+                            25. bilang 2,4,7,5,3 bila di urutkan menggunakan insertion sort menjadi ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>23457</p><p><strong>Penjelasan:</strong></p><p>karena jika dubauaht gwuhcgq</p><p>hiwgwysvwjisrraiauw iaawwjk jwbw</p><br />
+                                            <h2 class="ez-toc-section" id="1-berikut-ini-yang-termasuk-ke-dalam-algoritma-pencarian-adalah-a-bubble-sortb-insertion-sortc-selection-sortd-sequential-beruntune-shell2-berikut-ini-yang-termasuk-ke-dalam-algoritma-pen">
+                            26. 1. Berikut ini yang termasuk ke dalam algoritma pencarian adalah ....A. bubble sortB. insertion sortC. selection sortD. sequential (beruntun)E. shell2. Berikut ini yang termasuk ke dalam algoritma pencarian yang lebih efektif adalah ....A. pencarian bagi duaB. insertion sortC. selection sortD. sequential (beruntun)E. bubble sort3. Syarat data saat akan melakukan pencarian bagi dua adalah ....A. jumlah data harus genapB. jumlah data harus ganjilC. jumlah data harus banyakD. data harus sudah terurutE. tidak ada syarat yang harusdipenuhi4. Berikut ini yang termasuk ke dalam algoritma pengurutan adalah ....A. pencarian bagi duaB. insertion sortC. rekursifD. sequential (beruntun)E. shell​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>1</strong><strong>.</strong><strong>d</strong><strong>,</strong><strong> </strong><strong>s</strong><strong>q</strong><strong>u</strong><strong>e</strong><strong>n</strong><strong>t</strong><strong>i</strong><strong>a</strong><strong>l</strong></p><p><strong>2</strong><strong>.</strong><strong>a</strong><strong>,</strong><strong> </strong><strong>p</strong><strong>e</strong><strong>n</strong><strong>c</strong><strong>a</strong><strong>r</strong><strong>i</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>b</strong><strong>a</strong><strong>g</strong><strong>i</strong><strong> </strong><strong>2</strong></p><p><strong>3</strong><strong>.</strong><strong>d</strong><strong>,</strong><strong> </strong><strong>d</strong><strong>a</strong><strong>t</strong><strong>a</strong><strong> </strong><strong>h</strong><strong>a</strong><strong>r</strong><strong>u</strong><strong>s</strong><strong> </strong><strong>s</strong><strong>u</strong><strong>d</strong><strong>a</strong><strong>h</strong><strong> </strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>u</strong><strong>r</strong><strong>u</strong><strong>t</strong></p><p><strong>4</strong><strong>.</strong><strong>e</strong><strong>,</strong><strong> </strong><strong>s</strong><strong>h</strong><strong>e</strong><strong>l</strong><strong>l</strong></p><p></p><p><strong>p</strong><strong>e</strong><strong>n</strong><strong>j</strong><strong>e</strong><strong>l</strong><strong>a</strong><strong>s</strong><strong>a</strong><strong>n</strong><strong>:</strong></p><p><strong>m</strong><strong>a</strong><strong>a</strong><strong>f</strong><strong> </strong><strong>k</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>u</strong><strong> </strong><strong>s</strong><strong>a</strong><strong>l</strong><strong>a</strong><strong>h</strong></p><p><strong>j</strong><strong>a</strong><strong>d</strong><strong>i</strong><strong>k</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>j</strong><strong>a</strong><strong>w</strong><strong>a</strong><strong>b</strong><strong>a</strong><strong>n</strong><strong> </strong><strong>t</strong><strong>e</strong><strong>r</strong><strong>b</strong><strong>a</strong><strong>i</strong><strong>k</strong><strong> </strong><strong>y</strong><strong>a</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-pengertian-dan-cara-membuat-program-tentang-insertion-sortheap-sort-shell-sort-beri-keteranganya-juga-terimakasih">
+                            27. apa pengertian dan cara membuat program tentang insertion sort,heap sort, shell sort.
+beri keteranganya juga .
+terimakasih</h2><br />
+                        1. Insertion sort<br />Insertion sort adalah sebuah algoritma pengurutan yang membandingkan dua elemen data pertama, mengurutkannya, kemudian mengecek elemen data berikutnya satu persatu dan membandingkannya dengan elemen data yang telah diurutkan. Karena algoritma ini bekerja dengan membandingkan elemen-elemen data yang akan diurutkan, algoritma ini termasuk pula dalam comparison-based sort. Ide dasar dari algoritma Insertion Sort ini adalah mencari tempat yang "tepat" untuk setiap elemen array, dengan cara sequential search. Proses ini kemudian menyisipkan sebuah elemen array yang diproses ke tempatnya ang seharusnya. Proses dilakukan sebanyak N-1 tahapan (dalam sorting disebut sebagai "pass"), dengan indeks dimulai dari 0. Proses pengurutan dengan menggunakan algoritma Insertion Sort dilakukan dengan cara membandingkan data ke-i (dimana i dimulai dari data ke-2 sampai dengan data terakhir) dengan data berikutnya. Jika ditemukan data yang lebih kecil maka data tersebut disisipkan ke depan sesuai dengan posisi yang seharusnya.<br /><br /><br />2. Heap sort<br />Heap Sort merupakan salah satu dari 6 jenis metode sort atau sorting (melakukkan pengurutan). Heap sort ini menggunakan teknik sorting dengan menggunakan teknik heap. Teknik tersebut tersebut merupakan teknik pengelolaan data yang menggunakan binary tree. Data yang dikelola maksudnya adalah bagaimana data yang sudah terstruktur akan di organisir kembali jika kita memasukkan data baru atau meng-insert data baru, atau pula menghapus data. Teknik itulah yang diterapkan di metode heap sort. Inti dari pengurutan secara heap adalah pengerjaannya yang dilakukkan dengan pengurutan ascending dan descending, jadi ada dua kali pengurutan.<br /><br /><br />3. Shell sort<br />Metode ini disebut juga dengan metode pertambahan menurun (diminishing increment). Metode ini dikembangkan oleh Donald L. Shell pada tahun 1959, sehingga sering disebut dengan Metode Shell Sort. Metode ini mengurutkan data dengan cara membandingkan suatu data dengan data lain yang memiliki jarak tertentu, kemudian dilakukan penukaran bila diperlukan.<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="uk-19-berikut-yang-bukan-merupakan-algoritme-a-selection-sort-b-bubble-sort-c-merge-sort-d-snap-sort-e-insertion-sort%e2%80%8b">
+                            28. -uk 19. Berikut yang bukan merupakan algoritme... A. Selection sort B. Bubble sort C. Merge sort D. Snap sort E. Insertion sort​</h2><br />
+                        <p><strong>Jawaban:D. Snap sort</strong></p><p></p><p><strong>Penjelasan: karena tidak ada algoritma yang menggunakan snap sort untuk lainya ada </strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="pengurutan-secara-menghasilkan-data-yang-tersusun-dari-nilai-tertinggi-ke-terendah-a-ascending-b-descending-c-linear-d-bubble-sort-e-insertion-sort%e2%80%8b">
+                            29. Pengurutan secara... menghasilkan data yang tersusun dari nilai tertinggi ke terendah. a. ascending b. descending. c. linear d. bubble sort e. insertion sort​</h2><br />
+                        <p>jawabannya adalah:</p><p>a. ascending</p><p><strong>Jawaban:</strong></p><p>a. ascending</p><p><strong>Penjelasan:</strong></p><p>Pengurutan data ascending adalah pengurutan data dari yang terendah ke yang tertinggi sedangkan descending adalah pengurutan data dari yang tertinggi ke yang terendah. ascending adalah pengurutan data dari yg terkecil ke yg terbesar, contoh A-Z. sedangkan descending dari yg terbesar ke yg terkecil,contoh Z-A.</p><br />
+                                            <h2 class="ez-toc-section" id="insertion-sort-ascending-dan-descending-data-100-30-90-20-70-60-10-15%e2%80%8b">
+                            30. insertion sort ascending dan descending data = 100 30 90 20 70 60 10 15​</h2><br />
+                        <p><strong>Jawab:</strong></p><p>ascending sort ( dari terkecil ) = 10 15 20 30 60 70 90 100</p><p>descending sort ( dari terbesar ) = 100 90 70 60 30 20 15 10</p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/1Rn24CquveU?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/modifikasi-satria-fu-hitam-polos.html">Modifikasi Satria Fu Hitam Polos</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/arti-are-you-kidding-me.html">Arti Are You Kidding Me</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/kata-sinonim-jahil.html">Kata Sinonim Jahil</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-buku-ekspedisi-surat-keluar.html">Contoh Buku Ekspedisi Surat Keluar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/kunci-gitar-lagu-gayo-abadi-ayus.html">Kunci Gitar Lagu Gayo Abadi Ayus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/rajekan-dwipurwa.html">Rajekan Dwipurwa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/kata-kata-promosi-barbershop.html">Kata Kata Promosi Barbershop</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/sebab-jatuhnya-kabinet-sukiman.html">Sebab Jatuhnya Kabinet Sukiman</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/sifat-kedaulatan-permanen.html">Sifat Kedaulatan Permanen</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/pihak-pihak-yang-membutuhkan-informasi-akuntansi-internal-dan-eksternal.html">Pihak Pihak Yang Membutuhkan Informasi Akuntansi Internal Dan Eksternal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/berapa-ukuran-panjang-tongkat-bendera-semaphore.html">Berapa Ukuran Panjang Tongkat Bendera Semaphore</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/nama-ilmiah-dari-jagung.html">Nama Ilmiah Dari Jagung</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/figural-tes-cpns.html">Figural Tes Cpns</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-simple-present-verbal.html">Contoh Simple Present Verbal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/download-ebook-tafsir-mimpi.html">Download Ebook Tafsir Mimpi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/jadwal-pelajaran-k13-sd.html">Jadwal Pelajaran K13 Sd</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/brain-out-level-85-tangkap-tikus.html">Brain Out Level 85 Tangkap Tikus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-silabus-k13-smp-bahasa-indonesia.html">Contoh Silabus K13 Smp Bahasa Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/biantara-bahasa-sunda-singkat-tentang-kebersihan.html">Biantara Bahasa Sunda Singkat Tentang Kebersihan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/doa-penutup-acara-reuni.html">Doa Penutup Acara Reuni</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://prosschole.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://prosschole.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

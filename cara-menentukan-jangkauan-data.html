@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cara Menentukan Jangkauan Data - BELAJAR</title>
+    <meta name="description" content="Cara Menentukan Jangkauan Data, STATISTIKA - Cara mudah menentukan nilai Jangkauan, Jangkauan antarkuartil dan Simpangan kuartil, , , , Matematika Hebat, 2021-06-28T02:15:53.000000Z, 20, Jangkauan (Range) - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, cara-menentukan-jangkauan-data, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cara Menentukan Jangkauan Data - BELAJAR" />
+    <meta property="og:description" content="Cara Menentukan Jangkauan Data, STATISTIKA - Cara mudah menentukan nilai Jangkauan, Jangkauan antarkuartil dan Simpangan kuartil, , , , Matematika Hebat, 2021-06-28T02:15:53.000000Z, 20, Jangkauan (Range) - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, cara-menentukan-jangkauan-data, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cara Menentukan Jangkauan Data - BELAJAR" />
+    <meta name="twitter:description" content="Cara Menentukan Jangkauan Data, STATISTIKA - Cara mudah menentukan nilai Jangkauan, Jangkauan antarkuartil dan Simpangan kuartil, , , , Matematika Hebat, 2021-06-28T02:15:53.000000Z, 20, Jangkauan (Range) - YouTube, www.youtube.com, 1280 x 720, jpeg, , 20, cara-menentukan-jangkauan-data, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://prosschole.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://prosschole.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://prosschole.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://prosschole.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://prosschole.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://prosschole.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://prosschole.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://prosschole.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://prosschole.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://prosschole.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Cara Menentukan Jangkauan Data</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">wulanjuwita407</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Cara+Menentukan+Jangkauan+Data" alt="Cara Menentukan Jangkauan Data">
+                    </div>
+                    <p></p>
+                    <p>1. Apa yang dimaksud dengan statistika itu?2. Bagaimana cara menentukan nilai rata-rata dari suatu data?3. Bagaimana cara menentukan median dari suatu data?4. Bagaimana cara menentukan modus dari suatu data?Bagaimana cara menentukan jangkauan dan kuartil dari suatu data?5. Bagaimana cara menentukan jangkauan dan kuartil dari suatu data​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-apa-yang-dimaksud-dengan-statistika-itu2-bagaimana-cara-menentukan-nilai-rata-rata-dari-suatu-data3-bagaimana-cara-menentukan-median-dari-suatu-data4-bagaimana-cara-menentukan-modus-dari-suat">1.
+                                            1. Apa yang dimaksud dengan statistika itu?2. Bagaimana cara menentukan nilai rata-rata dari suatu data?3. Bagaimana cara menentukan median dari suatu data?4. Bagaimana cara menentukan modus dari suatu data?Bagaimana cara menentukan jangkauan dan kuartil dari suatu data?5. Bagaimana cara menentukan jangkauan dan kuartil dari suatu data​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-menentukan-letak-kuartil-dan-jangkauan-suatu-kumpulan-data%e2%80%8b">2.
+                                            bagaimana cara menentukan letak kuartil dan jangkauan suatu kumpulan data​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menentukan-jangkauan-dari-data-2225343126193842204321%e2%80%8b">3.
+                                            menentukan jangkauan dari data 22,25,34,31,26,19,38,42,20,43,21​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-mencari-jangkauan-dari-data-kelompok">4.
+                                            Cara mencari jangkauan dari data kelompok</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#96123814571041273169127658-jangkauan-dan-jangkauan-interkuatil-dari-data-tersebut-adalah%e2%80%8b">5.
+                                            9,6,12,3,8,14,5,7,10,4,12,7,3,169,12,7,6,5,8 jangkauan dan jangkauan interkuatil dari data tersebut adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jangkauan-data-berikut-adalah-94784693-adalah-tolong-sama-cara-penyelesaian">6.
+                                            jangkauan data berikut adalah 9,4,7,8,4,6,9,3 adalah (tolong sama cara penyelesaian)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-jangkauan-dan-kuartil-serta-cara-menentukannya-dengan-kata-kata-mu-sendiri">7.
+                                            Jelaskan pengertian jangkauan dan kuartil serta cara menentukannya dengan kata kata mu sendiri</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-menentukan-jangkauan-simpangan-rata-rata-rata-dan-simpangan-baku-data-3856410">8.
+                                            cara menentukan jangkauan simpangan rata rata rata dan simpangan baku data :
+3,8,5,6,4,10</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-bagaimana-cara-yang-kalian-gunakan-untuk-menentukan-mean-2-apa-makna-modus-dan-median-dari-distribusi-suatu-data-3-dapatkah-modus-dan-median-dari-suatu-kumpulan-data-memiliki-nilai-yang-sama-at">9.
+                                            1).Bagaimana cara yang kalian gunakan untuk menentukan mean? 2).Apa makna modus dan median dari distribusi suatu data? 3).Dapatkah modus dan median dari suatu kumpulan data memiliki nilai yang sama atau berbeda ?Jelaskan 4).Apa yang kalian ketahui tentang jangkauan dari data</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jangkauan-dari-data-681097111081174769-beserta-cara%e2%80%8b">10.
+                                            jangkauan dari data 6,8,10,9,7,11,10,8,11,7,4,7,6,9 beserta cara​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jangkauan-interkuartil-dari-data-3445566777899-adalah-pakai-cara">11.
+                                            jangkauan interkuartil dari data : 3,4,4,5,5,6,6,7,7,7,8,9,9 adalah..
+*pakai cara</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-menentukan-jangkauan">12.
+                                            cara menentukan jangkauan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-suatu-data-tertulis-75656080708588667080-jangkauan-dari-data-tersebut-adalah2-diketahui-sebuah-data-sebagai-berikut-3035404550555560708080-jangkauan-semikuartil-adalah3-sua">13.
+                                            1.suatu data tertulis : 75,65,60,80,70,85,88,66,70,80 jangkauan dari data tersebut adalah?2.diketahui sebuah data sebagai berikut: 30,35,40,45,50,55,55,60,70,80,80. jangkauan semikuartil adalah?3. suatu data tertulis sebagai berikut 7,6,7,9,6,6,5,4,3,6,5 maka jangkauan interkuartilnya adalah?4. suatu data tertulis : 7,5,6,8,9,5,6,7,5,7,8, maka kuartil bawahnya adalah?please bantu jawab pakai cara!!!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-jangkauan-dan-kuartil-serta-cara-menentukannya">14.
+                                            jelaskan pengertian jangkauan dan kuartil serta cara menentukannya </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jangkauan-dan-jangkauan-interkuartil-dari-data-65798103456">15.
+                                            jangkauan dan jangkauan interkuartil dari data 6,5,7,9,8,10,3,4,5,6</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jangkauan-semi-kuartil-dari-data-76897968-adalah-pakai-cara">16.
+                                            jangkauan semi kuartil dari data : 7,6,8,9,7,9,6,8 adalah..
+*pakai cara</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jangkauan-dari-data-555950585967555960-adalah-plus-cara-ya-kak%e2%80%8b">17.
+                                            jangkauan dari data 55,59,50,5859,67,55,59,60 adalah.....plus cara ya kak!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-jangkauan-dari-data-150156149148157148157148158151-beserta-caranya%e2%80%8b">18.
+                                            tentukan  jangkauan dari data 150,156,149,148,157,148,157,148,158,151.beserta caranya​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#5-pengurutan-data-tidak-dapat-digunakanuntuk-menentukana-sampelb-nilai-terendahc-nilai-tertinggid-jangkauan-data%e2%80%8b">19.
+                                            5. Pengurutan data tidak dapat digunakanuntuk menentukana. sampelb. nilai terendahC. nilai tertinggid. jangkauan data​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#pengertian-jangkauan-data-dan-jangkauan-interkuartil">20.
+                                            pengertian jangkauan data dan jangkauan interkuartil</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#diketahui-data-6732222548-jangkauan-dan-jangkauan-antarkuartilnya-adalah-mohon-dengan-caranya-ya">21.
+                                            Diketahui data 6,7,3,2,2,2,2,5,4,8 jangkauan Dan jangkauan antarkuartilnya adalah 
+Mohon dengan caranya ya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-jangkauan-dan-kuartil-serta-cara-menentukannya-dengan-kata-katamu-sendiri">22.
+                                            Jelaskan pengertian jangkauan dan kuartil serta cara menentukannya dengan kata-katamu sendiri</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-mencari-jangkauan-interkuartil-dalam-data-555666666677777777888888889999">23.
+                                            cara mencari jangkauan interkuartil dalam data 5,5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbandingan-jangkauan-1-sebuah-data-dan-jangkauan-2-sebuah-data-adalah-3-4-jika-jangkauan-1-dan-jangkauan-duadijumlahkan-hasilnya-42-maka-besarnya-jangkauan-1-adalah-%e2%80%8b">24.
+                                            Perbandingan jangkauan 1 sebuah data dan jangkauan 2 sebuah data adalah 3 : 4. Jika jangkauan 1 dan jangkauan duadijumlahkan hasilnya 42, maka besarnya jangkauan 1 adalah ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#diketahui-data-sbg-berikut-554567689-hitunglah-jangkauan-dan-jangkauan-interkuartil-tolong-kasih-caranya">25.
+                                            diketahui data sbg berikut 5,5,4,5,6,7,6,8,9.hitunglah jangkauan dan jangkauan interkuartil.tolong kasih caranya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jangkauan-dari-data-berikut392658352016499313-adalahtolong-pake-cara">26.
+                                            jangkauan dari data berikut:39,26,58,35,20,16,49,93,13 adalah(tolong pake cara)</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-apa-yang-kalian-ketahui-tentang-kuartil-dan-jangkauan-interkuartil8-bagaimana-cara-kalian-menentukan-letak-kuartil-dari-suatu-kumpulan-data%e2%80%8b">27.
+                                            7.Apa yang kalian ketahui tentang kuartil dan jangkauan interkuartil?8. bagaimana cara kalian menentukan letak kuartil dari suatu kumpulan data?​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-pengertian-jangkauan-dan-kuartil-serta-cara-menentukannya">28.
+                                            jelaskan pengertian jangkauan dan kuartil serta cara menentukannya !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jangkauan-interkuartil-dan-jangkauan-data-berikut5899551214101112-adalah-harus-dengan-caranya">29.
+                                            jangkauan interkuartil dan jangkauan data berikut:5,8,9,9,5,5,12,14,10,11,12 adalah harus dengan caranya</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tentukan-jangkauanjangkauan-interkuartildan-jangkauan-semiinterkuartil-dan-data-5534109566798">30.
+                                            tentukan jangkauan,jangkauan interkuartil,dan jangkauan semiinterkuartil dan data; 5,5,3,4,10,9,5,6,6,7,9,8</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="1-apa-yang-dimaksud-dengan-statistika-itu2-bagaimana-cara-menentukan-nilai-rata-rata-dari-suatu-data3-bagaimana-cara-menentukan-median-dari-suatu-data4-bagaimana-cara-menentukan-modus-dari-suat">
+                            1. 1. Apa yang dimaksud dengan statistika itu?2. Bagaimana cara menentukan nilai rata-rata dari suatu data?3. Bagaimana cara menentukan median dari suatu data?4. Bagaimana cara menentukan modus dari suatu data?Bagaimana cara menentukan jangkauan dan kuartil dari suatu data?5. Bagaimana cara menentukan jangkauan dan kuartil dari suatu data​</h2><br />
+                        <p> </p><p>1). Statistika adalah sebuah ilmu yang mempelajari bagaimana cara merencanakan, mengumpulkan, menganalisis, lalu menginterpretasikan, dan akhirnya mempresentasikan data. Singkatnya, statistika adalah ilmu yang bersangkutan dengan suatu data. Istilah "Statistika" berbeda dengan "Statistik".</p><p></p><p>2). Nilai rata-rata – pada suatu kelompok yaitu jumlah nilai data kemudian dibagi dengan banyaknya data tersebut, biasanya nilai rata-rata digunakan untuk mengevaluasi data sehingga lebih cepat dan menggambarkan seluruh data serta tidak dapat digunakan untuk menentukan nilai data tertentu di antara sekelompok data, sebagai contoh misalnya nilai rata-rata budi yaitu 85 jadi tidak bisa disimpulkan bahwa nilai untuk pelajaran Matematika Budi lebih dari 75.</p><p></p><p>Nilai rata-rata tersebut bisa dipakai untuk membandingkan kelompok data yang satu dengan yang lainnya, seperti yg nilai rata-rata kelas yaitu 85 sedangkan nilai rata-rata kelas B yaitu 87 itu berarti kelas B lebih tinggi daripada kelas A..</p><p></p><p>3). Cara menghitung Median, Modus/ Mode, Kuartil dan Desil</p><p>* Median Data Tunggal. Median (Me) merupakan nilai pertengahan dari sekelompok data yang telah diurutkan menurut besarnya. ...</p><p>* Me = X(n+1)/2 Dan jika banyak datanya genap maka mediannya adalah.</p><p>* Me = (Xn/2 + X(n/2)+1) / 2. Keterangan: ...</p><p>* Median Data Berkelompok. ...</p><p>* Modus atau Mode.</p><p> </p><p>4). sma sprti nmor 3</p><p></p><p></p><p>semoga membantu *_*</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-menentukan-letak-kuartil-dan-jangkauan-suatu-kumpulan-data%e2%80%8b">
+                            2. bagaimana cara menentukan letak kuartil dan jangkauan suatu kumpulan data​</h2><br />
+                        jangkauan kurang begitu ngerti:)<br />semoga membantuuu<br />
+                                            <h2 class="ez-toc-section" id="menentukan-jangkauan-dari-data-2225343126193842204321%e2%80%8b">
+                            3. menentukan jangkauan dari data 22,25,34,31,26,19,38,42,20,43,21​</h2><br />
+                        <p><strong>Jawab:</strong></p><p></p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="cara-mencari-jangkauan-dari-data-kelompok">
+                            4. Cara mencari jangkauan dari data kelompok</h2><br />
+                        <p>Cara mencari jangkauan dari data kelompok dapat dicari dengan cara mengurangkan data yang paling besar dengan data yang paling kecil. Gambaran rumusnya ada di bawah. </p><p></p><p>Jangkauan=Data terbesar-Data terkecil</p><p></p><p></p><p></p><p>Terima kasih.</p><br />
+                                            <h2 class="ez-toc-section" id="96123814571041273169127658-jangkauan-dan-jangkauan-interkuatil-dari-data-tersebut-adalah%e2%80%8b">
+                            5. 9,6,12,3,8,14,5,7,10,4,12,7,3,169,12,7,6,5,8 jangkauan dan jangkauan interkuatil dari data tersebut adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Jangkauan=3</p><p>Jangkauan Interkuartil=5,5</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>3,3,4,5,5,6,6,7,7,7,8,8,9,9,10,12,12,12,14,16</p><p></p><p>Jangkauan=16-3=13</p><p>Q1=5,5</p><p>Q2=7,5</p><p>Q3=11</p><p>interkuartil=11-5,5=5,5</p><br />
+                                            <h2 class="ez-toc-section" id="jangkauan-data-berikut-adalah-94784693-adalah-tolong-sama-cara-penyelesaian">
+                            6. jangkauan data berikut adalah 9,4,7,8,4,6,9,3 adalah (tolong sama cara penyelesaian)</h2><br />
+                        jangkauan atau range adalah selisih data terbesar dengan data terkecil.<br />R=9-3=6<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-jangkauan-dan-kuartil-serta-cara-menentukannya-dengan-kata-kata-mu-sendiri">
+                            7. Jelaskan pengertian jangkauan dan kuartil serta cara menentukannya dengan kata kata mu sendiri</h2><br />
+                        <p><strong>Jawab:</strong></p><p>Jangkauan adalah selisih antara data nilai terbesar dan data nilai terkecil. </p><p>Kuartil adalah bilangan yang membagi data terurut menjadi empat bagian sama banyak.</p><p></p><p>Jangkauan = data nilai terbesar - data nilai terkecil</p><p>Quartil</p><p>Q2 itu sama dengan Median karena berada di tengah</p><p>Cara mencari Q1 = bagi 2 jarak sebelum Median (yang disamping kiri)</p><p>Cara mencari Q1 = bagi 2 jarak setelah Median (yang disamping kanan)</p><br />
+                                            <h2 class="ez-toc-section" id="cara-menentukan-jangkauan-simpangan-rata-rata-rata-dan-simpangan-baku-data-3856410">
+                            8. cara menentukan jangkauan simpangan rata rata rata dan simpangan baku data :
+3,8,5,6,4,10</h2><br />
+                        3+8+5+6+4+10=36/6=6<br /><br />Simpangan rata"= 3+2+1+0+4=10/6=5/3<br />simpangan baku=√9+4+1+0+16=√30/6=√5<br />
+                                            <h2 class="ez-toc-section" id="1-bagaimana-cara-yang-kalian-gunakan-untuk-menentukan-mean-2-apa-makna-modus-dan-median-dari-distribusi-suatu-data-3-dapatkah-modus-dan-median-dari-suatu-kumpulan-data-memiliki-nilai-yang-sama-at">
+                            9. 1).Bagaimana cara yang kalian gunakan untuk menentukan mean? 2).Apa makna modus dan median dari distribusi suatu data? 3).Dapatkah modus dan median dari suatu kumpulan data memiliki nilai yang sama atau berbeda ?Jelaskan 4).Apa yang kalian ketahui tentang jangkauan dari data</h2><br />
+                        <p><strong>Jawab: mean: jumlahkan semua nilai lalu bagikan jumlah dari nilai tersebut.</strong></p><p><strong>2) modus adalah nilai yg sering muncul.</strong></p><p><strong>    median adalah nilai yg berada di tengah.</strong></p><p></p><p><strong>Penjelasan dengan langkah-langkah: mean: 34,56,12,34,</strong></p><p><strong>12,34,34,56: 12+34+34+56 = 136 (bagikan dengan jumlah nilai,karena nilainya terdapat 4) maka 136:4= 34</strong></p><p><strong></strong></p><p><strong>cuma bisa itu</strong></p><p><strong>moga membantu :)</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jangkauan-dari-data-681097111081174769-beserta-cara%e2%80%8b">
+                            10. jangkauan dari data 6,8,10,9,7,11,10,8,11,7,4,7,6,9 beserta cara​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jangkauannya dari data tersebut adalah 7</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p><strong>Jangkauan</strong><strong> </strong><strong>data</strong><strong>/</strong><strong> </strong><strong>Range</strong></p><p>R= Xmaks-Xmin</p><p>Xmaks=nilai data terbesar yaitu 11</p><p>Xmin= nilai data terkecil yaitu 4</p><p>R= Xmaks-Xmin</p><p>R= 11-4</p><p>R= 7</p><br />
+                                            <h2 class="ez-toc-section" id="jangkauan-interkuartil-dari-data-3445566777899-adalah-pakai-cara">
+                            11. jangkauan interkuartil dari data : 3,4,4,5,5,6,6,7,7,7,8,9,9 adalah..
+*pakai cara</h2><br />
+                        jangkauan interkuatil <br />rumus : Q3 - Q1 <br /> 3,4,4,5,5,6,6,7,7,7,8,9,9<br />Q2 = 6<br />Q1 = 4 + 5 : 2 = 9 : 2 = 4,5<br />Q3 = 7 + 8 : 2 = 15 : 2 = 7,5 <br /><br />jadi jangkauan interkuatil adalah Q3 - Q1 = 7,5 - 4,5 = 3,0 = 3<br /><br />semoga membantu! <br />
+                                            <h2 class="ez-toc-section" id="cara-menentukan-jangkauan">
+                            12. cara menentukan jangkauan</h2><br />
+                        Jangkauan / Range = data terbesar - data terkecil .<br /><br />contoh<br /><br />13 15 16 18 19 21 <br /><br />jangkauan = 21-13 = 8<br />
+                                            <h2 class="ez-toc-section" id="1-suatu-data-tertulis-75656080708588667080-jangkauan-dari-data-tersebut-adalah2-diketahui-sebuah-data-sebagai-berikut-3035404550555560708080-jangkauan-semikuartil-adalah3-sua">
+                            13. 1.suatu data tertulis : 75,65,60,80,70,85,88,66,70,80 jangkauan dari data tersebut adalah?2.diketahui sebuah data sebagai berikut: 30,35,40,45,50,55,55,60,70,80,80. jangkauan semikuartil adalah?3. suatu data tertulis sebagai berikut 7,6,7,9,6,6,5,4,3,6,5 maka jangkauan interkuartilnya adalah?4. suatu data tertulis : 7,5,6,8,9,5,6,7,5,7,8, maka kuartil bawahnya adalah?please bantu jawab pakai cara!!!</h2><br />
+                        1. jangakauan = data terbesar - data terkecil = 88-60 = 28<br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-jangkauan-dan-kuartil-serta-cara-menentukannya">
+                            14. jelaskan pengertian jangkauan dan kuartil serta cara menentukannya </h2><br />
+                        Jangkauan adalah selisih antara kuartil atas (Q3) dan kuartil bawah (Q1) <br />kuartil adalah nilai tengah dari suatu data (Q) kuartil dibagi menjadi 3:kuratil bawah(Q1),kuartil tengah(Q2),kuartil3(Q3)<br />Jangkauan interkuartil adalah selisih antara kuartil atas (Q3) dan kuartil bawah (Q1). Jika jangkauan interkuartil dinotasikan dengan QR<br />contoh:<br />20 25 30 30 30 35 35 40 45 45 50<br />maka: Q1=30 Q2=35 Q3=45<br />QR= Q3-Q1<br />     =45-30<br />     =15<br />
+                                            <h2 class="ez-toc-section" id="jangkauan-dan-jangkauan-interkuartil-dari-data-65798103456">
+                            15. jangkauan dan jangkauan interkuartil dari data 6,5,7,9,8,10,3,4,5,6</h2><br />
+                        data terurut = 3,4,5,5,6,6,7,8,9,10<br />Q3 = 8+9/2 = 8,5<br />Q1 = 4+5/2 = 4,5 <br /><br />jangkauan interkuatil = kuartil atas - kuartil bawah<br />                                  = 8,5 - 4,5<br />                                  = 4<br /><br />jangkauan data = nilai tertinggi - nilai terendah<br />                         = 10 - 3<br />                         = 7<br /><br />jadi, 7 dan 4<br />urutan data = 3,4,5,5,6,6,7,8,9,10 = jumlah datum = 10<br />Q1 = 1/4 (n+1) <br />         1/4 (10+1)<br />          1/4 * 11<br />          2,75 = 3 ( langkah)<br />Q2 = 1/2 (n+1)<br />          1/2 (10+1)<br />           1/2*11<br />           5,5 = 6 (langkah)<br />Q3 = 3/4 (n+1)<br />         3/4 (10 + 1)<br />         3/4*11<br />         8,25 = 8 (langkah)<br />Q1 = 5<br />Q2 = 6<br />Q3 = 8<br />jangkauan interkuartil = 1/2 ( Q3 - Q1)<br />                                       1/2 (8 - 5)<br />                                        1/2 * 3<br />                                        1,5<br />
+                                            <h2 class="ez-toc-section" id="jangkauan-semi-kuartil-dari-data-76897968-adalah-pakai-cara">
+                            16. jangkauan semi kuartil dari data : 7,6,8,9,7,9,6,8 adalah..
+*pakai cara</h2><br />
+                        Urutkan terlebih dahulu:<br />6,6,7,7,8,8,9,9,maka Kuartil tengah=7,5<br />kuartil atas adalah median dari nilai terbesar dan kuartil tengah=8,8,9,9=8+9/2=8,5<br />Kuartil bawah adalah median dari nilai terkecil dan kuartil tengah=6,6,7,7=6+7/2=6,5<br /><br />semi interkuartil adalah1/2 dari jangkauan kuartil<br />1/2(8,5+6,5)=1/2.15=7,5<br /><br />
+                                            <h2 class="ez-toc-section" id="jangkauan-dari-data-555950585967555960-adalah-plus-cara-ya-kak%e2%80%8b">
+                            17. jangkauan dari data 55,59,50,5859,67,55,59,60 adalah.....plus cara ya kak!​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>17</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>Nilai tertinggi=67</p><p>Nilai terendah=50</p><p>Jangkauan data</p><p>=nilai tertinggi - nilai terendah</p><p>=67-50</p><p>=17</p><br />
+                                            <h2 class="ez-toc-section" id="tentukan-jangkauan-dari-data-150156149148157148157148158151-beserta-caranya%e2%80%8b">
+                            18. tentukan  jangkauan dari data 150,156,149,148,157,148,157,148,158,151.beserta caranya​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Diketahui: data= 150, 156, 149, 158, 157, 148, 157, 148, 158, 151.</p><p></p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>Diketahui: data= 150, 156, 149, 158, 157, 148, 157, 148, 158, 151.</p><p></p><p>jawab.</p><p>= 148, 148, 148, 149, 150, 151, 156, 157, 157, 158.</p><p></p><p>jangkauan data = data terbesar-data terkecil.</p><p>=158-148=10.</p><br />
+                                            <h2 class="ez-toc-section" id="5-pengurutan-data-tidak-dapat-digunakanuntuk-menentukana-sampelb-nilai-terendahc-nilai-tertinggid-jangkauan-data%e2%80%8b">
+                            19. 5. Pengurutan data tidak dapat digunakanuntuk menentukana. sampelb. nilai terendahC. nilai tertinggid. jangkauan data​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>kalau enggak salah A.sampel</p><br />
+                                            <h2 class="ez-toc-section" id="pengertian-jangkauan-data-dan-jangkauan-interkuartil">
+                            20. pengertian jangkauan data dan jangkauan interkuartil</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>jangkauan interkuartil adalah selisih antara kuartil atas Dan kuartil bawah </p><p>jangkauan data adalah selisih datum terbesar dengan datum terkecil </p><p></p><p>maaf kalo salah :)</p><br />
+                                            <h2 class="ez-toc-section" id="diketahui-data-6732222548-jangkauan-dan-jangkauan-antarkuartilnya-adalah-mohon-dengan-caranya-ya">
+                            21. Diketahui data 6,7,3,2,2,2,2,5,4,8 jangkauan Dan jangkauan antarkuartilnya adalah 
+Mohon dengan caranya ya</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>data diurutkan dulu:</p><p>2, 2, 2, 2, 3, 4, 5, 6, 7, 8</p><p>jangkauan = data tertinggi - data terendah</p><p>= 8 - 2 = 6</p><p>jangkauan antarkuartil = Q3 - Q1</p><p>dari data tersebut Q1 = 2 dan Q3 = 6</p><p>jangkauan antarkuartil = 6 - 4 = 2</p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>cba krjakan ulang yaa biar lbh paham</p><p></p><p>#sejutapohon</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-jangkauan-dan-kuartil-serta-cara-menentukannya-dengan-kata-katamu-sendiri">
+                            22. Jelaskan pengertian jangkauan dan kuartil serta cara menentukannya dengan kata-katamu sendiri</h2><br />
+                        ini pelajaran statistika, 
+kuartil adalah data yang telah diurutkan dari nilai terkecil sampai terbesar.
+ada golongan kuartil diantaranya
+kuartil bawah (Qb), kuartil tengah (Qt), dan kuartil atas (Qa)
+sedangkan jangkauan adalah selisih antara bilangan terbesar dengan yang terkecil
+ada golongan jangkauan, diantaranya :
+jangkauan interkuartil (Qr), dan simpangan kuartil (Qd)<br />
+                                            <h2 class="ez-toc-section" id="cara-mencari-jangkauan-interkuartil-dalam-data-555666666677777777888888889999">
+                            23. cara mencari jangkauan interkuartil dalam data 5,5,5,6,6,6,6,6,6,6,7,7,7,7,7,7,7,7,8,8,8,8,8,8,8,8,9,9,9,9,</h2><br />
+                        jangkauan interquartil : Q3-Q1<br />= 8-6= 2<br />jadi jangkauan interquartilnya adalah 2<br />
+                                            <h2 class="ez-toc-section" id="perbandingan-jangkauan-1-sebuah-data-dan-jangkauan-2-sebuah-data-adalah-3-4-jika-jangkauan-1-dan-jangkauan-duadijumlahkan-hasilnya-42-maka-besarnya-jangkauan-1-adalah-%e2%80%8b">
+                            24. Perbandingan jangkauan 1 sebuah data dan jangkauan 2 sebuah data adalah 3 : 4. Jika jangkauan 1 dan jangkauan duadijumlahkan hasilnya 42, maka besarnya jangkauan 1 adalah ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>18</p><p></p><p><strong>Penjelasan dengan langkah-langkah:</strong></p><p>besar jangkauan 1 = j1</p><p>besar jangkauan 2 = j2</p><p></p><p>j1 : j2=3 : 4</p><p>j1 + j2 = 42</p><p></p><p>j1 = [3/(3+4)]*42</p><p>j1 = (3/7)*42</p><p>j1 = 3*6</p><p>j1 = 18</p><p></p><p>semoga membantu :)</p><br />
+                                            <h2 class="ez-toc-section" id="diketahui-data-sbg-berikut-554567689-hitunglah-jangkauan-dan-jangkauan-interkuartil-tolong-kasih-caranya">
+                            25. diketahui data sbg berikut 5,5,4,5,6,7,6,8,9.hitunglah jangkauan dan jangkauan interkuartil.tolong kasih caranya</h2><br />
+                        4, 5, 5, 5, 6, 6, 7, 8, 9<br />jangkauan = 9-4 = 5<br /><br />
+                                            <h2 class="ez-toc-section" id="jangkauan-dari-data-berikut392658352016499313-adalahtolong-pake-cara">
+                            26. jangkauan dari data berikut:39,26,58,35,20,16,49,93,13 adalah(tolong pake cara)</h2><br />
+                        caranya data terbesar dikurangin yg terkecil jd 93-13=80<br />
+                                            <h2 class="ez-toc-section" id="7-apa-yang-kalian-ketahui-tentang-kuartil-dan-jangkauan-interkuartil8-bagaimana-cara-kalian-menentukan-letak-kuartil-dari-suatu-kumpulan-data%e2%80%8b">
+                            27. 7.Apa yang kalian ketahui tentang kuartil dan jangkauan interkuartil?8. bagaimana cara kalian menentukan letak kuartil dari suatu kumpulan data?​</h2><br />
+                        <p>MAPEL=MATEMATIKA</p><p>KELAS=8</p><p>BAB=9</p><p></p><p>Kuartil adalah data yang telah diurutkan dan dibagi menjadi 4 bagian yang sama terdapat 3 nilai.Kuartil dibagi menjadi 3 bagian kuartil bawah,kuartil tengah,dan kuartil atas</p><p></p><p>Interkuartil adalah selisih antara kuartil atas dengan kuartil bawah dengan rumus Q3-Q1.contoh 8-3=5</p><p></p><p>SEMOGA MEMBANTU YA...</p><p>Like dan follow okk..</p><p>Menentukan Kuartil bawah (Q1), Kuartil Atas(Q3)</p><p></p><p>*Kuartil*</p><p>Kuartil artinya membagi sekumpulan data menjadi 4 bagian yg sama.</p><p></p><p>*Median* artinya sama dg *Kuartil Tengah* atau Q2</p><p></p><p>Contoh: Diketahui data nilai UH dari   11 siswa sbb :</p><p></p><p>48, 52, 49, 50, 55, 50, 52, 53, 54. 56, 48</p><p></p><p>Data diurutkan dari yg terkecil sampai terbesar</p><p>48,48,49,50,50,52,52, 53,54.55.56</p><p></p><p>Ditentukan median /Q2.....krn ada 11  (ganjil) ,mk data urutan ke 6 yaitu 52</p><p>Jd Q2=52</p><p></p><p>Setelah ditentukan Q2, kita tentukan Q1</p><p></p><p>48 48 49 50 50</p><p></p><p>Data di bagi 2 lagi sehingga Q1  terletak pd urutan ke3 yaitu 49</p><p>Jd Q1=49</p><p></p><p>Selanjutnya kt tentukan Kuartil Atas (Q3)</p><p>52  53  54  55 56</p><p> Sm dg yg atas,data di bagi 2 lg, sehingga Q3 terletak pada urutan ke9 yaitu 54</p><p></p><p>Jadi Q3=54</p><p></p><p></p><p>maaf klo salah:")</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-pengertian-jangkauan-dan-kuartil-serta-cara-menentukannya">
+                            28. jelaskan pengertian jangkauan dan kuartil serta cara menentukannya !</h2><br />
+                        Kuartil adalah data yang telah diurutkan dari nilai yang terkecil sampai yang terbesar, dapat dibagi menjadi empat kelompok yang lebih kecil<br />§ Kuartil terbagi atas tiga, yaitu :<br />Kuartil Bawah (Q B)<br />Kuartil Tengah (Q T )<br />Kuartil Atas (Q A)<br />§Jangkauan adalah selisih antara bilangan terbesar dengan bilangan terkecil dalam data<br />Rumus : R = xn – x1<br />dengan x1 : datum terkecil dan xn : datum terbesar<br />
+                                            <h2 class="ez-toc-section" id="jangkauan-interkuartil-dan-jangkauan-data-berikut5899551214101112-adalah-harus-dengan-caranya">
+                            29. jangkauan interkuartil dan jangkauan data berikut:5,8,9,9,5,5,12,14,10,11,12 adalah harus dengan caranya</h2><br />
+                        untuk mencari jangkauan interkuartil urutkan data seperti 5,5,5,8,9,9,10,12,12,14<br />lalu tentukan Q1,Q2,danQ3<br /><br />Dari data di atas, di temukan Q1 = 5<br />Karena 5+5/2 = 5<br /><br />Q2 = 9 karena data ada 11 angka, jadi 9 merupakan bilangan tengah/median<br /><br />Q3 = 12<br />Karena 12+12/2 = 12<br /><br />Untuk mencari jangkauan interkuartilnya; <br />Q3 - Q1 = <br />12 - 5 = 7<br /><br />Jadi,  jangkauan interkuartilnya adalah 7<br />
+                                            <h2 class="ez-toc-section" id="tentukan-jangkauanjangkauan-interkuartildan-jangkauan-semiinterkuartil-dan-data-5534109566798">
+                            30. tentukan jangkauan,jangkauan interkuartil,dan jangkauan semiinterkuartil dan data; 5,5,3,4,10,9,5,6,6,7,9,8</h2><br />
+                        semoga membantuu.......<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/MNIzawCcbX8?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>matematika</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/udin-s-advice-dialogue-1-2-3-4.html">Udin s Advice Dialogue 1 2 3 4</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/arti-dari-gathering.html">Arti Dari Gathering</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/good-morning-dari-jam-berapa-sampai-jam-berapa.html">Good Morning Dari Jam Berapa Sampai Jam Berapa</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/tempo-moderato-dalam-lagu-dinyanyikan-secara.html">Tempo Moderato Dalam Lagu Dinyanyikan Secara</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/ilmu-yang-mempelajari-tentang-makhluk-hidup-adalah.html">Ilmu Yang Mempelajari Tentang Makhluk Hidup Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/jika-disentuh-tumbuhan-putri-malu-akan.html">Jika Disentuh Tumbuhan Putri Malu Akan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/cabang-biologi-yang-mempelajari-klasifikasi-adalah.html">Cabang Biologi Yang Mempelajari Klasifikasi Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/apa-bahasa-inggrisnya-kantor-pos.html">Apa Bahasa Inggrisnya Kantor Pos</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/pertemuan-antara-baris-dan-kolom.html">Pertemuan Antara Baris Dan Kolom</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/sifat-bayangan-yang-terbentuk-lensa-okuler-pada-mikroskop-adalah.html">Sifat Bayangan Yang Terbentuk Lensa Okuler Pada Mikroskop Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/semaphore-hw.html">Semaphore Hw</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/nabi-yang-menerima-kitab-zabur.html">Nabi Yang Menerima Kitab Zabur</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/siapakah-yang-mengilhami-temuan-morse.html">Siapakah Yang Mengilhami Temuan Morse</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/kegiatan-penyaluran-barang-dan-jasa-dari-produsen-ke-konsumen-disebut.html">Kegiatan Penyaluran Barang Dan Jasa Dari Produsen Ke Konsumen Disebut</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/bahasa-yang-digunakan-di-filipina.html">Bahasa Yang Digunakan Di Filipina</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/kuat-arus-yang-mengalir-pada-r-adalah.html">Kuat Arus Yang Mengalir Pada R Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/susunan-liturgi-natal.html">Susunan Liturgi Natal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/brain-out-level-85-tangkap-tikus.html">Brain Out Level 85 Tangkap Tikus</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/yang-termasuk-kedalam-jenis-algoritma-percabangan-adalah.html">Yang Termasuk Kedalam Jenis Algoritma Percabangan Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/apa-itu-penyadap.html">Apa Itu Penyadap</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://prosschole.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://prosschole.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>

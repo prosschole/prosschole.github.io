@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoh Program Java Menampilkan Bilangan Ganjil Dan Genap - BELAJAR</title>
+    <meta name="description" content="Contoh Program Java Menampilkan Bilangan Ganjil Dan Genap, Java - Menampilkan bilangan ganjil dan genap menggunakan Apache NetBeans IDE 15, , , , Kelas Koding Pelita Bangsa, 2022-10-02T19:42:25.000000Z, 21, Contoh Bilangan Genap – Siti, belajarsemua.github.io, 1578 x 1600, png, , 20, contoh-program-java-menampilkan-bilangan-ganjil-dan-genap, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contoh Program Java Menampilkan Bilangan Ganjil Dan Genap - BELAJAR" />
+    <meta property="og:description" content="Contoh Program Java Menampilkan Bilangan Ganjil Dan Genap, Java - Menampilkan bilangan ganjil dan genap menggunakan Apache NetBeans IDE 15, , , , Kelas Koding Pelita Bangsa, 2022-10-02T19:42:25.000000Z, 21, Contoh Bilangan Genap – Siti, belajarsemua.github.io, 1578 x 1600, png, , 20, contoh-program-java-menampilkan-bilangan-ganjil-dan-genap, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contoh Program Java Menampilkan Bilangan Ganjil Dan Genap - BELAJAR" />
+    <meta name="twitter:description" content="Contoh Program Java Menampilkan Bilangan Ganjil Dan Genap, Java - Menampilkan bilangan ganjil dan genap menggunakan Apache NetBeans IDE 15, , , , Kelas Koding Pelita Bangsa, 2022-10-02T19:42:25.000000Z, 21, Contoh Bilangan Genap – Siti, belajarsemua.github.io, 1578 x 1600, png, , 20, contoh-program-java-menampilkan-bilangan-ganjil-dan-genap, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://prosschole.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://prosschole.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://prosschole.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://prosschole.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://prosschole.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://prosschole.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://prosschole.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://prosschole.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://prosschole.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://prosschole.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Contoh Program Java Menampilkan Bilangan Ganjil Dan Genap</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">dandusdanip6rejf</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Contoh+Program+Java+Menampilkan+Bilangan+Ganjil+Dan+Genap" alt="Contoh Program Java Menampilkan Bilangan Ganjil Dan Genap">
+                    </div>
+                    <p></p>
+                    <p>buat program untuk untuk menampilkan bilangan ganjil dan  bilangan genap kecil dari 40​</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-program-untuk-untuk-menampilkan-bilangan-ganjil-dan-bilangan-genap-kecil-dari-40%e2%80%8b">1.
+                                            buat program untuk untuk menampilkan bilangan ganjil dan  bilangan genap kecil dari 40​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-menampilkan-seleksi-bilangan-genap-atau-bilangan-ganjil-berdasarkan-angka-yang-di-input-%e2%80%8b">2.
+                                            program menampilkan seleksi bilangan genap atau bilangan ganjil berdasarkan angka yang di input.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-yang-akan-menampilkan-pesan-apakah-bilangan-0-65535-yang-user-masukkan-adalah-bilangan-genap-atau-ganjil">3.
+                                            Buatlah program yang akan menampilkan pesan apakah bilangan (0-65535) yang user masukkan adalah bilangan genap atau ganjil!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#code-program-untuk-menampilkan-semua-bilangan-genap-yang-terletak-antara-20-sampai-dengan-200-dengan-menggunakan-while">4.
+                                            Code program untuk menampilkan semua bilangan genap yang terletak antara 20 sampai Dengan 200 dengan menggunakan while</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tolong-buatin-progran-c-menampilkan-bilangan-genap-dan-bilangan-ganjil-0-sampai-100dan-total-hasil-dari-bilangan-genap-berapa-dan-bilangan-ganjil-berapa-kirimin-kode-nya-juga">5.
+                                            Tolong buatin progran c++ menampilkan bilangan genap dan bilangan ganjil 
+0 sampai 100
+Dan total hasil dari bilangan genap berapa dan bilangan ganjil berapa 
+Kirimin kode nya juga </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-mengerjakan-program-java-menampilkan-bilangan-prima-dari-50-1">6.
+                                            bagaimana cara mengerjakan program java menampilkan bilangan prima dari 50-1</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#membuat-flowchart-untuk-menampilkan-bilangan-genap-dan-ganjil-antara-1-10">7.
+                                            membuat flowchart untuk menampilkan bilangan genap dan ganjil antara 1-10</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-contoh-kode-program-class-dalam-java-untuk-menampilkan-output-string-yang-berisi-nama-anda">8.
+                                            Tuliskan contoh kode program class dalam java untuk menampilkan output string yang berisi nama anda</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-untuk-menampilkan-bilangan-acak-dari-1-sampai-10-sebanyak-100-kali-lalu-hitunglah-banyaknya-bilangan-ganjl-dan-bilangan-genap-dan-tampilkan-dalam-program">9.
+                                            buatlah program untuk menampilkan bilangan acak dari 1 sampai 10 sebanyak 100 kali.  Lalu hitunglah banyaknya bilangan ganjl dan bilangan genap dan tampilkan dalam program.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-program-untuk-menampilkan-bilangan-ganjil-dari-angka-5-50%e2%80%8b">10.
+                                            buat program untuk menampilkan bilangan ganjil dari angka 5-50​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#soal1-buatlah-program-untuk-menampilkan-bilangan-genap-dari-1-sampai-dengan-100-menggunakando-while2-buatlah-program-yang-akan-menampilkan-deretan-bilangan-ganjil-seperti-ini-13-5-7-9-11-13-15m">11.
+                                            Soal:1. Buatlah program untuk menampilkan bilangan genap dari 1 sampai dengan 100 menggunakando while!2. Buatlah program yang akan menampilkan deretan bilangan ganjil seperti ini :(13 5 7 9 11 13 15)menggunakan pengulangan do while! dengan bahasa c​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-menampilkan-bilangan-ganjil-dari-10-sampai-dengan-50-menggunakan-bahasa-c">12.
+                                            Program menampilkan bilangan ganjil dari 10 sampai dengan 50 menggunakan bahasa c.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-program-yang-menampilkan-bilangan-1-100-dimana-bilangan-tersebut-adalah-kelipatan-3-merupakan-bilangan-ganjil%e2%80%8b">13.
+                                            buat program yang menampilkan bilangan 1-100 dimana bilangan tersebut adalah kelipatan 3 merupakan bilangan ganjil​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-java-yang-dapat-menampilkan-10-deret-bilangan-kelipatan-100">14.
+                                            Program java yang dapat menampilkan 10 deret bilangan kelipatan 100</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-untuk-menampilkan-deret-bilangan-ganjil-antara-11-sampai-50%e2%80%8b">15.
+                                            Buatlah program untuk menampilkan deret bilangan ganjil antara 11 sampai 50​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-yang-membaca-lalu-menampilkan-bilangan-genap">16.
+                                            buatlah program yang membaca lalu menampilkan bilangan genap!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-menampilkan-bilangan-genap-1-50-menggunakan-for-do">17.
+                                            program menampilkan bilangan genap 1- 50 menggunakan for do</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-java-bilangan-ganjil-daru-20-1">18.
+                                            buatlah program java bilangan ganjil daru 20-1</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-kode-program-java-untuk-menampilkan-angka-genap-dari-1-sampai-20-menggunakan-struktur-kontrol-perulangan-while-dan-if%e2%80%8b">19.
+                                            Tuliskan kode program Java untuk menampilkan angka genap dari 1 sampai 20 menggunakan struktur kontrol perulangan while dan if​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatkan-program-untuk-menampilkan-bilangan-ganjil%c2%a0-dari-kecil-ke-besar-sampai-batas-tertentu%c2%a0-sampai-ia-menemui-break-program-selesai%e2%80%8b">20.
+                                            Buatkan program untuk menampilkan bilangan ganjil  dari kecil ke besar sampai batas tertentu  sampai ia menemui break, program selesai​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-membuat-program-untuk-menampillkan-bilangan-prima-antara-1-sampai-100-dan-menampilkan-bilangan-ganjil-di-antara-2-bilangan">21.
+                                            bagaimana cara membuat program untuk menampillkan bilangan prima antara 1 sampai 100 dan menampilkan bilangan ganjil di antara 2 bilangan</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#contoh-kode-program-class-dalam-java-utk-menampilkan-output-string">22.
+                                            contoh kode program class dalam java utk menampilkan output string</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-untuk-menampilkan-deret-bilangan-genap-antara-3-sampai-50%e2%80%8b">23.
+                                            Buatlah program untuk menampilkan deret bilangan genap antara 3 sampai 50​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#soal-1-buatlah-program-java-untuk-menghitung-luas-dan-keliling-lingkaran-dengan-jari-jari-yang-diberikan-oleh-pengguna-2-buatlah-program-java-untuk-menentukan-bilangan-terbesar-dari-tiga-bilangan">24.
+                                            Soal: 1. Buatlah program Java untuk menghitung luas dan keliling lingkaran dengan jari-jari yang diberikan oleh pengguna. 2. Buatlah program Java untuk menentukan bilangan terbesar dari tiga bilangan yang diberikan oleh pengguna. 3. Buatlah program Java untuk menentukan apakah bilangan yang diberikan oleh pengguna merupakan bilangan ganjil atau genap.Tugas:Buatlah program Java untuk menghitung nilai rata-rata dari sejumlah bilangan yang diberikan oleh pengguna. Program harus meminta pengguna untuk memasukkan banyaknya bilangan yang akan dihitung dan kemudian meminta pengguna untuk memasukkan setiap bilangan secara individu. Setelah semua bilangan dimasukkan, program harus menghitung dan menampilkan nilai rata-rata dari bilangan-bilangan tersebut.​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-dengan-menggunakan-bahasa-pemrograman-java-untuk-menginput-1-buah-bilangan-bulat-positif-dan-menampilkan-seluruh-angka-yang-merupakan-kelipatan-3-atau-kelipatan-5-yang-kurang-dari-ang">25.
+                                            Buatlah program dengan menggunakan bahasa pemrograman java untuk menginput 1 buah bilangan bulat positif dan menampilkan seluruh angka yang merupakan kelipatan 3 atau kelipatan 5 yang kurang dari  angka yang diinputkan, serta menampilkan jumlah angka ganjil dan angka genap dari deret bilangan tersebut! (gunakan perulangan for) [Bobot: 25] Contoh output program Input batasan angka : 20 &lt;inputan&gt; ==================================== Angka-angka yang merupakan kelipatan 3 atau 5 kurang dari 20 adalah: 3 5 6 9 10 12 15 18 Jumlah angka genap : 4 angka Jumlah angka ganjil : 4 angka ​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-untuk-menampilkan-deret-bilangan-genap-antara-2-sampai-30-dengan-menggunakan-for%e2%80%8b">26.
+                                            buatlah program untuk menampilkan deret bilangan genap antara 2 sampai 30, dengan menggunakan for​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-algoritma-flowchart-dan-program-untuk-menampilkan-semua-bilangan-dari-batas-awal-sampai-batas-akhir-dan-tentukan-bilangan-tersebut-termasuk-ganjil-atau-genap-contoh-keluaran-program-adalah">27.
+                                            Buatlah algoritma (flowchart) dan program untuk menampilkan semua bilangan dari Batas Awal sampai Batas Akhir dan tentukan bilangan tersebut termasuk ganjil atau genap. Contoh keluaran program adalah sebagai berikut (contoh keluaran untuk input awal = 6, dan akhir = 10). Awal dan akhir diinputkan dari keyboard oleh user program.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buat-listing-program-dalam-c-untuk-menampilkan-program-bilangan-ganjil-dan-genap-seperti-gambar-dibawah-dengan-%ef%bb%bf%ef%bb%bfmenggunakan-loop-forbtw-maaf-salah-input-seharusnya-sekolah-menenga">28.
+                                            Buat listing program dalam c++ untuk menampilkan program bilangan ganjil dan genap seperti gambar dibawah, dengan ﻿﻿menggunakan loop for!btw maaf salah input seharusnya sekolah menengah atas...</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#program-java-perulangan-forbuatlah-program-dengan-menggunakan-bahasa-pemrograman-java-untuk-menginput-1-buahbilangan-bulat-positif-dan-menampilkan-seluruh-angka-yang-merupakan-kelipatan-3-atau-kelip">29.
+                                            Program Java Perulangan For
+Buatlah program dengan menggunakan bahasa pemrograman java untuk menginput 1 buah
+bilangan bulat positif dan menampilkan seluruh angka yang merupakan kelipatan 3 atau kelipatan 5 yang kurang dari angka yang diinputkan, serta menampilkan jumlah angka
+ganjil dan angka genap dari deret bilangan tersebut! (gunakan perulangan for)
+[Bobot: 25]
+Contoh output program
+Input batasan angka : 20 
+====================================
+Angka-angka yang merupakan kelipatan 3 atau 5 kurang dari 20 adalah: 3 5 6 9 10
+12 15 18
+Jumlah angka genap : 4 angka
+Jumlah angka ganjil : 4 angka</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-program-java-yang-dapat-menampilkan-10-deret-bilangan-kelipatan-100-pada-visual-studio-code-%e2%80%8b">30.
+                                            Buatlah program Java yang dapat menampilkan 10 deret bilangan kelipatan 100 pada Visual Studio code ​</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="buat-program-untuk-untuk-menampilkan-bilangan-ganjil-dan-bilangan-genap-kecil-dari-40%e2%80%8b">
+                            1. buat program untuk untuk menampilkan bilangan ganjil dan  bilangan genap kecil dari 40​</h2><br />
+                        <p>dalam bahasa pemrograman ? bahasa pemrograman apa ya? lalu dari 40 sampai berapa ?</p><br />
+                                            <h2 class="ez-toc-section" id="program-menampilkan-seleksi-bilangan-genap-atau-bilangan-ganjil-berdasarkan-angka-yang-di-input-%e2%80%8b">
+                            2. program menampilkan seleksi bilangan genap atau bilangan ganjil berdasarkan angka yang di input.​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>bagian perangkat keras yang mempunyai struktur organisasi </p><p><strong>Jawaban:</strong></p><p>Penjelasan kode:</p>Baris pertama meminta pengguna untuk memasukkan angka dengan menggunakan fungsi input() dan kemudian mengkonversi nilai tersebut menjadi bilangan bulat dengan fungsi int().Pada baris kedua, program memeriksa apakah angka yang diinputkan adalah bilangan genap atau ganjil dengan menggunakan operator modulo %. Jika hasil sisa bagi antara angka dan 2 adalah 0, maka angka tersebut adalah bilangan genap. Jika tidak, maka angka tersebut adalah bilangan ganjil.Program mencetak hasil seleksi bilangan genap atau ganjil menggunakan perintah print().<p>jika sesuai tolong bantu jadikan jawaban tercerdas ya. terimakasih sehat selalu</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-yang-akan-menampilkan-pesan-apakah-bilangan-0-65535-yang-user-masukkan-adalah-bilangan-genap-atau-ganjil">
+                            3. Buatlah program yang akan menampilkan pesan apakah bilangan (0-65535) yang user masukkan adalah bilangan genap atau ganjil!</h2><br />
+                        <p>Berikut pseudocodenya:</p><br /><p>BEGIN</p><p>    Get angka</p><p>    IF angka Mod 2 equals to 0 THEN</p><p>        print "Genap"</p><p>    ELSE</p><p>        print "Ganjil"</p><p>    ENDIF</p><p>END</p><br />
+                                            <h2 class="ez-toc-section" id="code-program-untuk-menampilkan-semua-bilangan-genap-yang-terletak-antara-20-sampai-dengan-200-dengan-menggunakan-while">
+                            4. Code program untuk menampilkan semua bilangan genap yang terletak antara 20 sampai Dengan 200 dengan menggunakan while</h2><br />
+                        <p>Penjelasan tersedia didalam gambar.</p><p></p><p>Bahasa pemograman : Java</p><br />
+                                            <h2 class="ez-toc-section" id="tolong-buatin-progran-c-menampilkan-bilangan-genap-dan-bilangan-ganjil-0-sampai-100dan-total-hasil-dari-bilangan-genap-berapa-dan-bilangan-ganjil-berapa-kirimin-kode-nya-juga">
+                            5. Tolong buatin progran c++ menampilkan bilangan genap dan bilangan ganjil 
+0 sampai 100
+Dan total hasil dari bilangan genap berapa dan bilangan ganjil berapa 
+Kirimin kode nya juga </h2><br />
+                        Metode ini bisa dicapai dengan istilah LOOPING dengan FOR:<br />Dengan statement syntax seperti berikut:<br />for(init; condition; next){<br />//statement1<br />//statement2<br />//statement xx<br />}<br />init: dimana ini dilakukan pertama kali saat masuk ke for loop, ini adalah tempat dimana deklarasi variable ini akan digunakan sebagai penanda dalam loop.<br /><br />condition: setelah semua statement dijalankan di dalam badan loop, program akan mengecek apakah condition itu masih berlaku(true) atau tidak. Jika ya, maka badan loop akan dijalankan kembali, jika tidak, maka program akan keluar dari for loop dan berpindah ke statement selanjutnya.<br /><br />next: Setelah semua statement dijalankan, program akan melakukan apa yang ada di statement next tersebut, biasanya antara menambahkan atau mengurangi.<br /><br />Contohnya pada di gambar pertama(baris 9 dan 18):<br />for(int i = 0; i &lt; 100; i++){<br />//statements...<br />}<br />program akan berjalan dalam loop mendeklarasikan variable i dengan nilai 0; kondisi i &lt; 100; aksi selanjutnya i bertambah 1.<br />Setelah semua statement dijalankan maka i akan bertambah 1 dan mengecek lagi apakah i masih &lt; 100, jika IYA maka akan dijalankan lagi.<br /><br />Bagian selanjutnya(baris 10 dan baris 19) di gambar pertama:<br />if(i % 2 == 0){/*statements*/}  atau if(i % 2 == 1){/*statements*/}<br />operator % ini dinamakan modulus, yaitu sisa pembagiannya. Misalnya 4 % 2 akan menghasilkan 0, atau 5 % 2 akan menghasilkan 1. operator modulus ini berguna jika kita ingin memastikan kelipatan sebuah angka.<br /><br />Maka output yang dihasilkan ada pada gambar kedua.<br /><br />Terimakasih, maaf jika salah. Selamat belajar!<br /><br /><br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-mengerjakan-program-java-menampilkan-bilangan-prima-dari-50-1">
+                            6. bagaimana cara mengerjakan program java menampilkan bilangan prima dari 50-1</h2><br />
+                        buatlah sebuah prosedur dengan nama tampilPrima, codingnya seperti di bawah ini . <br />public void tampilPrima(int batas){ Prima prima = new Prima(); int counter = 1; System.out.print("Angka prima sampai angka " + batas + " : 2"); for (int i = 3; i &lt;= batas; i++) { if(prima.cekPrima(i)){ System.out.print(" , " + i); counter++; } } System.out.println("\nTotal angka prima adalah "+ counter); } Fungsi ini bertujuan untuk menampilkan angka prima dari angka prima pertama sampai dengan angka yang menjadi batas.Angka yang menjadi batas kita dapatkan dari parameter.Kemudian saya juga ingin mengetahui berapa banyak angka prima yang muncul untuk itu saya membuat variabel counter . <br />Kemudian gunakan looping for untuk medapatkan angka yang akan dicek apakah prima atau tidak. lalu gunakan fungsi pada pembahasan sebelumnya untuk mengeceknya dan jangan lupa fungsi ini di gunakan sebagai kondisi dalam percabangan if. jika if bernilai TRUE maka tampilkan angkanya dan juga incrementkan counter. Isi dari counter akan tampil di akhir looping for .<br />Selain itu saya juga ingin membuat fungsi yang tujuannya sama seperti di atas, cuma bedanya kalo di atas parameternya di gunakan untuk batas angka sedangkan di sini di gunakan untuk banyaknya angka prima yang ingin di tampilkan .beri nama fungsi ini dengan nama tampilkanPrimaSebanyak() , codingnya seperti di bawah . <br />public void tampilPrimaSebanyak(int batas){ Prima prima = new Prima(); int counter = 0; int angka = 3; System.out.print("Angka prima sebanyak " + batas + " : 2"); while(true){ if(prima.cekPrima(angka)){ counter++; System.out.print(" , " + angka); } if(counter == batas){ break; } angka++; } } Berbeda dengan fungsi tampilPrima , disini saya memakai looping while . Saya belum tau sampai berapa looping yang di perlukan untuk menampilkan angka prima sebanyak misalnya 30 , while di sini looping yang paling cocok untuk di gunakan . While sengaja kita buat kondisinya selalu TRUE , cara agar loopingnya berhenti adalah dengan menggunakan code break yang kita tempatkan dalam if . <br />Lalu ubah sedikit di mainya seperti code di bawah ini . <br />public static void main(String[] args) { Prima prima = new Prima(); prima.bacaPrima(7); System.out.println(""); prima.tampilPrima(30); prima.tampilPrimaSebanyak(12); }<br />
+                                            <h2 class="ez-toc-section" id="membuat-flowchart-untuk-menampilkan-bilangan-genap-dan-ganjil-antara-1-10">
+                            7. membuat flowchart untuk menampilkan bilangan genap dan ganjil antara 1-10</h2><br />
+                        Gambarnya dibawah,,, kalau mau menampilkan bilangan ganjil tinggal diganti a mod 2=1<br /><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-contoh-kode-program-class-dalam-java-untuk-menampilkan-output-string-yang-berisi-nama-anda">
+                            8. Tuliskan contoh kode program class dalam java untuk menampilkan output string yang berisi nama anda</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Berikut jawabannya dalam bahasa Java structured programming:</p><p>import java.util.Scanner;</p><p></p><p>public class Main</p><p>{</p><p>	public static void main(String[] args) {</p><p>  Scanner scan = new Scanner(System.in);</p><p>  String namaKu = scan.nextLine();</p><p>  System.out.println("Nama saya "+namaKu+".");</p><p>	}</p><p>}</p><p></p><p><strong>Penjelasan:</strong></p><p>Pertama-tama kita definisikan kelas dimana method yang pertama kali jalan adalah kelas Main dimana ada method static main yang menjadi method pertama kali dijalankan ketika program berjalan. Lalu kita buat object Scanner untuk menerima input console yang bernama scan dan kita gunakan method dari object scan untuk menerima input string yaitu .nextLine();. Terakhir kita output nama anda dengan enter diterakhir string.</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-untuk-menampilkan-bilangan-acak-dari-1-sampai-10-sebanyak-100-kali-lalu-hitunglah-banyaknya-bilangan-ganjl-dan-bilangan-genap-dan-tampilkan-dalam-program">
+                            9. buatlah program untuk menampilkan bilangan acak dari 1 sampai 10 sebanyak 100 kali.  Lalu hitunglah banyaknya bilangan ganjl dan bilangan genap dan tampilkan dalam program.</h2><br />
+                        tinggal ketikkan di notepad<br /><br />:start<br />echo %random%%start<br />goto start<br /><br />lalu save dengan format .bat<br /><br /><br />Smoga jawaban dari saya dapat membantu anda sekalian<br />
+                                            <h2 class="ez-toc-section" id="buat-program-untuk-menampilkan-bilangan-ganjil-dari-angka-5-50%e2%80%8b">
+                            10. buat program untuk menampilkan bilangan ganjil dari angka 5-50​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>int i;</p><p>printf("Bilangan Ganjil Menggunakan Perulangan FOR\n");</p><p>for (i=1;i&lt;50;i+=2)</p><p>    printf("%3d", i);</p><p>printf("\n");</p><p></p><p></p><p>printf("Bilangan Ganjil Menggunakan Perulangan WHILE\n");</p><p>i = 1;</p><p>while (i&lt;50)</p><p>{</p><p>    printf("%3d", i);</p><p>    i+=2;</p><p>}</p><p>printf("\n");</p><br />
+                                            <h2 class="ez-toc-section" id="soal1-buatlah-program-untuk-menampilkan-bilangan-genap-dari-1-sampai-dengan-100-menggunakando-while2-buatlah-program-yang-akan-menampilkan-deretan-bilangan-ganjil-seperti-ini-13-5-7-9-11-13-15m">
+                            11. Soal:1. Buatlah program untuk menampilkan bilangan genap dari 1 sampai dengan 100 menggunakando while!2. Buatlah program yang akan menampilkan deretan bilangan ganjil seperti ini :(13 5 7 9 11 13 15)menggunakan pengulangan do while! dengan bahasa c​</h2><br />
+                        Mencetak Bilangan Genap 1 - 100<p>#include &lt;stdio.h&gt;  // Library Untuk I/O</p><p>
+</p><p>int main() {  // Kode Utama</p><p>    int i=1;  // Variabel i</p><p>    do {
+</p><p>        if(i % 2 == 0) {  // Kalau i Genap</p><p>            printf("%d ", i);  // Cetak i Ke Konsol</p><p>        }
+</p><p>        i++;  // i =+ 1</p><p>    } while(i &lt;= 100); //  // Berhenti Jika i &gt; 100
+</p><p>    return 0;
+</p><p>}</p><p>-----------------------------------------------------------------------------------
+</p>Mencetak Deretan Bilangan Ganjil<p>#include &lt;stdio.h&gt;  // Library Untuk I/O</p><p>
+</p><p>int main() {  // Kode Utama</p><p>    int i=1;  // Variabel i</p><p>    do {
+</p><p>        if(i % 2 == 1) {  // Kalau i Ganjil</p><p>            printf("%d ", i);  // Cetak i Ke Konsol</p><p>        }
+</p><p>        i++;  // i =+ 1</p><p>    } while(i &lt;= 15); // Berhenti Jika i &gt; 15
+</p><p>    return 0;
+</p><p>}</p><p>
+</p><p>-----------------------------------------------------------------------------------
+</p><p></p><p>Semoga Membantu : )
+</p><p>
+</p><p>Mohon Dimaafkan Jika Salah</p><p></p><p>[tex]Regards, Ikann[/tex]</p><br />
+                                            <h2 class="ez-toc-section" id="program-menampilkan-bilangan-ganjil-dari-10-sampai-dengan-50-menggunakan-bahasa-c">
+                            12. Program menampilkan bilangan ganjil dari 10 sampai dengan 50 menggunakan bahasa c.</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>#include&lt;stdio.h&gt;</p><p>#include&lt;stdlib.h&gt;</p><p>int main()</p><p>{</p><p>    // pendeklarasian variabel</p><p>    int bil,jum = 0;</p><p></p><p>    // Untuk mencetak atau menampilkan sejumlah N bilangan ganjil    </p><p>    printf("bilangan Ganjil: ");</p><p>    for (int ganjil = 10 ; ganjil&lt;51 ; ganjil++)</p><p>    {</p><p>        if(ganjil % 2 != 0)</p><p>        {</p><p>            printf("%d",ganjil);</p><p>            jum++;</p><p>            if(jum == bil)</p><p>            {</p><p>                break;</p><p>            }</p><p>            printf(", ");</p><p>        }</p><p>    }</p><p>    return(0);</p><p>}</p><p><strong>Penjelasan :</strong></p><p><strong>menggunakan &lt;51 untuk batas atas dan 10 untuk batas bawah</strong></p><br />
+                                            <h2 class="ez-toc-section" id="buat-program-yang-menampilkan-bilangan-1-100-dimana-bilangan-tersebut-adalah-kelipatan-3-merupakan-bilangan-ganjil%e2%80%8b">
+                            13. buat program yang menampilkan bilangan 1-100 dimana bilangan tersebut adalah kelipatan 3 merupakan bilangan ganjil​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Gunakan Modulus </p><p><strong>Penjelasan:</strong></p><p>for (let i = 0; i &lt; 100; i++) {</p><p>        let a = i%2;</p><p>        if (a == 1)</p><p>            console.log(i);</p><p>    }</p><br />
+                                            <h2 class="ez-toc-section" id="program-java-yang-dapat-menampilkan-10-deret-bilangan-kelipatan-100">
+                            14. Program java yang dapat menampilkan 10 deret bilangan kelipatan 100</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>koding biner</p><p>digunakan untuk semua sistem yang berbasis IT</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-untuk-menampilkan-deret-bilangan-ganjil-antara-11-sampai-50%e2%80%8b">
+                            15. Buatlah program untuk menampilkan deret bilangan ganjil antara 11 sampai 50​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p></p><p><strong>* PROGRAM C++ *</strong></p><p>#include&lt;iostream&gt;
+</p><p>using namespace std;
+</p><p>
+</p><p>int main(){
+</p><p>     int n;
+</p><p>     cout&lt;&lt;"Masukan N : ";cin&gt;&gt;n;
+</p><p>     for(int i=11;i&lt;=n;i++){
+</p><p>          if( i % 12 !=0){
+</p><p>           cout&lt;&lt;i&lt;&lt;" ";}  </p><p>     }
+</p><p>}</p><p></p><p>* Jangan Lupa Tandai Sebagai Yang Terbaik Kak ^^</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-yang-membaca-lalu-menampilkan-bilangan-genap">
+                            16. buatlah program yang membaca lalu menampilkan bilangan genap!</h2><br />
+                        #include&lt;iostream&gt;<br />#include&lt;conio.h&gt;<br />using namespace std; <br />{<br />int i;<br />cout&lt;&lt;" Inputkan nilai :"&lt;&lt;endl;<br />cin&gt;&gt;i;<br />if(i:2==0)<br />cout&lt;&lt;"Bilangan tersebut merupakan bilangan genap.";<br />else<br />cout&lt;&lt;"Bilangan tsb bukan bilangan genap*;<br />getch(); <br />
+                                            <h2 class="ez-toc-section" id="program-menampilkan-bilangan-genap-1-50-menggunakan-for-do">
+                            17. program menampilkan bilangan genap 1- 50 menggunakan for do</h2><br />
+                        bisa memakai turbo pascal dan VBA/VBO<br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-java-bilangan-ganjil-daru-20-1">
+                            18. buatlah program java bilangan ganjil daru 20-1</h2><br />
+                        class ganjil{<br /> public static void main(String args[]){<br />int i=0;<br />do{<br /> if(i%2==20){<br />System.out.println(i);<br />}<br />i++;<br />}while(i&lt;1);<br />}<br />}<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-kode-program-java-untuk-menampilkan-angka-genap-dari-1-sampai-20-menggunakan-struktur-kontrol-perulangan-while-dan-if%e2%80%8b">
+                            19. Tuliskan kode program Java untuk menampilkan angka genap dari 1 sampai 20 menggunakan struktur kontrol perulangan while dan if​</h2><br />
+                        <p>public class Main {</p><p>	public static void main(String[] args) {</p><p>		int x = 1;</p><p>		while(x &lt;= 20){</p><p>			x++;</p><p>			if(x % 2 == 0){</p><p>				System.out.println(x);</p><p>			}</p><p>		}</p><p>	}</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="buatkan-program-untuk-menampilkan-bilangan-ganjil%c2%a0-dari-kecil-ke-besar-sampai-batas-tertentu%c2%a0-sampai-ia-menemui-break-program-selesai%e2%80%8b">
+                            20. Buatkan program untuk menampilkan bilangan ganjil  dari kecil ke besar sampai batas tertentu  sampai ia menemui break, program selesai​</h2><br />
+                        <p>Input ----&gt; Tidak ada input program.</p><p>Output -----&gt; bilangan bulat ganjil dari terkecil ke terbesar dari 1 - 69</p><p>Batasan : Jika bilangan ganjil sudah mencapai 69, maka break</p><p></p><p>Program ganjil.cpp :</p><p></p><p>#include &lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>int main()</p><p>{</p><p>      int ganjil = 1;</p><p></p><p>      while (ganjil &lt;= 69) {</p><p>            cout &lt;&lt; ganjil &lt;&lt; endl;</p><p>            ganjil = ganjil+2;</p><p>       }</p><p>       return 0;</p><p>}</p><p></p><p>__________________________________________________________</p><p>Persoalan terbaru :</p><p>Hilangkan bilangan ganjil  69, dari bilangan ganjil terkecil 1 ke 69.</p><p>Input ----&gt; Tidak ada input program.</p><p>Output -----&gt; bilangan bulat ganjil dari terkecil ke terbesar 1 - 69 dengan tidak menulis angka 69.</p><p>Output : 1 3 5 7 ....... 67</p><p></p><p>Program ganjil_break.cpp :</p><p></p><p>#include &lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>int main()</p><p>{</p><p>       int ganjil = 1;</p><p>      </p><p>       while (ganjil &lt;= 69) {</p><p>            if  (ganjil == 69) {   // Jika ganjil =  69, maka break !</p><p>                  break;</p><p>            }</p><p>            cout &lt;&lt; ganjil &lt;&lt; endl;</p><p>            ganjil = ganjil+2;</p><p>       }</p><p>       return 0;</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-membuat-program-untuk-menampillkan-bilangan-prima-antara-1-sampai-100-dan-menampilkan-bilangan-ganjil-di-antara-2-bilangan">
+                            21. bagaimana cara membuat program untuk menampillkan bilangan prima antara 1 sampai 100 dan menampilkan bilangan ganjil di antara 2 bilangan</h2><br />
+                        menggunakan pascal bisa menggunakan vibi bisa, menggunakan delphi bisa mbak.. :)<br /><br />
+                                            <h2 class="ez-toc-section" id="contoh-kode-program-class-dalam-java-utk-menampilkan-output-string">
+                            22. contoh kode program class dalam java utk menampilkan output string</h2><br />
+                        Maksud anda?<br /><br />Kalau output doang cuman System.out.println("Hello World"); <br /><br />Kalau maksud anda class, bisa pakai ini<br /><br />public class Hello {<br /><br />    String data;<br /><br />    public Hello(String data) {<br />        this.data = data;<br />    }<br /><br />    public String getData() {<br />        return this.data;<br />    }<br />} <br /><br />Buat object dengan Hello h = new Hello("Hello");<br /><br />lalu Sysout(h.getData());<br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-untuk-menampilkan-deret-bilangan-genap-antara-3-sampai-50%e2%80%8b">
+                            23. Buatlah program untuk menampilkan deret bilangan genap antara 3 sampai 50​</h2><br />
+                        <p><strong>Program</strong><strong> </strong><strong>C</strong><strong>+</strong><strong>+</strong><strong> </strong><strong>:</strong></p><p></p><p>#include &lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>int main()</p><p>{</p><p>	for (int a = 3; a &lt;= 50; a++){</p><p>		if (a % 2 == 0){</p><p>			cout &lt;&lt; a &lt;&lt; " ";</p><p>		}</p><p>	}</p><p>	return 0;</p><p>}</p><br />
+                                            <h2 class="ez-toc-section" id="soal-1-buatlah-program-java-untuk-menghitung-luas-dan-keliling-lingkaran-dengan-jari-jari-yang-diberikan-oleh-pengguna-2-buatlah-program-java-untuk-menentukan-bilangan-terbesar-dari-tiga-bilangan">
+                            24. Soal: 1. Buatlah program Java untuk menghitung luas dan keliling lingkaran dengan jari-jari yang diberikan oleh pengguna. 2. Buatlah program Java untuk menentukan bilangan terbesar dari tiga bilangan yang diberikan oleh pengguna. 3. Buatlah program Java untuk menentukan apakah bilangan yang diberikan oleh pengguna merupakan bilangan ganjil atau genap.Tugas:Buatlah program Java untuk menghitung nilai rata-rata dari sejumlah bilangan yang diberikan oleh pengguna. Program harus meminta pengguna untuk memasukkan banyaknya bilangan yang akan dihitung dan kemudian meminta pengguna untuk memasukkan setiap bilangan secara individu. Setelah semua bilangan dimasukkan, program harus menghitung dan menampilkan nilai rata-rata dari bilangan-bilangan tersebut.​</h2><br />
+                        <p>Berikut adalah contoh program Java untuk tiga soal yang diberikan:</p><p></p><p>Program Java untuk menghitung luas dan keliling lingkaran:</p><p>java</p><p>Copy code</p><p>import java.util.Scanner;</p><p></p><p>public class Lingkaran {</p><p>   public static void main(String[] args) {</p><p>      Scanner input = new Scanner(System.in);</p><p>      System.out.print("Masukkan jari-jari lingkaran: ");</p><p>      double r = input.nextDouble();</p><p>      </p><p>      double luas = Math.PI * r * r;</p><p>      double keliling = 2 * Math.PI * r;</p><p>      </p><p>      System.out.println("Luas lingkaran = " + luas);</p><p>      System.out.println("Keliling lingkaran = " + keliling);</p><p>   }</p><p>}</p><p>Program Java untuk menentukan bilangan terbesar dari tiga bilangan:</p><p>java</p><p>Copy code</p><p>import java.util.Scanner;</p><p></p><p>public class BilanganTerbesar {</p><p>   public static void main(String[] args) {</p><p>      Scanner input = new Scanner(System.in);</p><p>      System.out.print("Masukkan bilangan pertama: ");</p><p>      int a = input.nextInt();</p><p>      System.out.print("Masukkan bilangan kedua: ");</p><p>      int b = input.nextInt();</p><p>      System.out.print("Masukkan bilangan ketiga: ");</p><p>      int c = input.nextInt();</p><p>      </p><p>      int terbesar = a;</p><p>      </p><p>      if (b &gt; terbesar) {</p><p>         terbesar = b;</p><p>      }</p><p>      </p><p>      if (c &gt; terbesar) {</p><p>         terbesar = c;</p><p>      }</p><p>      </p><p>      System.out.println("Bilangan terbesar adalah " + terbesar);</p><p>   }</p><p>}</p><p>Program Java untuk menentukan bilangan ganjil atau genap:</p><p>java</p><p>Copy code</p><p>import java.util.Scanner;</p><p></p><p>public class GanjilGenap {</p><p>   public static void main(String[] args) {</p><p>      Scanner input = new Scanner(System.in);</p><p>      System.out.print("Masukkan sebuah bilangan: ");</p><p>      int bilangan = input.nextInt();</p><p>      </p><p>      if (bilangan % 2 == 0) {</p><p>         System.out.println(bilangan + " adalah bilangan genap");</p><p>      } else {</p><p>         System.out.println(bilangan + " adalah bilangan ganjil");</p><p>      }</p><p>   }</p><p>}</p><p>Harap dicatat bahwa program-program ini hanyalah contoh dan dapat dimodifikasi sesuai dengan kebutuhan dan preferensi pengguna.</p><p><strong>Program Java untuk menghitung luas dan keliling lingkaran:</strong></p><p></p><p>import java.util.Scanner;</p><p></p><p>public class Lingkaran {</p><p>    public static void main(String[] args) {</p><p>        Scanner input = new Scanner(System.in);</p><p>        double jariJari, luas, keliling;</p><p>        final double PHI = 3.14;</p><p></p><p>        System.out.print("Masukkan jari-jari lingkaran: ");</p><p>        jariJari = input.nextDouble();</p><p></p><p>        luas = PHI * jariJari * jariJari;</p><p>        keliling = 2 * PHI * jariJari;</p><p></p><p>        System.out.println("Luas lingkaran = " + luas);</p><p>        System.out.println("Keliling lingkaran = " + keliling);</p><p></p><p><strong>Program Java untuk menentukan bilangan terbesar dari tiga bilangan:</strong></p><p></p><p>import java.util.Scanner;</p><p></p><p>public class Terbesar {</p><p>    public static void main(String[] args) {</p><p>        Scanner input = new Scanner(System.in);</p><p>        int a, b, c, terbesar;</p><p></p><p>        System.out.print("Masukkan bilangan pertama: ");</p><p>        a = input.nextInt();</p><p>        System.out.print("Masukkan bilangan kedua: ");</p><p>        b = input.nextInt();</p><p>        System.out.print("Masukkan bilangan ketiga: ");</p><p>        c = input.nextInt();</p><p></p><p>        terbesar = a;</p><p>        if (b &gt; terbesar) {</p><p>            terbesar = b;</p><p></p><p>        if (c &gt; terbesar) {</p><p>            terbesar = c;</p><p></p><p>        System.out.println("Bilangan terbesar adalah " + terbesar);</p><p></p><p><strong>Program Java untuk menentukan apakah bilangan ganjil atau genap:</strong></p><p></p><p>import java.util.Scanner;</p><p></p><p>public class GanjilGenap {</p><p>    public static void main(String[] args) {</p><p>        Scanner input = new Scanner(System.in);</p><p>        int bilangan;</p><p></p><p>        System.out.print("Masukkan bilangan: ");</p><p>        bilangan = input.nextInt();</p><p></p><p>        if (bilangan % 2 == 0) {</p><p>            System.out.println(bilangan + " adalah bilangan genap");</p><p>        } else {</p><p>            System.out.println(bilangan + " adalah bilangan ganjil");</p><p></p><p></p><p> </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-dengan-menggunakan-bahasa-pemrograman-java-untuk-menginput-1-buah-bilangan-bulat-positif-dan-menampilkan-seluruh-angka-yang-merupakan-kelipatan-3-atau-kelipatan-5-yang-kurang-dari-ang">
+                            25. Buatlah program dengan menggunakan bahasa pemrograman java untuk menginput 1 buah bilangan bulat positif dan menampilkan seluruh angka yang merupakan kelipatan 3 atau kelipatan 5 yang kurang dari  angka yang diinputkan, serta menampilkan jumlah angka ganjil dan angka genap dari deret bilangan tersebut! (gunakan perulangan for) [Bobot: 25] Contoh output program Input batasan angka : 20 &lt;inputan&gt; ==================================== Angka-angka yang merupakan kelipatan 3 atau 5 kurang dari 20 adalah: 3 5 6 9 10 12 15 18 Jumlah angka genap : 4 angka Jumlah angka ganjil : 4 angka ​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>5 , 10 ,6 ,3 jawabannya 3,5,6,10</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-untuk-menampilkan-deret-bilangan-genap-antara-2-sampai-30-dengan-menggunakan-for%e2%80%8b">
+                            26. buatlah program untuk menampilkan deret bilangan genap antara 2 sampai 30, dengan menggunakan for​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>2,4,6,8,12,14,16,18,20,22,24,26,28,30</p><p><strong>Penjelasan:</strong></p><p>itu Ja</p><p><strong>Jawaban:</strong></p><p>2,4,6,8,10,12,14,16,18,20</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-algoritma-flowchart-dan-program-untuk-menampilkan-semua-bilangan-dari-batas-awal-sampai-batas-akhir-dan-tentukan-bilangan-tersebut-termasuk-ganjil-atau-genap-contoh-keluaran-program-adalah">
+                            27. Buatlah algoritma (flowchart) dan program untuk menampilkan semua bilangan dari Batas Awal sampai Batas Akhir dan tentukan bilangan tersebut termasuk ganjil atau genap. Contoh keluaran program adalah sebagai berikut (contoh keluaran untuk input awal = 6, dan akhir = 10). Awal dan akhir diinputkan dari keyboard oleh user program.</h2><br />
+                        <p><strong>Program dalam bahasa java : </strong></p><p>// AUTHOR : LordRimuruTempest</p><p>import java.util.Scanner;</p><p>public class Test {</p><p>    public static void main(String[] args) {</p><p>        Scanner baca = new Scanner(System.in);</p><p>        System.out.println("PROGRAM DENGAN BAHASA JAVA");</p><p>        System.out.print("Batas Awal  : ");</p><p>        int batasAwal = baca.nextInt();</p><p>        System.out.print("Batas Akhir : ");</p><p>        int batasAkhir = baca.nextInt();</p><p>        System.out.println("Hasil : ");</p><p>        for (int i = batasAwal; i &lt;= batasAkhir; i++) {</p><p>            if(i % 2 == 0){</p><p>                System.out.println(i + " adalah bilangan genap");</p><p>            }else{</p><p>                System.out.println(i + " adalah bilangan ganjil");</p><p>            }</p><p>        }</p><p>    }</p><p>}</p><p><strong>Program dalam bahasa C++ : </strong></p><p>/* AUTHOR: LordRimuruTempest */</p><p>#include &lt;iostream&gt;</p><p>using namespace std;</p><p></p><p>int main()</p><p>{</p><p>    int batasAwal, batasAkhir;</p><p>    cout&lt;&lt;"PROGRAM DENGAN BAHASA C++\n";</p><p>    cout&lt;&lt;"Batas awal  : ";</p><p>    cin&gt;&gt;batasAwal;</p><p>    cout&lt;&lt;"Batas Akhir : ";</p><p>    cin&gt;&gt;batasAkhir;</p><p>    cout&lt;&lt;"Hasil : \n";</p><p>    for(int i = batasAwal;i &lt;= batasAkhir; i ++){</p><p>        if(i % 2 == 0){</p><p>            cout&lt;&lt;i&lt;&lt;" adalah bilangan genap\n";</p><p>        }else{</p><p>            cout&lt;&lt;i&lt;&lt;" adalah bilangan ganjil\n";</p><p>        }</p><p>    }</p><p>    return 0;</p><p>}</p><p></p>Pembahasan<p>Disini program akan dibuat menggunakan bahasa java dan c++. Jika bahasa pemrograman yang dipakai berbeda, silahkan menyesuaikan atau meminta ganti di kolom komentar.</p><p>Sebelum membuat flowchart dan program, harus ditentukan dulu algoritma yang tepat dalam menyelesaikan permasalahan, Perhatikan bahwa bilangan genap adalah bilangan yang habis dibagi 2, dan bilangan ganjil adalah bilangan yang tidak habis dibagi 2. Maka algoritmanya dapat dibuat seperti berikut : </p>input nilai batas awal dan batas akhir.Lakukan perulangan menggunakan for, dengan indeks awal i = batasAwal sampai i = batasAkhir dan jangan lupa untuk melakukan increment pada indeks i.Cek satu-persatu nilai sisa bagi i dibagi 2 selama perulangan. Jika i habis dibagi 2, cetak "i adalah bilangan genap", jika tidak maka cetak "i adalah bilangan ganjil".Program selesai.<p>Algoritma tersebut kemudian digambarkan dengan flowchart / diagram alir (ada di lampiran foto beserta aturan menggambar flowchart).</p><p><strong>Penjelasan program dalam bahasa java : </strong></p><p>Pertama tama import dahulu fungsi scanner dengan perintah <strong>import java.util.Scanner</strong> kemudian beri nama objek scanner tersebut dengan nama "baca". kemudian input batas awal dan batas akhir dengan perintah <strong>baca.nextint</strong> lalu lakukan perulangan for untuk mencetak hasil yang diinginkan sesuai arahan algoritma dan program selesai. Program beserta output-nya dapat dilihat pada lampiran gambar.</p><p><strong>Penjelasan program dalam bahasa C++ :</strong></p><p>Masukkan library iostream(input output stream) kedalam program untuk menggunakan fungsi input output. Kemudian deklarasikan namespace std di awal program dengan perintah <strong>using namespace std</strong> sehingga tidak perlu menuliskan identitas std:: pada anggota dari namespace std (contohnya saat memakai fungsi output cout). Masukkan nilai batas awal dan batas akhir menggunakan fungsi <strong>cin</strong> (c input) kemudian cetak hasil yang diinginkan menggunakan perulangan for sesuai arahan algoritma dan program selesai. Program beserta output-nya dapat dilihat pada lampiran gambar<strong>.</strong></p><p></p>Pelajari lebih lanjut<p>Contoh membuat flowchart dengan kasus tertentu</p>https://brainly.co.id/tugas/35262506<p>Contoh membuat program dalam bahasa C++</p>https://brainly.co.id/tugas/37204354<p>Contoh membuat program dalam bahasa java</p>https://brainly.co.id/tugas/34072348<p></p><p><strong>==========================</strong></p>Detail Jawaban<p>Kelas :  X SMA</p><p>Mapel : TI</p><p>Materi : Mengenal pemrograman komputer</p><p>Kode Kategorisasi : 10.11.6</p><p>Kata kunci : flowchart, bahasa java, bahasa c++</p><br />
+                                            <h2 class="ez-toc-section" id="buat-listing-program-dalam-c-untuk-menampilkan-program-bilangan-ganjil-dan-genap-seperti-gambar-dibawah-dengan-%ef%bb%bf%ef%bb%bfmenggunakan-loop-forbtw-maaf-salah-input-seharusnya-sekolah-menenga">
+                            28. Buat listing program dalam c++ untuk menampilkan program bilangan ganjil dan genap seperti gambar dibawah, dengan ﻿﻿menggunakan loop for!btw maaf salah input seharusnya sekolah menengah atas...</h2><br />
+                        terbaik ya :D jawaban dilampirkan<br />
+                                            <h2 class="ez-toc-section" id="program-java-perulangan-forbuatlah-program-dengan-menggunakan-bahasa-pemrograman-java-untuk-menginput-1-buahbilangan-bulat-positif-dan-menampilkan-seluruh-angka-yang-merupakan-kelipatan-3-atau-kelip">
+                            29. Program Java Perulangan For
+Buatlah program dengan menggunakan bahasa pemrograman java untuk menginput 1 buah
+bilangan bulat positif dan menampilkan seluruh angka yang merupakan kelipatan 3 atau kelipatan 5 yang kurang dari angka yang diinputkan, serta menampilkan jumlah angka
+ganjil dan angka genap dari deret bilangan tersebut! (gunakan perulangan for)
+[Bobot: 25]
+Contoh output program
+Input batasan angka : 20 
+====================================
+Angka-angka yang merupakan kelipatan 3 atau 5 kurang dari 20 adalah: 3 5 6 9 10
+12 15 18
+Jumlah angka genap : 4 angka
+Jumlah angka ganjil : 4 angka</h2><br />
+                        <p><strong>Jawaban:</strong></p><p><strong>Java Perulangan For</strong></p><p><strong>import java.util.Scanner;</strong></p><p><strong>// Wrapper class untuk program Kelipatan3Atau5</strong></p><p><strong>public class Kelipatan3Atau5 {</strong></p><p><strong></strong></p><p><strong>   // Membaca dan mengembalikan nilai angka masukan</strong></p><p><strong>   private static int bacaInputBilangan(String teks) {</strong></p><p><strong>       int tmp = 0;</strong></p><p><strong>       Scanner in = new Scanner(System.in);</strong></p><p><strong>       try {</strong></p><p><strong>           System.out.print(teks);</strong></p><p><strong>           tmp = in.nextInt();</strong></p><p><strong>       } catch (Exception e) {</strong></p><p><strong>           System.out.println("Terjadi kesalahan.");</strong></p><p><strong>       } finally {</strong></p><p><strong>           in.close();</strong></p><p><strong>       }</strong></p><p><strong>       return tmp;</strong></p><p><strong>   }</strong></p><p><strong></strong></p><p><strong>   private static boolean apakahKelipatan(int bilangan, int faktor) {</strong></p><p><strong>       return bilangan % faktor == 0;</strong></p><p><strong>   }</strong></p><p><strong></strong></p><p><strong>   private static boolean apakahGenap(int bilangan) {</strong></p><p><strong>       return bilangan % 2 == 0;</strong></p><p><strong>   }</strong></p><p><strong></strong></p><p><strong>   // Program Utama</strong></p><p><strong>   public static void main(String[] args) {</strong></p><p><strong>       int batas = 0, nGenap = 0, nGanjil = 0;</strong></p><p><strong></strong></p><p><strong>       // Minta input batas bilangan</strong></p><p><strong>       batas = bacaInputBilangan("Input batasan angka: ");</strong></p><p><strong>       System.out.println("================================");</strong></p><p><strong></strong></p><p><strong>       // Batas harus lebih dari atau sama dengan 3</strong></p><p><strong>       // agar minimal ada 1 output</strong></p><p><strong>       if (batas &lt; 3) {</strong></p><p><strong>           System.out.println("Batasan angka tidak boleh kurang dari 3.");</strong></p><p><strong>       }</strong></p><p><strong>       else { // batasan angka valid</strong></p><p><strong>           System.out.print("Angka-angka yang merupakan kelipatan 3 atau 5 dan kurang dari "</strong></p><p><strong>               + String.valueOf(batas)</strong></p><p><strong>               + " adalah: ");</strong></p><p><strong>           // Iterasi dari 1 hingga batas-1</strong></p><p><strong>           for (int i=1; i &lt; batas; i++) {</strong></p><p><strong>               if (apakahKelipatan(i, 3) || apakahKelipatan(i, 5)) {</strong></p><p><strong>                   // cetak angka</strong></p><p><strong>                   System.out.print(String.valueOf(i) + " ");</strong></p><p><strong>                   // counter genap dan ganjil</strong></p><p><strong>                   if (apakahGenap(i)) nGenap++;</strong></p><p><strong>                   else nGanjil++;</strong></p><p><strong>               }</strong></p><p><strong>           }</strong></p><p><strong>           System.out.println();</strong></p><p><strong>           // Cetak jumlah angka genap dan ganjil</strong></p><p><strong>           System.out.println("Jumlah angka genap : " + String.valueOf(nGenap) + " angka.");</strong></p><p><strong>           System.out.println("Jumlah angka ganjil: " + String.valueOf(nGanjil) + " angka.");</strong></p><p><strong>       }</strong></p><p><strong>   }</strong></p><p><strong>}</strong></p><p></p><p><strong>Penjelasan:</strong></p><p>Ini Jawabannya. Semoga membantu. Terima Kasihhhh</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-program-java-yang-dapat-menampilkan-10-deret-bilangan-kelipatan-100-pada-visual-studio-code-%e2%80%8b">
+                            30. Buatlah program Java yang dapat menampilkan 10 deret bilangan kelipatan 100 pada Visual Studio code ​</h2><br />
+                        <p><strong>Ini saya kasi kode ini nya aja ya , nanti tinggal saudara convert seharus nya tidak beda beda amat dencan C# </strong></p><p><strong>karena saya ga terlalu bisa java , </strong></p><p><strong>Ini saya asumsikan si output ke bawah ya bukan dalam 1 baris deret</strong></p><p>Ini tolong adik cek lagi ya , terimakasih</p><p><strong>============</strong></p><p><strong>user_input = int input(("Masukkan Kelipatan"))</strong></p><p><strong>deret = int input(("Berapa Banyak Deret Bilangan ?"))</strong></p><p>counter = 0</p><p><strong>print </strong></p><p><strong>for i in range (userinput,0,i++){</strong></p><p><strong>        if(counter&lt;=deret){</strong></p><p><strong>          hasil = user_input+=user_input</strong></p><p><strong>          counter += 1;</strong></p><p><strong>           print (hasil);</strong></p><p>}</p><p><strong>}</strong></p><p><strong> print("......");</strong></p><p><strong>         </strong></p><p><strong></strong></p><p><strong></strong></p><p><strong></strong></p><br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/_wfjY8JOMa0?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-surat-izin-sakit-demam.html">Contoh Surat Izin Sakit Demam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/no-resi-grab.html">No Resi Grab</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-surat-lamaran-kerja-bahasa-inggris-untuk-guru.html">Contoh Surat Lamaran Kerja Bahasa Inggris Untuk Guru</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/jelaskan-manfaat-kelas-maya-dalam-pembelajaran.html">Jelaskan Manfaat Kelas Maya Dalam Pembelajaran</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/kentang-menyimpan-cadangan-makanan-di.html">Kentang Menyimpan Cadangan Makanan Di</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/ukuran-standar-bendera-semaphore-adalah.html">Ukuran Standar Bendera Semaphore Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/nama-pancasila-pertama-kali-dikemukakan-oleh.html">Nama Pancasila Pertama Kali Dikemukakan Oleh</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/manasuka-adalah.html">Manasuka Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/daerah-penghasil-kayu-hitam.html">Daerah Penghasil Kayu Hitam</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/bahasa-nasional-negara-filipina-adalah.html">Bahasa Nasional Negara Filipina Adalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/drama-bawang-merah-bawang-putih-bahasa-inggris.html">Drama Bawang Merah Bawang Putih Bahasa Inggris</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-soal-logika-angka.html">Contoh Soal Logika Angka</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-soal-ujian-ppat.html">Contoh Soal Ujian Ppat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-potensi-agrikultur-di-indonesia.html">Contoh Potensi Agrikultur Di Indonesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-soal-kementerian-hukum-dan-ham.html">Contoh Soal Kementerian Hukum Dan Ham</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-soal-program-linear-nilai-maksimum-dan-minimum.html">Contoh Soal Program Linear Nilai Maksimum Dan Minimum</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/contoh-soal-ukg-kelas-atas.html">Contoh Soal Ukg Kelas Atas</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/dongeng-sasakala-bahasa-sunda-singkat.html">Dongeng Sasakala Bahasa Sunda Singkat</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/masuk-masjid-mendahulukan-kaki.html">Masuk Masjid Mendahulukan Kaki</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://prosschole.github.io/dzikir-pagi-petang-rodja.html">Dzikir Pagi Petang Rodja</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://prosschole.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://prosschole.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://prosschole.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+    <script type='text/javascript' src='//jd3j7g5z1fqs.com/96/78/7a/96787a1945876b1a9c10f79941441964.js'></script>
+<script type='text/javascript' src='//jd3j7g5z1fqs.com/b4/f1/ef/b4f1ef8dfe59b7fa68754094cf6c8e0e.js'></script>
+  <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4739059,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4739059&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
